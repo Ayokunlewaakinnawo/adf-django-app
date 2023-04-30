@@ -3,7 +3,8 @@ Setup
 
 Update the System
 
-sudo apt-get update
+T sudo apt-get update
+
 To get this repository, run the following command inside your git enabled terminal
 
 git clone https://github.com/ayokunlewaakinnawo/adf-django-app.git
