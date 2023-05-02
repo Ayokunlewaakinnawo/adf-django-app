@@ -4,6 +4,7 @@ Setup
 Update the System
 
 >sudo apt-get update -ubuntu
+>
 >sudo yum update - Linux distribution
 
 To get this repository, run the following command inside your git enabled terminal
