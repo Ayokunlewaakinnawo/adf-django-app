@@ -17,6 +17,17 @@ Download django usig pip
 >sudo apt install python3-pip -y
 >pip install django
 
+>sudo yum install python3-venv
+
+Activate a virtual env
+>source myenv/bin/activate
+
+update Package
+>python -m pip install --upgrade pip
+
+
+
+
 Once you have downloaded django, go to the cloned repo directory and run the following command
 
 >python3 manage.py makemigrations
