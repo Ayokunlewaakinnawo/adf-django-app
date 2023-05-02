@@ -28,14 +28,23 @@ update Package
 
 If on Amazon Linux 2, you would have to upgrade you sqlite;
 >wget https://www.sqlite.org/2022/sqlite-tools-linux-x86-3400000.zip
+>
 >unzip sqlite-tools*.zip
+>
 >cd sqlite-tools* 
+>
 >sudo cp sql* /usr/local/bin/  # Usually this directory is empty, so no need to worry about overwriting files 
+>
 >cd ~
+>
 >sudo yum update -y
+>
 >sudo amazon-linux-extras install epel -y 
+>
 >sudo yum install glibc.i686 -y
+>
 >sqlite3 --version 
+>
 
 
 
