@@ -5,7 +5,6 @@ Update the System
 
 >sudo apt-get update -ubuntu
 >
->sudo yum update - Linux distribution
 
 To get this repository, run the following command inside your git enabled terminal
 
@@ -27,6 +26,29 @@ update Package
 >python -m pip install --upgrade pip
 
 
+Once you have downloaded django, go to the cloned repo directory and run the following command
+
+>python3 manage.py makemigrations
+
+This will create all the migrations file (database migrations) required to run this App.
+
+Now, to apply this migrations run the following command
+
+>python3 manage.py migrate
+
+One last step and then our todo App will be live. We need to create an admin user to run this App. On the terminal, type the following command and provide username, password and email for the admin user
+
+>python3 manage.py createsuperuser
+
+That was pretty simple, right? Now let's make the App live. We just need to start the server now and then we can start using our simple todo App. Start the server by following command
+
+>python3 manage.py runserver
+
+*************************************************
+
+
+>sudo yum update - Linux distribution
+
 If on Amazon Linux 2, you would have to upgrade you sqlite;
 >wget https://www.sqlite.org/2022/sqlite-tools-linux-x86-3400000.zip
 >
@@ -46,23 +68,3 @@ If on Amazon Linux 2, you would have to upgrade you sqlite;
 >
 >sqlite3 --version 
 >
-
-
-
-Once you have downloaded django, go to the cloned repo directory and run the following command
-
->python3 manage.py makemigrations
-
-This will create all the migrations file (database migrations) required to run this App.
-
-Now, to apply this migrations run the following command
-
->python3 manage.py migrate
-
-One last step and then our todo App will be live. We need to create an admin user to run this App. On the terminal, type the following command and provide username, password and email for the admin user
-
->python3 manage.py createsuperuser
-
-That was pretty simple, right? Now let's make the App live. We just need to start the server now and then we can start using our simple todo App. Start the server by following command
-
->python3 manage.py runserver
