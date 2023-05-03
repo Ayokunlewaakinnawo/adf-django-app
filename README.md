@@ -44,6 +44,12 @@ That was pretty simple, right? Now let's make the App live. We just need to star
 
 >python3 manage.py runserver
 
+
+Launchin live
+
+install Nginx, gunicorn and supervisor: web server, connecting web-server to app and maintaing the web app live at the bckgrnd respectively.
+ 
+
 *************************************************
 
 
