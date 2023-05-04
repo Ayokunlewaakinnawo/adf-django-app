@@ -30,17 +30,6 @@ configure supervisor
 >cd /etc/supervisor/conf.d/
 >sudo touch gunicorn.conf
 >sudo nano gunicorn.conf
->
-{[program:gunicorn]
-directory=/home/ubuntu/adfonline
-command=/home/ubuntu/env/bin/gunicorn --worker 3 --bind unix:/home/ubuntu/adfonline/app.sock adfonline.wsgi:application
-autostart=true
-autorestart=true
-stderr_logfile=/var/log/gunicorn/gunicorn.err.log
-stdout_logfile=/var/log/gunicorn/gunicorn.out.log
-
-[group:guni]
-programs:gunicorn}
 
 server{
 
