@@ -1,5 +1,5 @@
-# Deployoing adfonline on Amazon EC2 (Ubuntu)
-Setup
+# Deploying adfonline 
+Setup -on Amazon EC2 (Ubuntu)
 
 Update the System
 
