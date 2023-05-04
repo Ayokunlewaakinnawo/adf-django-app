@@ -4,73 +4,85 @@ Setup
 Update the System
 
 >sudo apt-get update -ubuntu
+>sudo apt-get update
+>sudo apt-get upgrade
+
+install python3 virtual enviroment set up pip;
+>sudo apt-get install python3-venv
+
+Create Virtual enviroment "env" and activate it:
+>python3 -m venv env
+>source env/bin/activate
+
+install dependensies and download project from git
+>pip3 install django
+>git clone https://github.com/Ayokunlewaakinnawo/adfonline.git
 >
 
-To get this repository, run the following command inside your git enabled terminal
-
-git clone https://github.com/ayokunlewaakinnawo/adf-django-app.git
-
-You will need django to be installed in you computer to run this app. Head over to https://www.djangoproject.com/download/ for the download guide
-
-Download django usig pip
-
->sudo apt install python3-pip -y
->pip install django
-
->sudo yum install python3-venv
-
-Activate a virtual env
->source myenv/bin/activate
-
-update Package
->python -m pip install --upgrade pip
 
 
-Once you have downloaded django, go to the cloned repo directory and run the following command
+install gunicorn
+.
+install supervisor
+>sudo apt-get install supervisor
 
->python3 manage.py makemigrations
+configure supervisor
+>cd /etc/supervisor/conf.d/
+>sudo touch gunicorn.conf
+>sudo nano gunicorn.conf
 
-This will create all the migrations file (database migrations) required to run this App.
+[program:gunicorn]
+directory=/home/ubuntu/adfonline
+command=/home/ubuntu/env/bin/gunicorn --worker 3 --bind unix:/home/ubuntu/adfonline/app.sock adfonline.wsgi:application
+autostart=true
+autorestart=true
+stderr_logfile=/var/log/gunicorn/gunicorn.err.log
+stdout_logfile=/var/log/gunicorn/gunicorn.out.log
 
-Now, to apply this migrations run the following command
+[group:guni]
+programs:gunicorn
 
->python3 manage.py migrate
+create log dri.;
+>sudi mkdir /var/log/gunicorn
 
-One last step and then our todo App will be live. We need to create an admin user to run this App. On the terminal, type the following command and provide username, password and email for the admin user
+read from config file(gunicorn conf)
+>sudo supervisorctl reread
 
->python3 manage.py createsuperuser
+tell supervisor to start gunicorn in the bckgrd;
+>sudo supervisorctl update
 
-That was pretty simple, right? Now let's make the App live. We just need to start the server now and then we can start using our simple todo App. Start the server by following command
-
->python3 manage.py runserver
-
-
-Launchin live
-
-install Nginx, gunicorn and supervisor: web server, connecting web-server to app and maintaing the web app live at the bckgrnd respectively.
- 
-
-*************************************************
+to test and see gunicorn is working;
+>sudo supervisorctl status
 
 
->sudo yum update - Linux distribution
+install nginx
+>sudo apt-get install -y nginx
+create a file "django.conf" at dir. /etc/nginx/sites-available.
+>sudo touch django.conf
+>nano django.conf
 
-If on Amazon Linux 2, you would have to upgrade you sqlite;
->wget https://www.sqlite.org/2022/sqlite-tools-linux-x86-3400000.zip
->
->unzip sqlite-tools*.zip
->
->cd sqlite-tools* 
->
->sudo cp sql* /usr/local/bin/  # Usually this directory is empty, so no need to worry about overwriting files 
->
->cd ~
->
->sudo yum update -y
->
->sudo amazon-linux-extras install epel -y 
->
->sudo yum install glibc.i686 -y
->
->sqlite3 --version 
->
+edit file django.conf with;
+server{
+
+        listen 80;
+        server_name 3.144.4.134;
+
+
+        location / {
+
+                include proxy_params;
+                proxy_pass http://unix:/home/ubuntu/adfonline/app.sock;
+
+        }
+
+        location /static/ {
+                alias /home/ubuntu/adfonline/web/static/;
+        }
+}
+
+
+to test your nginx syntax;
+>sudo nginx -t
+
+run to go live;
+>sudo ln django.conf /etc/nginx/sites-enabled 
