@@ -1,4 +1,4 @@
-# adf-django-app
+# Deployoing adfonline on Amazon EC2 (Ubuntu)
 Setup
 
 Update the System
