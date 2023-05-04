@@ -42,6 +42,21 @@ stdout_logfile=/var/log/gunicorn/gunicorn.out.log
 [group:guni]
 programs:gunicorn}
 
+server{
+
+        [program:gunicorn]
+        directory=/home/ubuntu/adfonline
+        command=/home/ubuntu/env/bin/gunicorn --worker 3 --bind unix:/home/ubuntu/adfonline/app.sock adfonline.wsgi:application
+        autostart=true
+        autorestart=true
+        stderr_logfile=/var/log/gunicorn/gunicorn.err.log
+        stdout_logfile=/var/log/gunicorn/gunicorn.out.log
+
+        [group:guni]
+        programs:gunicorn
+}
+
+
 
 create log dri.;
 >sudi mkdir /var/log/gunicorn
@@ -65,8 +80,10 @@ create a file "django.conf" at dir. /etc/nginx/sites-available.
 edit file django.conf with;
 server{
 
-        listen 80;
-        server_name 3.144.4.134;
+        server{
+
+                listen 80;
+                server_name 3.144.4.134;
 
 
         location / {
@@ -78,6 +95,7 @@ server{
 
         location /static/ {
                 alias /home/ubuntu/adfonline/web/static/;
+        }
         }
 }
 
