@@ -6,6 +6,7 @@ Setup -on Amazon EC2 (Ubuntu)
 Update the System
 
 >sudo apt-get update -ubuntu
+
 >sudo apt-get update
 >sudo apt-get upgrade
 install python3 virtual enviroment set up pip;
