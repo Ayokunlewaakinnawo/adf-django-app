@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://www.webflow.com  -->
 <!--  Last Published: Sat May 06 2023 19:46:24 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="6417fc58e2165d80b756b7ee" data-wf-site="6416913004ae8a2b5cbbad43">
+<html data-wf-page="6437a54aac291d265ed79354" data-wf-site="6416913004ae8a2b5cbbad43">
     {% load static %}
     <head>
         <meta charset="utf-8"/>
         <title>
-            Contact Us
+            TermsOfService
         </title>
-        <meta content="Contact Us" property="og:title"/>
-        <meta content="Contact Us" property="twitter:title"/>
+        <meta content="TermsOfService" property="og:title"/>
+        <meta content="TermsOfService" property="twitter:title"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content="Webflow" name="generator"/>
         <link href="{% static 'web/css/normalize.css' %}" rel="stylesheet" type="text/css"/>
@@ -29,7 +29,7 @@
         <link href="{% static 'web/images/favicon.png' %}" rel="shortcut icon" type="image/x-icon"/>
         <link href="{% static 'web/images/webclip.png' %}" rel="apple-touch-icon"/>
     </head>
-    <body class="body-2">
+    <body class="body-5">
         <div class="nav_comp_contact">
             <div class="nav_bar_legacy">
                 <div class="navbar_mobile">
@@ -39,22 +39,22 @@
                                 <img alt="Logo" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 140px, 100vw" src="{% static 'web/images/Logo_1.png' %}" srcset="{% static 'web/images/Logo_1-p-500.png' %} 500w, {% static 'web/images/Logo_1.png' %} 713w" width="140"/>
                             </a>
                             <nav class="nav-menu w-nav-menu" role="navigation">
-                                <a class="nav-link-2 w-nav-link" href="{% url 'HomePage' %}">
+                                <a class="nav-link-2 w-nav-link" href="{% url 'HomePage' %}#">
                                     Home
                                 </a>
-                                <a class="nav-link-3 w-nav-link" href="{% url 'HomePage' %}#Mission">
+                                <a class="nav-link-3 w-nav-link" href="{% url 'HomePage' %}#">
                                     Mission
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#DataCollectionPage">
+                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#">
                                     Data Collection
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#OurTeam">
+                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#">
                                     Our Team
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#PartnersPage">
+                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#">
                                     Partners
                                 </a>
-                                <a aria-current="page" class="nav-link-4 w-nav-link w--current" href="{% url 'ContactPage' %}">
+                                <a class="nav-link-4 w-nav-link" href="{% url 'ContactPage' %}">
                                     Contact Us
                                 </a>
                             </nav>
@@ -100,11 +100,11 @@
                             Our Team
                         </div>
                     </a>
-                    <a class="link-block-6 w-inline-block" href="{% url 'HomePage' %}">
+                    <a class="link-block-6 w-inline-block" href="{% url 'ContactPage' %}">
                         <div class="updcontactus">
                             <div class="updcontactbtn">
                                 <div class="text-block-35">
-                                    Back Home
+                                    Contact Us
                                 </div>
                                 <img alt="" loading="lazy" src="{% static 'web/images/btn_arrow.png' %}"/>
                             </div>
@@ -114,79 +114,93 @@
             </div>
         </div>
         <div class="w-container">
-            <div class="cntct_main">
-                <div class="cntct_header">
-                    <h1 class="heading-7" data-w-id="5fde68c1-60f2-69da-94e3-e092652f2ca6" style="-webkit-transform:translate3d(0px, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0.02">
-                        Contact Us
-                    </h1>
-                    <div class="text-block-20" data-w-id="2c4f055c-d992-b510-127c-4ce36c66b50b" style="opacity:0">
-                        Please use the form below to get in touch and we'll respond as soon as we can.
-                        <br/>
-                        Thank you for contacting us.
-                    </div>
-                </div>
-                <div class="div-block-42" data-w-id="3f8fd069-03a1-038f-57b4-fe2555782a2f" style="opacity:0">
-                    <div>
-                        <div class="form-block w-form">
-
-                            <form class="form" data-name="Email Form" id="email-form" method="POST" name="email-form">
-                                {% csrf_token %}
-                                <input class="text-field w-input" data-name="firstname" id="firstname" maxlength="256" name="firstname" placeholder="First name" required="" type="text"/>
-                                <input class="text-field-2 w-input" data-name="lastname" id="lastname-2" maxlength="256" name="lastname" placeholder="Last Name" required="" type="text"/>
-                                <input class="text-field-3 w-input" data-name="email" id="email" maxlength="256" name="email" placeholder="Email" required="" type="email"/>
-                                <input class="text-field-4 w-input" data-name="phone" id="desc" maxlength="256" name="phone" placeholder="Phone" required="" type="tel"/>
-                                <textarea class="textarea w-input" data-name="desc" id="desc" maxlength="5000" name="desc" placeholder="Your comments/Questions"></textarea>
-                                <input class="submit-button w-button" data-wait="Please wait..." type="submit" value="Send"/>
-                            </form>
-                            <div class="w-form-done">
-                                <div>
-                                    Thank you! Your submission has been received!
-                                </div>
-                            </div>
-                            <!--<div class="w-form-fail">
-                                <div>
-                                    Oops! Something went wrong while submitting the form.
-                                </div>
-                            </div>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="info_sec" data-w-id="ef782b88-1adc-4ed4-782f-eff706215377" style="opacity:0">
-                    <div class="div-block-37">
-                        <div class="text-block-21">
-                            Address
-                        </div>
-                        <div class="text-block-21">
-                            Africa Data Foundation (ADF)
-                        </div>
-                        <div class="text-block-22">
-                            1301 Presidential Dr,
+            <section class="hero-without-image wf-section">
+                <div class="container-2">
+                    <div class="hero-wrapper-two" data-w-id="4ce0517d-6f7e-c589-124c-fc9e300fa2ef" style="opacity:0">
+                        <h1 class="heading-10">
+                            Terms of Service
+                        </h1>
+                        <p class="margin-bottom-24px">
+                            By accessing or using this website, you agree to be bound by the following terms and conditions. Please read them carefully before using our Site;
+                            <a href="http://www.africandatafoundation.org/" target="_blank">
+                                www.africandatafoundation.org
+                            </a>
                             <br/>
-                            Richardson, TX, 75081, USA
-                        </div>
-                    </div>
-                    <div class="div-block-39">
-                        <div class="text-block-21">
-                            Email
-                        </div>
-                        <div class="text-block-22">
-                            info@africadatafoundation.org
-                        </div>
-                    </div>
-                    <div class="div-block-38">
-                        <div class="text-block-21">
-                            Phone
-                        </div>
-                        <div class="text-block-22">
-                            +1-214-794-7760
                             <br/>
-                        </div>
+                            1.
+                            <span class="text-span-26">
+                                Use of Site
+                            </span>
+                            <br/>
+                            ADF grants you a limited, non-exclusive, non-transferable, revocable license to access and use our Site solely for personal, non-commercial purposes. You may not use our Site for any other purpose, including any commercial purpose, without our express prior written consent.
+                            <br/>
+                            <br/>
+                            2.
+                            <span class="text-span-25">
+                                Content
+                            </span>
+                            <br/>
+                            All content on our Site, including but not limited to text, graphics, images, videos, and software, is owned or licensed by ADF and is protected by copyright, trademark, trade secret, and other intellectual property laws. You may not copy, reproduce, modify, distribute, display, perform, or create derivative works based on any content on our Site without our express prior written consent.
+                            <br/>
+                            <br/>
+                            3.
+                            <span class="text-span-24">
+                                User Content
+                            </span>
+                            <br/>
+                            You are solely responsible for any content that you post, upload, submit, or otherwise make available on our Site ("User Content"). By posting User Content on our Site, you grant ADF a worldwide, non-exclusive, perpetual, irrevocable, royalty-free, sublicensable, and transferable license to use, copy, distribute, display, perform, and create derivative works based on your User Content for any purpose, including but not limited to promoting our Site.
+                            <br/>
+                            <br/>
+                            4.
+                            <span class="text-span-23">
+                                Prohibited Conduct
+                            </span>
+                            <br/>
+                            You may not use our Site in any manner that could damage, disable, overburden, or impair our Site or interfere with any other party's use and enjoyment of our Site. You may not engage in any conduct that is illegal, fraudulent, or harmful to ADF, our Site, or any third party. We reserve the right to investigate and take appropriate legal action against anyone who, in our sole discretion, violates this provision, including without limitation, reporting you to law enforcement authorities.
+                            <br/>
+                            <br/>
+                            5.
+                            <span class="text-span-27">
+                                Links to Third-Party Sites
+                            </span>
+                            <br/>
+                            Our Site may contain links to third-party websites that are not owned or controlled by ADF. We are not responsible for the content or practices of any third-party website, and we encourage you to review the terms of service and privacy policies of any third-party website before using it.
+                            <br/>
+                            <br/>
+                            6.
+                            <span class="text-span-22">
+                                Disclaimer of Warranties
+                            </span>
+                            <br/>
+                            Our Site is provided on an "as is" and "as available" basis without any representation or warranty, express or implied. ADF does not guarantee the accuracy, completeness, timeliness, or reliability of any content on our Site. To the fullest extent permissible by law, ADF disclaims all warranties, express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
+                            <br/>
+                            <br/>
+                            7.
+                            <span class="text-span-21">
+                                Limitation of Liability
+                            </span>
+                            <br/>
+                            ADF shall not be liable for any damages of any kind arising from the use of our Site, including but not limited to direct, indirect, incidental, punitive, and consequential damages. Your sole and exclusive remedy for dissatisfaction with our Site is to stop using our Site.
+                            <br/>
+                            <br/>
+                            8.
+                            <span class="text-span-20">
+                                Indemnification
+                            </span>
+                            <br/>
+                            You agree to indemnify, defend, and hold harmless ADF, its affiliates, officers, directors, employees, agents, and licensors from and against any and all claims, damages, liabilities, costs, and expenses, including reasonable attorneys' fees, arising out of or related to your use or misuse of our Site, your violation of these Terms, or your violation of any rights of any third party.
+                            <br/>
+                            <br/>
+                            9.
+                            <span class="text-span-19">
+                                Termination
+                            </span>
+                            <br/>
+                            ADF reserves the right to terminate your access to our Site, without notice or liability, for any reason whatsoever, including without limitation if you breach these Terms.
+                        </p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="laser_divided">
-            <img alt="" class="image-15" loading="lazy" sizes="(max-width: 479px) 100vw, 459px" src="{% static 'web/images/Border_line.png' %}" srcset="{% static 'web/images/Border_line-p-500.png' %} 500w, {% static 'web/images/Border_line-p-800.png' %} 800w, {% static 'web/images/Border_line.png' %} 918w" width="459"/>
+            </section>
         </div>
         <div class="footsection wf-section">
             <div class="borderline">
@@ -217,22 +231,22 @@
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-2" href="{% url 'HomePage' %}#Mission">
+                                            <a class="link-2" href="{% url 'HomePage' %}#">
                                                 Mission
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-3" href="{% url 'HomePage' %}#DataCollectionPage">
+                                            <a class="link-3" href="{% url 'HomePage' %}#">
                                                 Data Collection
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-4" href="{% url 'HomePage' %}#OurTeam">
+                                            <a class="link-4" href="{% url 'HomePage' %}#">
                                                 Our Team
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a aria-current="page" class="link-5 w--current" href="{% url 'ContactPage' %}">
+                                            <a class="link-5" href="{% url 'ContactPage' %}">
                                                 Contact Us
                                             </a>
                                         </div>
@@ -276,7 +290,7 @@
                                         </div>
                                     </li>
                                     <li class="list-item">
-                                        <a class="link-block-7 w-inline-block" href="{% url 'HomePage' %}#PartnersPage">
+                                        <a class="link-block-7 w-inline-block" href="{% url 'HomePage' %}#">
                                             <div class="footerbtn">
                                                 Our Partners
                                             </div>
@@ -349,7 +363,7 @@
                     <div class="text-block-15">
                         © 2023 Africa Data Foundation. All rights reserved.
                     </div>
-                    <a class="w-inline-block" href="{% url 'TermsofServicePage' %}">
+                    <a aria-current="page" class="w-inline-block w--current" href="{% url 'TermsofServicePage' %}">
                         <div class="text-block-15 text-block-53 text-block-54 text-block-55 text-block-56 text-block-57 text-block-58 text-block-59 text-block-60 text-block-61 text-block-62 text-block-63 text-block-64 text-block-65 text-block-66 text-block-67 text-block-68 text-block-69 text-block-70 text-block-71 text-block-72 text-block-73 text-block-74 text-block-75 text-block-76 text-block-77 text-block-78 text-block-79 text-block-80 text-block-81 text-block-82 text-block-83 text-block-84 text-block-85 text-block-86 text-block-93 text-block-94 text-block-95 text-block-96 text-block-97 text-block-98 text-block-99 text-block-100 text-block-101 text-block-102 text-block-103 text-block-104 text-block-105 text-block-106 text-block-107 text-block-108 text-block-109 text-block-110 text-block-111 text-block-112 text-block-113 text-block-114 text-block-115 text-block-116 text-block-117 text-block-118 text-block-119 text-block-120 text-block-121 text-block-122 text-block-123 text-block-124 text-block-125 text-block-126 text-block-127 text-block-128 text-block-129 text-block-130 text-block-131 text-block-132 text-block-133 text-block-134 text-block-135 text-block-136 text-block-137 text-block-138 text-block-139 text-block-140 text-block-141 text-block-142 text-block-143 text-block-144 text-block-145 text-block-146 text-block-147 text-block-148 text-block-149 text-block-150 text-block-151 text-block-152 text-block-153 text-block-154 text-block-155 text-block-156 text-block-157 text-block-158 text-block-159 text-block-160 text-block-161 text-block-162 text-block-163 text-block-164 text-block-165 text-block-166 text-block-167 text-block-168 text-block-169 text-block-170 text-block-171 text-block-172 text-block-173 text-block-174 text-block-175 text-block-176 text-block-177">
                             <span class="text-span-28 text-span-29 text-span-30 text-span-31 text-span-32 text-span-33 text-span-34 text-span-35 text-span-36 text-span-37 text-span-38 text-span-39 text-span-40 text-span-41 text-span-42 text-span-43 text-span-44 text-span-45 text-span-46 text-span-47 text-span-48 text-span-49 text-span-50">
                                 Terms of Service

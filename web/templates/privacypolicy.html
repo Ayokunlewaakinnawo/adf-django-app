@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://www.webflow.com  -->
 <!--  Last Published: Sat May 06 2023 19:46:24 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="6417fc58e2165d80b756b7ee" data-wf-site="6416913004ae8a2b5cbbad43">
+<html data-wf-page="6453f984c97a2d7b6443b5eb" data-wf-site="6416913004ae8a2b5cbbad43">
     {% load static %}
     <head>
         <meta charset="utf-8"/>
         <title>
-            Contact Us
+            PrivacyPolicy
         </title>
-        <meta content="Contact Us" property="og:title"/>
-        <meta content="Contact Us" property="twitter:title"/>
+        <meta content="PrivacyPolicy" property="og:title"/>
+        <meta content="PrivacyPolicy" property="twitter:title"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content="Webflow" name="generator"/>
         <link href="{% static 'web/css/normalize.css' %}" rel="stylesheet" type="text/css"/>
@@ -29,7 +29,7 @@
         <link href="{% static 'web/images/favicon.png' %}" rel="shortcut icon" type="image/x-icon"/>
         <link href="{% static 'web/images/webclip.png' %}" rel="apple-touch-icon"/>
     </head>
-    <body class="body-2">
+    <body class="body-5">
         <div class="nav_comp_contact">
             <div class="nav_bar_legacy">
                 <div class="navbar_mobile">
@@ -39,22 +39,22 @@
                                 <img alt="Logo" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 140px, 100vw" src="{% static 'web/images/Logo_1.png' %}" srcset="{% static 'web/images/Logo_1-p-500.png' %} 500w, {% static 'web/images/Logo_1.png' %} 713w" width="140"/>
                             </a>
                             <nav class="nav-menu w-nav-menu" role="navigation">
-                                <a class="nav-link-2 w-nav-link" href="{% url 'HomePage' %}">
+                                <a class="nav-link-2 w-nav-link" href="{% url 'HomePage' %}#">
                                     Home
                                 </a>
-                                <a class="nav-link-3 w-nav-link" href="{% url 'HomePage' %}#Mission">
+                                <a class="nav-link-3 w-nav-link" href="{% url 'HomePage' %}#">
                                     Mission
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#DataCollectionPage">
+                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#">
                                     Data Collection
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#OurTeam">
+                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#">
                                     Our Team
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#PartnersPage">
+                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#">
                                     Partners
                                 </a>
-                                <a aria-current="page" class="nav-link-4 w-nav-link w--current" href="{% url 'ContactPage' %}">
+                                <a class="nav-link-4 w-nav-link" href="{% url 'ContactPage' %}">
                                     Contact Us
                                 </a>
                             </nav>
@@ -100,11 +100,11 @@
                             Our Team
                         </div>
                     </a>
-                    <a class="link-block-6 w-inline-block" href="{% url 'HomePage' %}">
+                    <a class="link-block-6 w-inline-block" href="{% url 'ContactPage' %}">
                         <div class="updcontactus">
                             <div class="updcontactbtn">
                                 <div class="text-block-35">
-                                    Back Home
+                                    Contact Us
                                 </div>
                                 <img alt="" loading="lazy" src="{% static 'web/images/btn_arrow.png' %}"/>
                             </div>
@@ -114,79 +114,89 @@
             </div>
         </div>
         <div class="w-container">
-            <div class="cntct_main">
-                <div class="cntct_header">
-                    <h1 class="heading-7" data-w-id="5fde68c1-60f2-69da-94e3-e092652f2ca6" style="-webkit-transform:translate3d(0px, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0px, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0px, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0px, 80px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0.02">
-                        Contact Us
-                    </h1>
-                    <div class="text-block-20" data-w-id="2c4f055c-d992-b510-127c-4ce36c66b50b" style="opacity:0">
-                        Please use the form below to get in touch and we'll respond as soon as we can.
-                        <br/>
-                        Thank you for contacting us.
-                    </div>
-                </div>
-                <div class="div-block-42" data-w-id="3f8fd069-03a1-038f-57b4-fe2555782a2f" style="opacity:0">
-                    <div>
-                        <div class="form-block w-form">
-
-                            <form class="form" data-name="Email Form" id="email-form" method="POST" name="email-form">
-                                {% csrf_token %}
-                                <input class="text-field w-input" data-name="firstname" id="firstname" maxlength="256" name="firstname" placeholder="First name" required="" type="text"/>
-                                <input class="text-field-2 w-input" data-name="lastname" id="lastname-2" maxlength="256" name="lastname" placeholder="Last Name" required="" type="text"/>
-                                <input class="text-field-3 w-input" data-name="email" id="email" maxlength="256" name="email" placeholder="Email" required="" type="email"/>
-                                <input class="text-field-4 w-input" data-name="phone" id="desc" maxlength="256" name="phone" placeholder="Phone" required="" type="tel"/>
-                                <textarea class="textarea w-input" data-name="desc" id="desc" maxlength="5000" name="desc" placeholder="Your comments/Questions"></textarea>
-                                <input class="submit-button w-button" data-wait="Please wait..." type="submit" value="Send"/>
-                            </form>
-                            <div class="w-form-done">
-                                <div>
-                                    Thank you! Your submission has been received!
-                                </div>
-                            </div>
-                            <!--<div class="w-form-fail">
-                                <div>
-                                    Oops! Something went wrong while submitting the form.
-                                </div>
-                            </div>-->
-                        </div>
-                    </div>
-                </div>
-                <div class="info_sec" data-w-id="ef782b88-1adc-4ed4-782f-eff706215377" style="opacity:0">
-                    <div class="div-block-37">
-                        <div class="text-block-21">
-                            Address
-                        </div>
-                        <div class="text-block-21">
-                            Africa Data Foundation (ADF)
-                        </div>
-                        <div class="text-block-22">
-                            1301 Presidential Dr,
+            <section class="hero-without-image wf-section">
+                <div class="container-2">
+                    <div class="hero-wrapper-two" data-w-id="4ce0517d-6f7e-c589-124c-fc9e300fa2ef" style="opacity:0">
+                        <h1 class="heading-10">
+                            Privacy Policy
+                        </h1>
+                        <p class="margin-bottom-24px">
+                            Africadatafoundation.org (the "Site"), owned and operated by Africadatafoundation ("ADF," "we," or "us"), is committed to protecting your privacy. This Privacy Policy ("Policy") explains how we collect, use, and share information from users of our Site ("Users" or "you").
                             <br/>
-                            Richardson, TX, 75081, USA
-                        </div>
-                    </div>
-                    <div class="div-block-39">
-                        <div class="text-block-21">
-                            Email
-                        </div>
-                        <div class="text-block-22">
-                            info@africadatafoundation.org
-                        </div>
-                    </div>
-                    <div class="div-block-38">
-                        <div class="text-block-21">
-                            Phone
-                        </div>
-                        <div class="text-block-22">
-                            +1-214-794-7760
                             <br/>
-                        </div>
+                            1.
+                            <span class="text-span-12">
+                                Information We Collect
+                            </span>
+                            <br/>
+                            We collect personal information that you provide to us when you register for an account, make a donation, sign up for our newsletter, or contact us. This information may include your name, email address, mailing address, and payment information.
+                            <br/>
+                            <br/>
+                            We also collect non-personal information such as your IP address, browser type, operating system, and pages visited on our Site. We use cookies and other tracking technologies to collect this information.
+                            <br/>
+                            <br/>
+                            2.
+                            <span class="text-span-13">
+                                Use of Information
+                            </span>
+                            <br/>
+                            We use the information we collect to provide and improve our services, respond to your inquiries and requests, process your donations, and communicate with you about our Site and services. We may also use your information to send you marketing and promotional materials, but you may opt-out of receiving these communications at any time.
+                            <br/>
+                            <br/>
+                            We may share your information with third-party service providers who assist us with our operations, such as payment processors and email service providers. We may also share your information as required by law or to protect our rights and property.
+                            <br/>
+                            <br/>
+                            3.
+                            <span class="text-span-14">
+                                Cookies and Tracking Technologies
+                            </span>
+                            <br/>
+                            We use cookies and other tracking technologies to collect information about your use of our Site. Cookies are small data files stored on your device that allow us to recognize your browser and remember your preferences.
+                            <br/>
+                            <br/>
+                            We use both session cookies, which expire when you close your browser, and persistent cookies, which remain on your device until they expire or you delete them. You may set your browser to block cookies or to alert you when cookies are being sent, but this may affect your ability to use our Site.
+                            <br/>
+                            <br/>
+                            4.
+                            <span class="text-span-15">
+                                Security
+                            </span>
+                            <br/>
+                            We take reasonable measures to protect your information from unauthorized access, disclosure, or use. However, no system can be completely secure, and we cannot guarantee the security of your information.
+                            <br/>
+                            <br/>
+                            5.
+                            <span class="text-span-16">
+                                Children's Privacy
+                            </span>
+                            <br/>
+                            Our Site is not intended for children under the age of 13, and we do not knowingly collect personal information from children under the age of 13. If we learn that we have collected personal information from a child under the age of 13, we will take steps to delete the information as soon as possible.
+                            <br/>
+                            <br/>
+                            6.
+                            <span class="text-span-17">
+                                Changes to this Policy
+                            </span>
+                            <br/>
+                            We may update this Policy from time to time by posting a new version on our Site. Your continued use of our Site after we make changes indicates your acceptance of the updated Policy.
+                            <br/>
+                            <br/>
+                            7.
+                            <span class="text-span-18">
+                                Contact Us
+                            </span>
+                            <br/>
+                            If you have any questions or concerns about our Policy, please contact us at
+                            <a href="mailto:privacy@africadatafoundation.org" target="_new">
+                                <strong>
+                                    privacy@africadatafoundation.org
+                                </strong>
+                            </a>
+                            .
+                        </p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="laser_divided">
-            <img alt="" class="image-15" loading="lazy" sizes="(max-width: 479px) 100vw, 459px" src="{% static 'web/images/Border_line.png' %}" srcset="{% static 'web/images/Border_line-p-500.png' %} 500w, {% static 'web/images/Border_line-p-800.png' %} 800w, {% static 'web/images/Border_line.png' %} 918w" width="459"/>
+            </section>
         </div>
         <div class="footsection wf-section">
             <div class="borderline">
@@ -217,22 +227,22 @@
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-2" href="{% url 'HomePage' %}#Mission">
+                                            <a class="link-2" href="{% url 'HomePage' %}#">
                                                 Mission
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-3" href="{% url 'HomePage' %}#DataCollectionPage">
+                                            <a class="link-3" href="{% url 'HomePage' %}#">
                                                 Data Collection
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-4" href="{% url 'HomePage' %}#OurTeam">
+                                            <a class="link-4" href="{% url 'HomePage' %}#">
                                                 Our Team
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a aria-current="page" class="link-5 w--current" href="{% url 'ContactPage' %}">
+                                            <a class="link-5" href="{% url 'ContactPage' %}">
                                                 Contact Us
                                             </a>
                                         </div>
@@ -276,7 +286,7 @@
                                         </div>
                                     </li>
                                     <li class="list-item">
-                                        <a class="link-block-7 w-inline-block" href="{% url 'HomePage' %}#PartnersPage">
+                                        <a class="link-block-7 w-inline-block" href="{% url 'HomePage' %}#">
                                             <div class="footerbtn">
                                                 Our Partners
                                             </div>
@@ -356,7 +366,7 @@
                             </span>
                         </div>
                     </a>
-                    <a class="link-block-8 w-inline-block" href="{% url 'PrivacyPolicyPage' %}">
+                    <a aria-current="page" class="link-block-8 w-inline-block w--current" href="{% url 'PrivacyPolicyPage' %}">
                         <div class="text-block-15">
                             Privacy Policy
                         </div>
