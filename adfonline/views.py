@@ -43,4 +43,13 @@ def register(request):
         registerpost.Category=category
         registerpost.save()
 
-    return render(request, 'registration-form-2.html')
+    return render(request, 'registration-form.html')
+
+def other(request):
+    return render(request, 'otherpages.html')
+
+def privacy(request):
+    return render(request, 'privacypolicy.html')
+
+def terms(request):
+    return render(request, 'termsofservice.html')

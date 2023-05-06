@@ -23,5 +23,8 @@ urlpatterns = [
     path('', views.home, name="HomePage"),
     path('contact/', views.contact, name="ContactPage"),
     path('learnMore/', views.event, name="EventPage"),
-    path('register/', views.register, name="RegisterPage")
+    path('register/', views.register, name="RegisterPage"),
+    path('other/', views.other, name="UnderConstruction"),
+    path('privacy/', views.privacy, name="PrivacyPolicyPage"),
+    path('terms/', views.terms, name="TermsofServicePage")
 ]

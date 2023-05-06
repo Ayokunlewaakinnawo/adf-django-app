@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Thu Apr 27 2023 17:27:13 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat May 06 2023 19:46:24 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6437a5a128cc15cf5a07f5bc" data-wf-site="6416913004ae8a2b5cbbad43">
     {% load static %}
     <head>
         <meta charset="utf-8"/>
         <title>
-            Terms_and_Agreement
+            Ticket_Plan
         </title>
-        <meta content="Terms_and_Agreement" property="og:title"/>
-        <meta content="Terms_and_Agreement" property="twitter:title"/>
+        <meta content="Ticket_Plan" property="og:title"/>
+        <meta content="Ticket_Plan" property="twitter:title"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content="Webflow" name="generator"/>
         <link href="{% static 'web/css/normalize.css' %}" rel="stylesheet" type="text/css"/>
@@ -35,26 +35,26 @@
                 <div class="navbar_mobile">
                     <div class="navbar-2 w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner">
                         <div class="w-container">
-                            <a class="brand w-nav-brand" href="#">
+                            <a class="brand w-nav-brand" href="{% url 'HomePage' %}#">
                                 <img alt="Logo" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 140px, 100vw" src="{% static 'web/images/Logo_1.png' %}" srcset="{% static 'web/images/Logo_1-p-500.png' %} 500w, {% static 'web/images/Logo_1.png' %} 713w" width="140"/>
                             </a>
                             <nav class="nav-menu w-nav-menu" role="navigation">
-                                <a class="nav-link-2 w-nav-link" href="#">
+                                <a class="nav-link-2 w-nav-link" href="{% url 'HomePage' %}#">
                                     Home
                                 </a>
-                                <a class="nav-link-3 w-nav-link" href="#">
+                                <a class="nav-link-3 w-nav-link" href="{% url 'HomePage' %}#">
                                     Mission
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="#">
+                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#">
                                     Data Collection
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="#">
+                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#">
                                     Our Team
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="#">
+                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#">
                                     Partners
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="contact-us.html">
+                                <a class="nav-link-4 w-nav-link" href="{% url 'ContactPage' %}">
                                     Contact Us
                                 </a>
                             </nav>
@@ -67,86 +67,40 @@
                 </div>
             </div>
             <div class="updnavbar">
-                <div class="drpbck" data-w-id="7ca2bb44-b162-54b9-9f37-df0ba8117d95">
-                    <div class="navbar2-copy">
-                        <a class="w-inline-block" href="index.html">
-                            <div class="logowrp">
-                                <img alt="ADF_Logo" loading="lazy" sizes="100vw" src="{% static 'web/images/Logo_1.png' %}" srcset="{% static 'web/images/Logo_1-p-500.png' %} 500w, {% static 'web/images/Logo_1.png' %} 713w" width="125"/>
-                            </div>
-                        </a>
-                        <a class="link-block w-inline-block" href="#">
-                            <div class="text-block-34">
-                                Home
-                            </div>
-                        </a>
-                        <a class="link-block-2 w-inline-block" href="#">
-                            <div class="text-block-30">
-                                Mission
-                            </div>
-                        </a>
-                        <div class="div-block-78">
-                            <a class="datacollectnlink w-inline-block" href="#">
-                                <div class="text-block-31">
-                                    Data Collection
-                                </div>
-                            </a>
-                        </div>
-                        <a class="link-block-4 w-inline-block" href="#">
-                            <div class="text-block-32">
-                                Partners
-                            </div>
-                        </a>
-                        <a class="link-block-5 w-inline-block" href="#">
-                            <div class="text-block-33">
-                                Our Team
-                            </div>
-                        </a>
-                        <a class="link-block-6 w-inline-block" href="contact-us.html">
-                            <div class="updcontactus">
-                                <div class="updcontactbtn">
-                                    <div class="text-block-35">
-                                        Contact Us
-                                    </div>
-                                    <img alt="" loading="lazy" src="{% static 'web/images/btn_arrow.png' %}"/>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
                 <div class="navbar2" data-w-id="80d0e6a2-8a32-c82e-165b-e052ab01eb2d">
-                    <a class="w-inline-block" href="index.html">
+                    <a class="w-inline-block" href="{% url 'HomePage' %}">
                         <div class="logowrp">
                             <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo_1.png' %}" srcset="{% static 'web/images/Logo_1-p-500.png' %} 500w, {% static 'web/images/Logo_1.png' %} 713w" width="125"/>
                         </div>
                     </a>
-                    <a class="link-block w-inline-block" href="#">
+                    <a class="link-block w-inline-block" href="{% url 'HomePage' %}#">
                         <div class="text-block-34">
                             Home
                         </div>
                     </a>
-                    <a class="link-block-2 w-inline-block" href="#">
+                    <a class="link-block-2 w-inline-block" href="{% url 'HomePage' %}#">
                         <div class="text-block-30">
                             Mission
                         </div>
                     </a>
                     <div class="div-block-78">
-                        <a class="datacollectnlink w-inline-block" href="#">
+                        <a class="datacollectnlink w-inline-block" href="{% url 'HomePage' %}#">
                             <div class="text-block-31">
                                 Data Collection
                             </div>
                         </a>
                     </div>
-                    <a class="link-block-4 w-inline-block" href="#">
+                    <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#">
                         <div class="text-block-32">
                             Partners
                         </div>
                     </a>
-                    <a class="link-block-5 w-inline-block" href="#">
+                    <a class="link-block-5 w-inline-block" href="{% url 'HomePage' %}#">
                         <div class="text-block-33">
                             Our Team
                         </div>
                     </a>
-                    <a class="link-block-6 w-inline-block" href="contact-us.html">
+                    <a class="link-block-6 w-inline-block" href="{% url 'ContactPage' %}">
                         <div class="updcontactus">
                             <div class="updcontactbtn">
                                 <div class="text-block-35">
@@ -226,7 +180,7 @@
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <a class="brix---btn-primary-small-white-2 w-button" href="payment.html">
+                                                    <a class="brix---btn-primary-small-white-2 w-button" href="{% url 'TermsofServicePage' %}">
                                                         Checkout
                                                     </a>
                                                 </div>
@@ -273,7 +227,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <a class="brix---btn-primary-small-white-2 w-button" href="payment.html">
+                                                <a class="brix---btn-primary-small-white-2 w-button" href="{% url 'TermsofServicePage' %}">
                                                     Checkout
                                                 </a>
                                             </div>
@@ -318,7 +272,7 @@
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <a class="brix---btn-primary-small-white-2 w-button" href="payment.html">
+                                                    <a class="brix---btn-primary-small-white-2 w-button" href="{% url 'TermsofServicePage' %}">
                                                         Checkout
                                                     </a>
                                                 </div>
@@ -371,27 +325,27 @@
                                     </li>
                                     <li class="list-item">
                                         <div class="footerbtn">
-                                            <a class="link" href="index.html">
+                                            <a class="link" href="{% url 'HomePage' %}">
                                                 Home
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-2" href="#">
+                                            <a class="link-2" href="{% url 'HomePage' %}#">
                                                 Mission
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-3" href="#">
+                                            <a class="link-3" href="{% url 'HomePage' %}#">
                                                 Data Collection
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-4" href="#">
+                                            <a class="link-4" href="{% url 'HomePage' %}#">
                                                 Our Team
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-5" href="contact-us.html">
+                                            <a class="link-5" href="{% url 'ContactPage' %}">
                                                 Contact Us
                                             </a>
                                         </div>
@@ -435,7 +389,7 @@
                                         </div>
                                     </li>
                                     <li class="list-item">
-                                        <a class="link-block-7 w-inline-block" href="#">
+                                        <a class="link-block-7 w-inline-block" href="{% url 'HomePage' %}#">
                                             <div class="footerbtn">
                                                 Our Partners
                                             </div>
@@ -464,7 +418,7 @@
                                         </div>
                                     </li>
                                     <li class="list-item">
-                                        <a class="link-block-7 w-inline-block" href="events.html">
+                                        <a class="link-block-7 w-inline-block" href="{% url 'EventPage' %}">
                                             <div class="footerbtn">
                                                 ADF Conference Agenda 2023
                                             </div>
@@ -508,17 +462,27 @@
                     <div class="text-block-15">
                         © 2023 Africa Data Foundation. All rights reserved.
                     </div>
-                    <div class="text-block-15">
-                        Terms of Service
+                    <a class="w-inline-block" href="{% url 'TermsofServicePage' %}">
+                        <div class="text-block-15 text-block-53 text-block-54 text-block-55 text-block-56 text-block-57 text-block-58 text-block-59 text-block-60 text-block-61 text-block-62 text-block-63 text-block-64 text-block-65 text-block-66 text-block-67 text-block-68 text-block-69 text-block-70 text-block-71 text-block-72 text-block-73 text-block-74 text-block-75 text-block-76 text-block-77 text-block-78 text-block-79 text-block-80 text-block-81 text-block-82 text-block-83 text-block-84 text-block-85 text-block-86 text-block-93 text-block-94 text-block-95 text-block-96 text-block-97 text-block-98 text-block-99 text-block-100 text-block-101 text-block-102 text-block-103 text-block-104 text-block-105 text-block-106 text-block-107 text-block-108 text-block-109 text-block-110 text-block-111 text-block-112 text-block-113 text-block-114 text-block-115 text-block-116 text-block-117 text-block-118 text-block-119 text-block-120 text-block-121 text-block-122 text-block-123 text-block-124 text-block-125 text-block-126 text-block-127 text-block-128 text-block-129 text-block-130 text-block-131 text-block-132 text-block-133 text-block-134 text-block-135 text-block-136 text-block-137 text-block-138 text-block-139 text-block-140 text-block-141 text-block-142 text-block-143 text-block-144 text-block-145 text-block-146 text-block-147 text-block-148 text-block-149 text-block-150 text-block-151 text-block-152 text-block-153 text-block-154 text-block-155 text-block-156 text-block-157 text-block-158 text-block-159 text-block-160 text-block-161 text-block-162 text-block-163 text-block-164 text-block-165 text-block-166 text-block-167 text-block-168 text-block-169 text-block-170 text-block-171 text-block-172 text-block-173 text-block-174 text-block-175 text-block-176 text-block-177">
+                            <span class="text-span-28 text-span-29 text-span-30 text-span-31 text-span-32 text-span-33 text-span-34 text-span-35 text-span-36 text-span-37 text-span-38 text-span-39 text-span-40 text-span-41 text-span-42 text-span-43 text-span-44 text-span-45 text-span-46 text-span-47 text-span-48 text-span-49 text-span-50">
+                                Terms of Service
+                            </span>
+                        </div>
+                    </a>
+                    <a class="link-block-8 w-inline-block" href="{% url 'PrivacyPolicyPage' %}">
+                        <div class="text-block-15">
+                            Privacy Policy
+                        </div>
+                    </a>
+                    <div>
+                        <div class="text-block-15 text-block-87 text-block-88 text-block-89 text-block-90 text-block-91 text-block-92">
+                            Sitemap
+                        </div>
                     </div>
-                    <div class="text-block-15">
-                        Privacy Policy
-                    </div>
-                    <div class="text-block-15">
-                        Sitemap
-                    </div>
-                    <div class="text-block-15">
-                        Security
+                    <div class="div-block-122">
+                        <div class="text-block-15">
+                            Security
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Thu Apr 27 2023 17:27:13 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat May 06 2023 19:46:24 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="643ebcdc3fa744691e8c4155" data-wf-site="6416913004ae8a2b5cbbad43">
     {% load static %}
     <head>
         <meta charset="utf-8"/>
         <title>
-            Registration_form_2
+            Registration_form
         </title>
-        <meta content="Registration_form_2" property="og:title"/>
-        <meta content="Registration_form_2" property="twitter:title"/>
+        <meta content="Registration_form" property="og:title"/>
+        <meta content="Registration_form" property="twitter:title"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content="Webflow" name="generator"/>
         <link href="{% static 'web/css/normalize.css' %}" rel="stylesheet" type="text/css"/>
@@ -35,11 +35,11 @@
                 <div class="navbar_mobile">
                     <div class="navbar-2 w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner">
                         <div class="w-container">
-                            <a class="brand w-nav-brand" href="{% url 'HomePage' %}">
+                            <a class="brand w-nav-brand" href="{% url 'HomePage' %}#">
                                 <img alt="Logo" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 140px, 100vw" src="{% static 'web/images/Logo_1.png' %}" srcset="{% static 'web/images/Logo_1-p-500.png' %} 500w, {% static 'web/images/Logo_1.png' %} 713w" width="140"/>
                             </a>
                             <nav class="nav-menu w-nav-menu" role="navigation">
-                                <a class="nav-link-2 w-nav-link" href="{% url 'HomePage' %}">
+                                <a class="nav-link-2 w-nav-link" href="{% url 'HomePage' %}#">
                                     Home
                                 </a>
                                 <a class="nav-link-3 w-nav-link" href="{% url 'HomePage' %}#Mission">
@@ -67,52 +67,6 @@
                 </div>
             </div>
             <div class="updnavbar">
-                <div class="drpbck" data-w-id="7ca2bb44-b162-54b9-9f37-df0ba8117d95">
-                    <div class="navbar2-copy">
-                        <a class="w-inline-block" href="{% url 'HomePage' %}">
-                            <div class="logowrp">
-                                <img alt="ADF_Logo" loading="lazy" sizes="100vw" src="{% static 'web/images/Logo_1.png' %}" srcset="{% static 'web/images/Logo_1-p-500.png' %} 500w, {% static 'web/images/Logo_1.png' %} 713w" width="125"/>
-                            </div>
-                        </a>
-                        <a class="link-block w-inline-block" href="{% url 'HomePage' %}">
-                            <div class="text-block-34">
-                                Home
-                            </div>
-                        </a>
-                        <a class="link-block-2 w-inline-block" href="{% url 'HomePage' %}#Mission">
-                            <div class="text-block-30">
-                                Mission
-                            </div>
-                        </a>
-                        <div class="div-block-78">
-                            <a class="datacollectnlink w-inline-block" href="{% url 'HomePage' %}#DataCollectionPage">
-                                <div class="text-block-31">
-                                    Data Collection
-                                </div>
-                            </a>
-                        </div>
-                        <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#Partners">
-                            <div class="text-block-32">
-                                Partners
-                            </div>
-                        </a>
-                        <a class="link-block-5 w-inline-block" href="{% url 'HomePage' %}#OurTeam">
-                            <div class="text-block-33">
-                                Our Team
-                            </div>
-                        </a>
-                        <a class="link-block-6 w-inline-block" href="{% url 'ContactPage' %}">
-                            <div class="updcontactus">
-                                <div class="updcontactbtn">
-                                    <div class="text-block-35">
-                                        Contact Us
-                                    </div>
-                                    <img alt="" loading="lazy" src="{% static 'web/images/btn_arrow.png' %}"/>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
                 <div class="navbar2" data-w-id="80d0e6a2-8a32-c82e-165b-e052ab01eb2d">
                     <a class="w-inline-block" href="{% url 'HomePage' %}">
                         <div class="logowrp">
@@ -168,9 +122,9 @@
                                 Join the Event
                             </div>
                             <h2 class="uui-heading-medium-6">
-                                African data foundation (ADF) in Partnership
+                                East Africa Business Network (EABN) in Partnership
                                 <br/>
-                                with East Africa Business Network (EABN)
+                                with African data foundation (ADF)
                             </h2>
                             <div class="uui-space-xsmall-6">
                             </div>
@@ -180,34 +134,34 @@
                         </div>
                     </div>
                     <div class="uui-contact02_component w-form">
-                        <form class="uui-contact02_form" data-name="register_form" id="wf-form-register_form" method="POST" name="wf-form-register_form">
+                        <form class="uui-contact02_form" data-name="register_form" id="wf-form-register_form" method="post" name="wf-form-register_form">
                             {% csrf_token %}
                             <div class="form-field-2col-3">
                                 <div class="uui-form-field-wrapper-3">
-                                    <label class="uui-field-label-3" for="Contact-02-first-name">
+                                    <label class="uui-field-label-3" for="Firstname">
                                         First name
                                     </label>
-                                    <input class="uui-form_input-4 w-input" data-name="Contact 02 first name" id="Contact-02-first-name" maxlength="256" name="Firstname" placeholder="First name" required="" type="text"/>
+                                    <input class="uui-form_input-4 w-input" data-name="Firstname" id="Firstname" maxlength="256" name="Firstname" placeholder="First name" required="" type="text"/>
                                 </div>
                                 <div class="uui-form-field-wrapper-3">
-                                    <label class="uui-field-label-3" for="Contact-02-last-name">
+                                    <label class="uui-field-label-3" for="Lastname">
                                         Last name
                                     </label>
-                                    <input class="uui-form_input-4 w-input" data-name="Contact 02 last name" id="Contact-02-last-name" maxlength="256" name="Lastname" placeholder="Last name" required="" type="text"/>
+                                    <input class="uui-form_input-4 w-input" data-name="Lastname" id="Lastname" maxlength="256" name="Lastname" placeholder="Last name" required="" type="text"/>
                                 </div>
                             </div>
                             <div class="form-field-2col-3">
                                 <div class="uui-form-field-wrapper-3">
-                                    <label class="uui-field-label-3" for="Contact-02-email">
+                                    <label class="uui-field-label-3" for="Email">
                                         Email
                                     </label>
-                                    <input class="uui-form_input-4 w-input" data-name="Contact 02 email" id="Contact-02-email" maxlength="256" name="Email" placeholder="your@company.com" required="" type="email"/>
+                                    <input class="uui-form_input-4 w-input" data-name="Email" id="Email" maxlength="256" name="Email" placeholder="your@company.com" required="" type="email"/>
                                 </div>
                                 <div class="uui-form-field-wrapper-3">
-                                    <label class="uui-field-label-3" for="Contact-02-phone">
+                                    <label class="uui-field-label-3" for="Phone">
                                         Phone number
                                     </label>
-                                    <input class="uui-form_input-4 w-input" data-name="Contact 02 phone" id="Contact-02-phone" maxlength="256" name="Phone" placeholder="+1 (555) 000-0000" required="" type="tel"/>
+                                    <input class="uui-form_input-4 w-input" data-name="Phone" id="Phone" maxlength="256" name="Phone" placeholder="+1 (555) 000-0000" required="" type="tel"/>
                                 </div>
                             </div>
                             <div class="uui-form-field-wrapper-3">
@@ -271,66 +225,65 @@
                                     <option value="WY">Wyoming</option>
                                 </select>
                             </div>
-                            
                             <div class="uui-form-field-wrapper-3">
                                 <div class="uui-form-field-wrapper-3">
                                     <label class="uui-field-label-3" for="Contact-2-Select">
                                         Which best describes you?
                                     </label>
-                                    <div class="radio_choices">
+                                    <div class="w-layout-grid form-radio-2col-3">
                                         <label class="uui-form-radio-3 w-radio">
                                             <div class="w-form-formradioinput w-form-formradioinput--inputType-custom checkbtnprofessional w-radio-input">
                                             </div>
-                                            <input data-name="Contact 02 radio" id="ContentCreatorbtn" name="Category" style="opacity:0;position:absolute;z-index:-1" type="radio" value="Contact 02 radio 02"/>
-                                            <span class="uui-form-radio-label-3 w-form-label" for="ContentCreatorbtn">
+                                            <input data-name="Category" id="student_radio" name="Category" style="opacity:0;position:absolute;z-index:-1" type="radio" value="student_radio"/>
+                                            <span class="uui-form-radio-label-3 w-form-label" for="student_radio">
                                                 Student
                                             </span>
                                         </label>
                                         <label class="uui-form-radio-3 w-radio">
                                             <div class="w-form-formradioinput w-form-formradioinput--inputType-custom checkbtnprofessional w-radio-input">
                                             </div>
-                                            <input data-name="Contact 02 Radio 9" id="Contact-02-radio-9" name="Category" style="opacity:0;position:absolute;z-index:-1" type="radio" value="Contact 02 radio 03"/>
-                                            <span class="uui-form-radio-label-3 w-form-label" for="Contact-02-radio-9">
+                                            <input data-name="Category" id="pro_radio" name="Category" style="opacity:0;position:absolute;z-index:-1" type="radio" value="pro_radio"/>
+                                            <span class="uui-form-radio-label-3 w-form-label" for="pro_radio">
                                                 Professional
                                             </span>
                                         </label>
                                         <label class="uui-form-radio-3 w-radio">
                                             <div class="w-form-formradioinput w-form-formradioinput--inputType-custom checkbtnprofessional w-radio-input">
                                             </div>
-                                            <input data-name="Contact 02 Radio 7" id="ProfessionalBtn" name="Category" style="opacity:0;position:absolute;z-index:-1" type="radio" value="content_radio"/>
-                                            <span class="uui-form-radio-label-3 w-form-label" for="ProfessionalBtn">
+                                            <input data-name="Category" id="content_radio" name="Category" style="opacity:0;position:absolute;z-index:-1" type="radio" value="content_radio"/>
+                                            <span class="uui-form-radio-label-3 w-form-label" for="content_radio">
                                                 Content Creator
                                             </span>
                                         </label>
                                         <label class="uui-form-radio-3 w-radio">
                                             <div class="w-form-formradioinput w-form-formradioinput--inputType-custom checkbtnprofessional w-radio-input">
                                             </div>
-                                            <input data-name="Contact 02 Radio 7" id="Contact-02-radio-7" name="Category" style="opacity:0;position:absolute;z-index:-1" type="radio" value="consult_radio"/>
-                                            <span class="uui-form-radio-label-3 w-form-label" for="Contact-02-radio-7">
+                                            <input data-name="Category" id="consult_radio" name="Category" style="opacity:0;position:absolute;z-index:-1" type="radio" value="consult_radio"/>
+                                            <span class="uui-form-radio-label-3 w-form-label" for="consult_radio">
                                                 Strategy & consulting
                                             </span>
                                         </label>
                                         <label class="uui-form-radio-3 w-radio">
                                             <div class="w-form-formradioinput w-form-formradioinput--inputType-custom checkbtnprofessional w-radio-input">
                                             </div>
-                                            <input data-name="Contact 02 Radio 7" id="BusinessOwnerBtn" name="Category" style="opacity:0;position:absolute;z-index:-1" type="radio" value="business_radio"/>
-                                            <span class="uui-form-radio-label-3 w-form-label" for="BusinessOwnerBtn">
+                                            <input data-name="Category" id="business_radio" name="Category" style="opacity:0;position:absolute;z-index:-1" type="radio" value="business_radio"/>
+                                            <span class="uui-form-radio-label-3 w-form-label" for="business_radio">
                                                 Business Owner
                                             </span>
                                         </label>
                                         <label class="uui-form-radio-3 w-radio">
                                             <div class="w-form-formradioinput w-form-formradioinput--inputType-custom checkbtnprofessional w-radio-input">
                                             </div>
-                                            <input data-name="Contact 02 Radio 7" id="Contact-02-radio-7" name="Category" style="opacity:0;position:absolute;z-index:-1" type="radio" value="gov_radio"/>
-                                            <span class="uui-form-radio-label-3 w-form-label" for="Contact-02-radio-7">
+                                            <input data-name="Category" id="gov_radio" name="Category" style="opacity:0;position:absolute;z-index:-1" type="radio" value="gov_radio"/>
+                                            <span class="uui-form-radio-label-3 w-form-label" for="gov_radio">
                                                 Government/ Public Service
                                             </span>
                                         </label>
                                         <label class="uui-form-radio-3 w-radio">
                                             <div class="w-form-formradioinput w-form-formradioinput--inputType-custom checkbtnprofessional w-radio-input">
                                             </div>
-                                            <input data-name="Contact 02 Radio 8" id="OtherBtn" name="Category" style="opacity:0;position:absolute;z-index:-1" type="radio" value="other_radio"/>
-                                            <span class="uui-form-radio-label-3 w-form-label" for="OtherBtn">
+                                            <input data-name="Category" id="other_radio" name="Category" style="opacity:0;position:absolute;z-index:-1" type="radio" value="other_radio"/>
+                                            <span class="uui-form-radio-label-3 w-form-label" for="other_radio">
                                                 Other
                                             </span>
                                         </label>
@@ -343,26 +296,25 @@
                                 <input data-name="Contact 02 checkbox" id="Contact-02-checkbox" name="Contact-02-checkbox" required="" style="opacity:0;position:absolute;z-index:-1" type="checkbox"/>
                                 <span class="uui-form-checkbox-label-3 w-form-label" for="Contact-02-checkbox">
                                     You agree to our friendly
-                                    <a class="uui-text-style-link-4" href="#">
+                                    <a class="uui-text-style-link-4" href="{% url 'HomePage' %}#">
                                         privacy policy
                                     </a>
                                     .
                                 </span>
                             </label>
-                            <a class="uui-form-button-wrapper-3 w-inline-block" href="terms-and-agreement.html">
-                            </a>
-                            <input class="button-3 w-button" id="w-node-_0bbc6a88-8792-831a-95c7-c112416f8cfc-1e8c4155 data-wait="Please wait..." type="submit" value="Register"/>
-
+                            <input class="submit-button-2 w-button" data-wait="Please wait..." id="w-node-_851047cd-8dd4-71ac-b5c8-422cff89e5fa-1e8c4155" type="submit" value="Register"/>
                         </form>
                         <div class="success-message-3 w-form-done">
                             <div class="success-text-3">
                                 Thank you! Your submission has been received!
+                                <br/>
                             </div>
                         </div>
-                        <div class="error-message-3 w-form-fail">
+                        <!--<div class="error-message-3 w-form-fail">
                             <div class="error-text-3">
+                                Oops! Something went wrong while submitting the form.
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -457,7 +409,7 @@
                                         </div>
                                     </li>
                                     <li class="list-item">
-                                        <a class="link-block-7 w-inline-block" href="{% url 'HomePage' %}#Partners">
+                                        <a class="link-block-7 w-inline-block" href="{% url 'HomePage' %}#PartnersPage">
                                             <div class="footerbtn">
                                                 Our Partners
                                             </div>
@@ -530,17 +482,27 @@
                     <div class="text-block-15">
                         © 2023 Africa Data Foundation. All rights reserved.
                     </div>
-                    <div class="text-block-15">
-                        Terms of Service
+                    <a class="w-inline-block" href="{% url 'TermsofServicePage' %}">
+                        <div class="text-block-15 text-block-53 text-block-54 text-block-55 text-block-56 text-block-57 text-block-58 text-block-59 text-block-60 text-block-61 text-block-62 text-block-63 text-block-64 text-block-65 text-block-66 text-block-67 text-block-68 text-block-69 text-block-70 text-block-71 text-block-72 text-block-73 text-block-74 text-block-75 text-block-76 text-block-77 text-block-78 text-block-79 text-block-80 text-block-81 text-block-82 text-block-83 text-block-84 text-block-85 text-block-86 text-block-93 text-block-94 text-block-95 text-block-96 text-block-97 text-block-98 text-block-99 text-block-100 text-block-101 text-block-102 text-block-103 text-block-104 text-block-105 text-block-106 text-block-107 text-block-108 text-block-109 text-block-110 text-block-111 text-block-112 text-block-113 text-block-114 text-block-115 text-block-116 text-block-117 text-block-118 text-block-119 text-block-120 text-block-121 text-block-122 text-block-123 text-block-124 text-block-125 text-block-126 text-block-127 text-block-128 text-block-129 text-block-130 text-block-131 text-block-132 text-block-133 text-block-134 text-block-135 text-block-136 text-block-137 text-block-138 text-block-139 text-block-140 text-block-141 text-block-142 text-block-143 text-block-144 text-block-145 text-block-146 text-block-147 text-block-148 text-block-149 text-block-150 text-block-151 text-block-152 text-block-153 text-block-154 text-block-155 text-block-156 text-block-157 text-block-158 text-block-159 text-block-160 text-block-161 text-block-162 text-block-163 text-block-164 text-block-165 text-block-166 text-block-167 text-block-168 text-block-169 text-block-170 text-block-171 text-block-172 text-block-173 text-block-174 text-block-175 text-block-176 text-block-177">
+                            <span class="text-span-28 text-span-29 text-span-30 text-span-31 text-span-32 text-span-33 text-span-34 text-span-35 text-span-36 text-span-37 text-span-38 text-span-39 text-span-40 text-span-41 text-span-42 text-span-43 text-span-44 text-span-45 text-span-46 text-span-47 text-span-48 text-span-49 text-span-50">
+                                Terms of Service
+                            </span>
+                        </div>
+                    </a>
+                    <a class="link-block-8 w-inline-block" href="{% url 'PrivacyPolicyPage' %}">
+                        <div class="text-block-15">
+                            Privacy Policy
+                        </div>
+                    </a>
+                    <div>
+                        <div class="text-block-15 text-block-87 text-block-88 text-block-89 text-block-90 text-block-91 text-block-92">
+                            Sitemap
+                        </div>
                     </div>
-                    <div class="text-block-15">
-                        Privacy Policy
-                    </div>
-                    <div class="text-block-15">
-                        Sitemap
-                    </div>
-                    <div class="text-block-15">
-                        Security
+                    <div class="div-block-122">
+                        <div class="text-block-15">
+                            Security
+                        </div>
                     </div>
                 </div>
             </div>
