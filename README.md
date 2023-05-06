@@ -8,14 +8,23 @@ Update the System
 >sudo apt-get update -ubuntu
 
 >sudo apt-get update
+
 >sudo apt-get upgrade
+>
 install python3 virtual enviroment set up pip;
+
 >sudo apt-get install python3-venv
+>
 Create Virtual enviroment "env" and activate it:
+
 >python3 -m venv env
+>
 >source env/bin/activate
+>
 install dependensies and download project from git
+
 >pip3 install django
+>
 >git clone https://github.com/Ayokunlewaakinnawo/adfonline.git
 >
 
@@ -23,11 +32,17 @@ install dependensies and download project from git
 install gunicorn
 .
 install supervisor
+
 >sudo apt-get install supervisor
+>
 configure supervisor
+
 >cd /etc/supervisor/conf.d/
+>
 >sudo touch gunicorn.conf
+>
 >sudo nano gunicorn.conf
+>
 server{
 
         [program:gunicorn]
