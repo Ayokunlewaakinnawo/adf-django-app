@@ -62,43 +62,18 @@ Create gunicorn configuration file;
 
 server{
 	[program:gunicorn]
->
 	directory=/home/ubuntu/elevate
->
-	command=/home/ubuntu/env/bin/gunicorn --workers 3 --bind unix:/home/ubuntu/elevate/app.sock elevate.wsgi:application  
->
+	command=/home/ubuntu/env/bin/gunicorn --workers 3 --bind unix:/home/ubuntu/elevate/app.sock elevate.wsgi:application  >
 	autostart=true
->
 	autorestart=true
->
 	stderr_logfile=/var/log/gunicorn/gunicorn.err.log
->
 	stdout_logfile=/var/log/gunicorn/gunicorn.out.log
->
->
+	
 	[group:guni]
 	programs:gunicorn
->
+
 }
 
->[program:gunicorn]
->
->directory=/home/ubuntu/elevate
->
->command=/home/ubuntu/env/bin/gunicorn --workers 3 --bind unix:/home/ubuntu/elevate/app.sock elevate.wsgi:application  
->
->autostart=true
->
->autorestart=true
->
->stderr_logfile=/var/log/gunicorn/gunicorn.err.log
->
->stdout_logfile=/var/log/gunicorn/gunicorn.out.log
->
->
->[group:guni]
->programs:gunicorn
->
 
 
 create log dri.;
