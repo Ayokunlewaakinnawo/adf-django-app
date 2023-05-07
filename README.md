@@ -59,16 +59,16 @@ Create gunicorn configuration file;
 
 
 {
-[program:gunicorn]
-directory=/home/ubuntu/elevate
-command=/home/ubuntu/env/bin/gunicorn --workers 3 --bind unix:/home/ubuntu/elevate/app.sock elevate.wsgi:application  
-autostart=true
-autorestart=true
-stderr_logfile=/var/log/gunicorn/gunicorn.err.log
-stdout_logfile=/var/log/gunicorn/gunicorn.out.log
+	[program:gunicorn]
+	directory=/home/ubuntu/elevate
+	command=/home/ubuntu/env/bin/gunicorn --workers 3 --bind unix:/home/ubuntu/elevate/app.sock elevate.wsgi:application  
+	autostart=true
+	autorestart=true
+	stderr_logfile=/var/log/gunicorn/gunicorn.err.log
+	stdout_logfile=/var/log/gunicorn/gunicorn.out.log
 
-[group:guni]
-programs:gunicorn
+	[group:guni]
+	programs:gunicorn
 }
 
 
@@ -141,6 +141,7 @@ to test your nginx syntax;
 run to go live;
 
 >sudo ln django.conf /etc/nginx/sites-enabled 
+>
 
 >sudo service nginx restart
 
