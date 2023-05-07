@@ -28,11 +28,17 @@ install dependensies and download project from git
 >git clone https://github.com/Ayokunlewaakinnawo/adfonline.git
 >
 
-
+install nginx
+.
 install gunicorn
 .
 install supervisor
 
+>install nginx
+>sudo apt-get install -y nginx
+>
+>pip install gunicorn
+>
 >sudo apt-get install supervisor
 >
 configure supervisor
@@ -43,7 +49,7 @@ configure supervisor
 >
 >sudo nano gunicorn.conf
 >
->server{
+{
 
         [program:gunicorn]
         directory=/home/ubuntu/adfonline
@@ -74,8 +80,7 @@ To test and see gunicorn is working;
 
 >sudo supervisorctl status
 
-install nginx
->sudo apt-get install -y nginx
+
 create a file "django.conf" at dir. /etc/nginx/sites-available.
 >sudo touch django.conf
 >nano django.conf
