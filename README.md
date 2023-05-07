@@ -135,6 +135,9 @@ server{
         location /static/ {
                 alias /home/ubuntu/adfonline/web/static/;
         }
+	location /static/admin/ {
+                alias /home/ubuntu/env/lib/python3.10/site-packages/django/contrib/admin/static/admin/;
+        }
 
 }
 
