@@ -43,7 +43,7 @@ configure supervisor
 >
 >sudo nano gunicorn.conf
 >
-server{
+>server{
 
         [program:gunicorn]
         directory=/home/ubuntu/adfonline
@@ -60,12 +60,18 @@ server{
 
 
 create log dri.;
->sudi mkdir /var/log/gunicorn
+>sudo mkdir /var/log/gunicorn
+
 read from config file(gunicorn conf)
+
 >sudo supervisorctl reread
+
 tell supervisor to start gunicorn in the bckgrd;
+
 >sudo supervisorctl update
-to test and see gunicorn is working;
+
+To test and see gunicorn is working;
+
 >sudo supervisorctl status
 
 install nginx
