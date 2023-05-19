@@ -26,5 +26,9 @@ urlpatterns = [
     path('register/', views.register, name="RegisterPage"),
     path('other/', views.other, name="UnderConstruction"),
     path('privacy/', views.privacy, name="PrivacyPolicyPage"),
-    path('terms/', views.terms, name="TermsofServicePage")
+    path('terms/', views.terms, name="TermsofServicePage"),
+    path('tk1/', views.tk1, name="TcTypePage"),
+    path('tk2/', views.tk2, name="AttendeeTcPage"),
+    path('tk3/', views.tk3, name="SponsorTcPage"),
+    path('lm/', views.lm, name="LMPage"),
 ]

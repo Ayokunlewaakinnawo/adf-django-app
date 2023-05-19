@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Sat May 06 2023 19:46:24 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri May 19 2023 16:10:10 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="643ebcdc3fa744691e8c4155" data-wf-site="6416913004ae8a2b5cbbad43">
     {% load static %}
     <head>
@@ -35,23 +35,23 @@
                 <div class="navbar_mobile">
                     <div class="navbar-2 w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner">
                         <div class="w-container">
-                            <a class="brand w-nav-brand" href="{% url 'HomePage' %}#">
-                                <img alt="Logo" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 140px, 100vw" src="{% static 'web/images/Logo_1.png' %}" srcset="{% static 'web/images/Logo_1-p-500.png' %} 500w, {% static 'web/images/Logo_1.png' %} 713w" width="140"/>
+                            <a class="brand w-nav-brand" href="#">
+                                <img alt="Logo" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 140px, 100vw" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="140"/>
                             </a>
                             <nav class="nav-menu w-nav-menu" role="navigation">
-                                <a class="nav-link-2 w-nav-link" href="{% url 'HomePage' %}#">
+                                <a class="nav-link-2 w-nav-link" href="{% url 'HomePage' %}">
                                     Home
                                 </a>
-                                <a class="nav-link-3 w-nav-link" href="{% url 'HomePage' %}#Mission">
+                                <a class="nav-link-3 w-nav-link" href="#">
                                     Mission
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#DataCollectionPage">
+                                <a class="nav-link-4 w-nav-link" href="#">
                                     Data Collection
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#OurTeam">
+                                <a class="nav-link-4 w-nav-link" href="#">
                                     Our Team
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#PartnersPage">
+                                <a class="nav-link-4 w-nav-link" href="#">
                                     Partners
                                 </a>
                                 <a class="nav-link-4 w-nav-link" href="{% url 'ContactPage' %}">
@@ -70,32 +70,32 @@
                 <div class="navbar2" data-w-id="80d0e6a2-8a32-c82e-165b-e052ab01eb2d">
                     <a class="w-inline-block" href="{% url 'HomePage' %}">
                         <div class="logowrp">
-                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo_1.png' %}" srcset="{% static 'web/images/Logo_1-p-500.png' %} 500w, {% static 'web/images/Logo_1.png' %} 713w" width="125"/>
+                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="125"/>
                         </div>
                     </a>
-                    <a class="link-block w-inline-block" href="{% url 'HomePage' %}">
+                    <a class="link-block w-inline-block" href="#">
                         <div class="text-block-34">
                             Home
                         </div>
                     </a>
-                    <a class="link-block-2 w-inline-block" href="{% url 'HomePage' %}#Mission">
+                    <a class="link-block-2 w-inline-block" href="#">
                         <div class="text-block-30">
                             Mission
                         </div>
                     </a>
                     <div class="div-block-78">
-                        <a class="datacollectnlink w-inline-block" href="{% url 'HomePage' %}#DataCollectionPage">
+                        <a class="datacollectnlink w-inline-block" href="#">
                             <div class="text-block-31">
                                 Data Collection
                             </div>
                         </a>
                     </div>
-                    <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#Partners">
+                    <a class="link-block-4 w-inline-block" href="#">
                         <div class="text-block-32">
                             Partners
                         </div>
                     </a>
-                    <a class="link-block-5 w-inline-block" href="{% url 'HomePage' %}#OurTeam">
+                    <a class="link-block-5 w-inline-block" href="#">
                         <div class="text-block-33">
                             Our Team
                         </div>
@@ -122,9 +122,9 @@
                                 Join the Event
                             </div>
                             <h2 class="uui-heading-medium-6">
-                                East Africa Business Network (EABN) in Partnership
+                                African data foundation (ADF) in Partnership
                                 <br/>
-                                with African data foundation (ADF)
+                                with East Africa Business Network (EABN)
                             </h2>
                             <div class="uui-space-xsmall-6">
                             </div>
@@ -172,57 +172,15 @@
                                     <option value="">
                                         Select one...
                                     </option>
-                                    <option value="AL">Alabama</option>
-                                    <option value="AK">Alaska</option>
-                                    <option value="AZ">Arizona</option>
-                                    <option value="AR">Arkansas</option>
-                                    <option value="CA">California</option>
-                                    <option value="CO">Colorado</option>
-                                    <option value="CT">Connecticut</option>
-                                    <option value="DE">Delaware</option>
-                                    <option value="DC">District Of Columbia</option>
-                                    <option value="FL">Florida</option>
-                                    <option value="GA">Georgia</option>
-                                    <option value="HI">Hawaii</option>
-                                    <option value="ID">Idaho</option>
-                                    <option value="IL">Illinois</option>
-                                    <option value="IN">Indiana</option>
-                                    <option value="IA">Iowa</option>
-                                    <option value="KS">Kansas</option>
-                                    <option value="KY">Kentucky</option>
-                                    <option value="LA">Louisiana</option>
-                                    <option value="ME">Maine</option>
-                                    <option value="MD">Maryland</option>
-                                    <option value="MA">Massachusetts</option>
-                                    <option value="MI">Michigan</option>
-                                    <option value="MN">Minnesota</option>
-                                    <option value="MS">Mississippi</option>
-                                    <option value="MO">Missouri</option>
-                                    <option value="MT">Montana</option>
-                                    <option value="NE">Nebraska</option>
-                                    <option value="NV">Nevada</option>
-                                    <option value="NH">New Hampshire</option>
-                                    <option value="NJ">New Jersey</option>
-                                    <option value="NM">New Mexico</option>
-                                    <option value="NY">New York</option>
-                                    <option value="NC">North Carolina</option>
-                                    <option value="ND">North Dakota</option>
-                                    <option value="OH">Ohio</option>
-                                    <option value="OK">Oklahoma</option>
-                                    <option value="OR">Oregon</option>
-                                    <option value="PA">Pennsylvania</option>
-                                    <option value="RI">Rhode Island</option>
-                                    <option value="SC">South Carolina</option>
-                                    <option value="SD">South Dakota</option>
-                                    <option value="TN">Tennessee</option>
-                                    <option value="TX">Texas</option>
-                                    <option value="UT">Utah</option>
-                                    <option value="VT">Vermont</option>
-                                    <option value="VA">Virginia</option>
-                                    <option value="WA">Washington</option>
-                                    <option value="WV">West Virginia</option>
-                                    <option value="WI">Wisconsin</option>
-                                    <option value="WY">Wyoming</option>
+                                    <option value="First">
+                                        First choice
+                                    </option>
+                                    <option value="Second">
+                                        Second choice
+                                    </option>
+                                    <option value="Third">
+                                        Third choice
+                                    </option>
                                 </select>
                             </div>
                             <div class="uui-form-field-wrapper-3">
@@ -296,7 +254,7 @@
                                 <input data-name="Contact 02 checkbox" id="Contact-02-checkbox" name="Contact-02-checkbox" required="" style="opacity:0;position:absolute;z-index:-1" type="checkbox"/>
                                 <span class="uui-form-checkbox-label-3 w-form-label" for="Contact-02-checkbox">
                                     You agree to our friendly
-                                    <a class="uui-text-style-link-4" href="{% url 'HomePage' %}#">
+                                    <a class="uui-text-style-link-4" href="#">
                                         privacy policy
                                     </a>
                                     .
@@ -310,11 +268,11 @@
                                 <br/>
                             </div>
                         </div>
-                        <!--<div class="error-message-3 w-form-fail">
+                        <div class="error-message-3 w-form-fail">
                             <div class="error-text-3">
                                 Oops! Something went wrong while submitting the form.
                             </div>
-                        </div>-->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -332,7 +290,7 @@
             <div class="w-container">
                 <div class="div-block-30">
                     <div class="div-block-40">
-                        <img alt="Logo" loading="lazy" sizes="(max-width: 479px) 100vw, 120px" src="{% static 'web/images/Logo_1.png' %}" srcset="{% static 'web/images/Logo_1-p-500.png' %} 500w, {% static 'web/images/Logo_1.png' %} 713w" width="120"/>
+                        <img alt="Logo" loading="lazy" sizes="(max-width: 479px) 100vw, 120px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="120"/>
                     </div>
                     <div class="div-block-31">
                         <div class="partnerfooter">
@@ -350,17 +308,17 @@
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-2" href="{% url 'HomePage' %}#Mission">
+                                            <a class="link-2" href="#">
                                                 Mission
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-3" href="{% url 'HomePage' %}#DataCollectionPage">
+                                            <a class="link-3" href="#">
                                                 Data Collection
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-4" href="{% url 'HomePage' %}#OurTeam">
+                                            <a class="link-4" href="#">
                                                 Our Team
                                             </a>
                                         </div>
@@ -409,7 +367,7 @@
                                         </div>
                                     </li>
                                     <li class="list-item">
-                                        <a class="link-block-7 w-inline-block" href="{% url 'HomePage' %}#PartnersPage">
+                                        <a class="link-block-7 w-inline-block" href="#">
                                             <div class="footerbtn">
                                                 Our Partners
                                             </div>
@@ -511,7 +469,6 @@
         </script>
         <script src="{% static 'web/js/webflow.js' %}" type="text/javascript">
         </script>
-        <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
         <script>
             // Add native form submission support for Webflow forms. This makes all forms asynchronous.
     async function submitForm(event, formElement) {

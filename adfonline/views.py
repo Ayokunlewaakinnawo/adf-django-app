@@ -53,3 +53,15 @@ def privacy(request):
 
 def terms(request):
     return render(request, 'termsofservice.html')
+
+def tk1(request):
+    return render(request, 'registerticket1.html')
+
+def tk2(request):
+    return render(request, 'registerticket2.html')
+
+def tk3(request):
+    return render(request, 'registerticket3.html')
+
+def lm(request):
+    return render(request, 'learnmore.html')

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Sat May 06 2023 19:46:24 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri May 19 2023 16:10:10 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6416913004ae8acc77bbad44" data-wf-site="6416913004ae8a2b5cbbad43">
     {% load static %}
     <head>
@@ -33,8 +33,8 @@
                 <div class="navbar_mobile">
                     <div class="navbar-2 w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner">
                         <div class="w-container">
-                            <a class="brand w-nav-brand" href="{% url 'HomePage' %}#">
-                                <img alt="Logo" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 140px, 100vw" src="{% static 'web/images/Logo_1.png' %}" srcset="{% static 'web/images/Logo_1-p-500.png' %} 500w, {% static 'web/images/Logo_1.png' %} 713w" width="140"/>
+                            <a class="brand w-nav-brand" href="#">
+                                <img alt="Logo" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 140px, 100vw" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="140"/>
                             </a>
                             <nav class="nav-menu w-nav-menu" role="navigation">
                                 <a class="nav-link-2 w-nav-link" href="{% url 'HomePage' %}">
@@ -46,7 +46,7 @@
                                 <a class="nav-link-4 w-nav-link" href="#DataCollectionPage">
                                     Data Collection
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="#OurTeam">
+                                <a class="nav-link-4 w-nav-link" href="#">
                                     Our Team
                                 </a>
                                 <a class="nav-link-4 w-nav-link" href="#GoalsAndObj.Page">
@@ -65,59 +65,13 @@
                 </div>
             </div>
             <div class="updnavbar">
-                <div class="drpbck" data-w-id="7ca2bb44-b162-54b9-9f37-df0ba8117d95">
-                    <div class="navbar2-copy">
-                        <a aria-current="page" class="w-inline-block w--current" href="{% url 'HomePage' %}">
-                            <div class="logowrp">
-                                <img alt="ADF_Logo" loading="lazy" sizes="100vw" src="{% static 'web/images/Logo_1.png' %}" srcset="{% static 'web/images/Logo_1-p-500.png' %} 500w, {% static 'web/images/Logo_1.png' %} 713w" width="125"/>
-                            </div>
-                        </a>
-                        <a class="link-block w-inline-block" href="{% url 'HomePage' %}">
-                            <div class="text-block-34">
-                                Home
-                            </div>
-                        </a>
-                        <a class="link-block-2 w-inline-block" href="#Mission">
-                            <div class="text-block-30">
-                                Mission
-                            </div>
-                        </a>
-                        <div class="div-block-78">
-                            <a class="datacollectnlink w-inline-block" href="#DataCollectionPage">
-                                <div class="text-block-31">
-                                    Data Collection
-                                </div>
-                            </a>
-                        </div>
-                        <a class="link-block-4 w-inline-block" href="#PartnersPage">
-                            <div class="text-block-32">
-                                Partners
-                            </div>
-                        </a>
-                        <a class="link-block-5 w-inline-block" href="#OurTeam">
-                            <div class="text-block-33">
-                                Our Team
-                            </div>
-                        </a>
-                        <a class="link-block-6 w-inline-block" href="{% url 'ContactPage' %}">
-                            <div class="updcontactus">
-                                <div class="updcontactbtn">
-                                    <div class="text-block-35">
-                                        Contact Us
-                                    </div>
-                                    <img alt="" loading="lazy" src="{% static 'web/images/btn_arrow.png' %}"/>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
                 <div class="navbar2" data-w-id="80d0e6a2-8a32-c82e-165b-e052ab01eb2d">
                     <a aria-current="page" class="w-inline-block w--current" href="{% url 'HomePage' %}">
                         <div class="logowrp">
-                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo_1.png' %}" srcset="{% static 'web/images/Logo_1-p-500.png' %} 500w, {% static 'web/images/Logo_1.png' %} 713w" width="125"/>
+                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="125"/>
                         </div>
                     </a>
-                    <a class="link-block w-inline-block" href="{% url 'HomePage' %}">
+                    <a class="link-block w-inline-block" href="#">
                         <div class="text-block-34">
                             Home
                         </div>
@@ -200,7 +154,7 @@
                                 </div>
                                 <img alt="" class="image-5" loading="lazy" src="{% static 'web/images/BtnAnimation.gif' %}" width="150"/>
                             </div>
-                            <a class="main_btn w-inline-block" href="{% url 'UnderConstruction' %}">
+                            <a class="main_btn w-inline-block" href="{% url 'LMPage' %}">
                                 <div class="text-block-6">
                                     Learn More
                                 </div>
@@ -218,14 +172,13 @@
                                                 <span class="text-span-4">
                                                     Conference 2023
                                                     <br/>
-                                                    ‍
                                                 </span>
                                                 Leveraging Africa-Centric Data to achieve Exponential Growth
                                             </h1>
                                             <div class="uui-space-small">
                                                 <div class="text-block-37">
                                                     <strong class="bold-text-19">
-                                                        September 29th - October 1st 2023, Texas, United States
+                                                        October 9th - October 14th 2023, Texas, United States
                                                     </strong>
                                                 </div>
                                             </div>
@@ -242,7 +195,7 @@
                                                     </a>
                                                 </div>
                                                 <div class="registerbtnevent max-width-full-mobile-landscape">
-                                                    <a class="uui-button is-button-large w-inline-block" href="{% url 'RegisterPage' %}">
+                                                    <a class="uui-button is-button-large w-inline-block" href="{% url 'TcTypePage' %}">
                                                         <div class="text-block-36">
                                                             Register
                                                         </div>
@@ -335,7 +288,7 @@
                             <p class="fn-paragraph-3">
                                 00000000
                             </p>
-                            <a class="fn-link-with-arrow-classic w-inline-block" data-w-id="ada34fff-97ff-7db8-2bf2-46e1a7b16764" href="{% url 'HomePage' %}#">
+                            <a class="fn-link-with-arrow-classic w-inline-block" data-w-id="ada34fff-97ff-7db8-2bf2-46e1a7b16764" href="#">
                                 <div class="text-block-52">
                                     000
                                 </div>
@@ -851,7 +804,7 @@
                                                                 Empraim Urevbu
                                                             </div>
                                                             <div class="uui-text-size-medium-4 text-color-primary700">
-                                                                Stackholder
+                                                                Partner
                                                             </div>
                                                             <div class="uui-space-xxsmall-4">
                                                             </div>
@@ -879,7 +832,7 @@
                                                                 Michael Oseji
                                                             </div>
                                                             <div class="uui-text-size-medium-4 text-color-primary700">
-                                                                Stackholder
+                                                                Partner
                                                             </div>
                                                             <div class="uui-space-xxsmall-4">
                                                             </div>
@@ -1019,7 +972,7 @@
                             <p class="fn-paragraph-3">
                                 00000000
                             </p>
-                            <a class="fn-link-with-arrow-classic w-inline-block" data-w-id="f19addef-258f-684c-0185-d149267af0ca" href="{% url 'HomePage' %}#">
+                            <a class="fn-link-with-arrow-classic w-inline-block" data-w-id="f19addef-258f-684c-0185-d149267af0ca" href="#">
                                 <div class="text-block-52">
                                     000
                                 </div>
@@ -1043,7 +996,7 @@
             <div class="w-container">
                 <div class="div-block-30">
                     <div class="div-block-40">
-                        <img alt="Logo" loading="lazy" sizes="(max-width: 479px) 100vw, 120px" src="{% static 'web/images/Logo_1.png' %}" srcset="{% static 'web/images/Logo_1-p-500.png' %} 500w, {% static 'web/images/Logo_1.png' %} 713w" width="120"/>
+                        <img alt="Logo" loading="lazy" sizes="(max-width: 479px) 100vw, 120px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="120"/>
                     </div>
                     <div class="div-block-31">
                         <div class="partnerfooter">
@@ -1222,7 +1175,6 @@
         </script>
         <script src="{% static 'web/js/webflow.js' %}" type="text/javascript">
         </script>
-        <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
         <script>
             // Add native form submission support for Webflow forms. This makes all forms asynchronous.
     async function submitForm(event, formElement) {
