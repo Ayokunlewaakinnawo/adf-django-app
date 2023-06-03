@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Tue May 23 2023 13:03:31 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Jun 02 2023 12:33:44 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="64380662aaa24ce569df8015" data-wf-site="6416913004ae8a2b5cbbad43">
     {% load static %}
     <head>
@@ -29,6 +29,15 @@
         <link href="{% static 'web/images/webclip.png' %}" rel="apple-touch-icon"/>
     </head>
     <body class="body-3">
+        <div class="btnwrapper wrapbtn">
+            <div class="uui-button-wrapper-copy wrp">
+                <a class="uui-button-copy is-button-large-copy w-inline-block" data-w-id="7ae3dd62-b69f-a893-8591-bae61a9de562" href="{% url 'RegisterPage' %}" style="opacity:0">
+                    <div class="text-block-36">
+                        Buy Ticket
+                    </div>
+                </a>
+            </div>
+        </div>
         <div class="nav_comp_contact">
             <div class="nav_bar_legacy">
                 <div class="navbar_mobile">
@@ -46,6 +55,9 @@
                                 </a>
                                 <a class="nav-link-4 w-nav-link" href="#">
                                     Data Collection
+                                </a>
+                                <a class="nav-link-4 w-nav-link" href="#">
+                                    Events
                                 </a>
                                 <a class="nav-link-4 w-nav-link" href="#">
                                     Our Team
@@ -69,7 +81,7 @@
                 <div class="navbar2">
                     <a class="w-inline-block" href="{% url 'HomePage' %}">
                         <div class="logowrp">
-                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 479px) 0px, (max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="125"/>
+                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="125"/>
                         </div>
                     </a>
                     <a class="link-block w-inline-block" href="{% url 'HomePage' %}">
@@ -96,14 +108,14 @@
                             </div>
                         </a>
                     </div>
-                    <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#Partners">
+                    <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#PartnersPage">
                         <div class="text-block-32">
                             Partners
                         </div>
                     </a>
-                    <a class="link-block-5 w-inline-block" href="{% url 'HomePage' %}#OurTeam">
+                    <a class="link-block-5 w-inline-block" href="{% url 'DataContPage' %}">
                         <div class="text-block-33">
-                            Our Team
+                            Data Content
                         </div>
                     </a>
                     <a class="link-block-6 w-inline-block" href="{% url 'ContactPage' %}">
@@ -154,7 +166,7 @@
                                     <div class="uui-button-wrapper max-width-full-mobile-landscape" data-w-id="8735c35a-8441-7a81-3474-fb901f7ab581" style="opacity:0">
                                         <a class="uui-button is-button-large w-inline-block" href="{% url 'RegisterPage' %}">
                                             <div class="text-block-36">
-                                                Buy Ticket
+                                                Register
                                             </div>
                                         </a>
                                     </div>
@@ -764,7 +776,7 @@ height: 0.625rem;
                                         </h2>
                                         <h2 class="brix---heading-h2-size-2">
                                             <strong class="bold-text">
-                                                Day 1: Monday, October 11th 2023
+                                                Day 1: Wednesday, October 11th 2023
                                             </strong>
                                         </h2>
                                         <h2 class="brix---heading-h2-size-2">
@@ -777,7 +789,7 @@ height: 0.625rem;
                                 <div class="brix---color-neutral-803">
                                     <p class="brix---paragraph-default-2">
                                         <strong>
-                                            by Co-Chair & Sponsor – John Oshodi | CEO Vox Technologies; Founder, African Data Foundation.
+                                            by Co-Chair & Sponsor – John Oshodi | CEO Vox Technologies; Founder, Africa Data Foundation.
                                         </strong>
                                     </p>
                                 </div>
@@ -797,7 +809,7 @@ height: 0.625rem;
                                         <div class="brix---accordion-header">
                                             <div class="brix---color-neutral-804">
                                                 <h3 class="brix---accordion-title">
-                                                    Registration Opens Exhibitions Opens Welcome ReceptionEvening Cocktail Reception
+                                                    Registration Opens Exhibitions Opens Welcome Reception Evening Cocktail Reception
                                                 </h3>
                                             </div>
                                         </div>
@@ -834,7 +846,7 @@ height: 0.625rem;
                                     <div class="brix---color-neutral-804">
                                         <h2 class="brix---heading-h2-size-2">
                                             <strong class="bold-text">
-                                                Day 2: Wednesday, October 12th 2023
+                                                Day 2: Thursday, October 12th 2023
                                             </strong>
                                         </h2>
                                         <h2 class="brix---heading-h2-size-2">
@@ -847,7 +859,7 @@ height: 0.625rem;
                                 <div class="brix---color-neutral-803">
                                     <p class="brix---paragraph-default-2">
                                         <strong>
-                                            Dignitries and the Mayor Power BreakfastFounder EABN Benson KasueNational Athems EABN Chair Elsa Juko-McDowell
+                                            Dignitries and the Mayor Power Breakfast Founder EABN Benson Kasue National Anthems EABN Chair Elsa Juko-McDowell
                                         </strong>
                                     </p>
                                 </div>
@@ -947,7 +959,7 @@ height: 0.625rem;
                                                         <br/>
                                                         ‍
                                                         <em class="italic-text-6">
-                                                            Telling ourown stories and re-storying history
+                                                            Telling our own stories and re-storying history
                                                         </em>
                                                     </strong>
                                                 </h3>
@@ -978,7 +990,7 @@ height: 0.625rem;
                                                         <strong class="bold-text-3">
                                                             Moderator:
                                                         </strong>
-                                                        -  Chukuka Chukuma | Partner | Racecourse Capital & Member FederalRepublic of Nigeria Presidential Advisory Committee for the passing of theCreative Development Industries Bill
+                                                        -  Chukuka Chukuma | Partner | Racecourse Capital & Member Federal Republic of Nigeria Presidential Advisory Committee for the passing of the Creative Development Industries Bill
                                                         <br/>
                                                         ‍
                                                         <strong class="bold-text-4">
@@ -1034,7 +1046,7 @@ height: 0.625rem;
                                             <div class="brix---paragraph-default-2">
                                                 <div class="brix---color-neutral-803">
                                                     <p class="brix---mg-bottom-0">
-                                                        Education is a key driver of economic growth, socialdevelopment, and individual empowerment. By collecting and analyzing data onenrollment rates, school infrastructure, teacher training, and academicperformance, policymakers can develop evidence-based policies and interventionsto improve education outcomes.
+                                                        Education is a key driver of economic growth, socialdevelopment, and individual empowerment. By collecting and analyzing data onenrollment rates, school infrastructure, teacher training, and academicperformance, policy makers can develop evidence-based policies and interventions to improve education outcomes.
                                                         <br/>
                                                         <br/>
                                                         We are seeking solutions to design new and improved educational systems that will empower our current 1.4 billion population continent. We want to hear about case studies of which individuals, companies or countries on the continent are doing it right, especially for the underserved communities, so we can learn from them and adapt from their stories.
@@ -1277,7 +1289,7 @@ height: 0.625rem;
                                                 <div class="brix---color-neutral-803">
                                                     <p class="brix---mg-bottom-0">
                                                         <strong class="bold-text-11">
-                                                            Investing across the capital structure refers to investing indifferent types of securities issued by a company, including common stock,preferred stock, bonds, and other debt instruments. Each type of securityoffers a different level of risk and reward, and investors who invest acrossthe capital structure seek to diversify their portfolio and maximize returnswhile managing risk.
+                                                            Investing across the capital structure refers to investing indifferent types of securities issued by a company, including common stock, preferred stock, bonds, and other debt instruments. Each type of security offers a different level of risk and reward, and investors who invest across the capital structure seek to diversify their portfolio and maximize returnswhile managing risk.
                                                             <br/>
                                                             <br/>
                                                             The mindset of investors who invest across the capital structure is focused on achieving a balanced portfolio that can weather different market conditions. These investors understand that each type of security offers unique benefits and risks, and they seek to allocate their capital in a way that optimizes their risk-adjusted returns.
@@ -1328,10 +1340,10 @@ height: 0.625rem;
                                                 <div class="brix---color-neutral-803">
                                                     <p class="brix---mg-bottom-0">
                                                         <strong class="bold-text-10">
-                                                            From electric planes to tech sensors that can “see” around corners, there is no shortage of emerging technologies packed with inspiring advances. Experts discuss the benefits of all this innovations and the industries they will disrupt. However emergent technologies, while often exciting and promising, can also have downsides that need to be considered; unintended consequences, JobLosses, dependency on technology, ethical concerns, access and equity, privacy concerns and data security.
+                                                            From electric planes to tech sensors that can “see” around corners, there is no shortage of emerging technologies packed with inspiring advances. Experts discuss the benefits of all this innovations and the industries they will disrupt. However emergent technologies, while often exciting and promising, can also have downsides that need to be considered; unintended consequences, Job Losses, dependency on technology, ethical concerns, access and equity, privacy concerns and data security.
                                                             <br/>
                                                             <br/>
-                                                            Algorithms now rule the world. Algorithms can be racially neutral and still spit out outcomes that are undoubtedly biased against a certain group of people, I.e. ‘unintended consequencies. No malicious intent but millions can still be affected negatively which we have seen in areas like policing, justice systems, retail, financial services, human capital.
+                                                            Algorithms now rule the world. Algorithms can be racially neutral and still spit out outcomes that are undoubtedly biased against a certain group of people, i.e. unintended consequencies. No malicious intent but millions can still be affected negatively which we have seen in areas like policing, justice systems, retail, financial services, human capital.
                                                             <br/>
                                                             <br/>
                                                             Advanced computation is not the only important variable. We need to view emergent technology through the prism of effects on environment, creative depth, ethical tests.  what is technologies environmental load?
@@ -1454,7 +1466,7 @@ height: 0.625rem;
                                     <div class="brix---color-neutral-804">
                                         <h2 class="brix---heading-h2-size-2">
                                             <strong class="bold-text">
-                                                Day 3: Saturday, October 13th 2023
+                                                Day 3: Friday, October 13th 2023
                                             </strong>
                                         </h2>
                                         <h2 class="brix---heading-h2-size-2">
@@ -1467,7 +1479,7 @@ height: 0.625rem;
                                 <div class="brix---color-neutral-803">
                                     <p class="brix---paragraph-default-2">
                                         <strong>
-                                            Dignitries and the Mayor Power BreakfastFounder EABN Benson KasueNational Athems EABN Chair Elsa Juko-McDowell
+                                            Dignitries and the Mayor Power Breakfast Founder EABN Benson Kasue National Athems EABN Chair Elsa Juko-McDowell
                                         </strong>
                                     </p>
                                 </div>
@@ -1605,7 +1617,7 @@ height: 0.625rem;
                                             <div class="brix---paragraph-default-2">
                                                 <div class="brix---color-neutral-803">
                                                     <p class="brix---mg-bottom-0">
-                                                        There has been many promises regarding the launch of The AfricanContinental Free Trade Area (AfCFTA). The continent expects: increased trade, diversification of economies, job creation, increased investment, increased competition and ease of intra-trade in Africa.  Since it took effect on January 1, 2021, over 2 years ago, let’s move from potential to actual results. How has the AfCFTA contributed to transforming Africa's economy by creating a more integrated and prosperous continent?
+                                                        There has been many promises regarding the launch of The African Continental Free Trade Area (ACFTA). The continent expects: increased trade, diversification of economies, job creation, increased investment, increased competition and ease of intra-trade in Africa.  Since it took effect on January 1, 2021, over 2 years ago, let’s move from potential to actual results. How has the ACFTA contributed to transforming Africa's economy by creating a more integrated and prosperous continent?
                                                     </p>
                                                 </div>
                                             </div>
@@ -2041,17 +2053,17 @@ height: 0.625rem;
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-2" href="#">
+                                            <a class="link-2" href="{% url 'HomePage' %}#Mission">
                                                 Mission
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-3" href="#">
+                                            <a class="link-3" href="{% url 'HomePage' %}#DataCollectionPage">
                                                 Data Collection
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-4" href="#">
+                                            <a class="link-4" href="{% url 'HomePage' %}#OurTeam">
                                                 Our Team
                                             </a>
                                         </div>

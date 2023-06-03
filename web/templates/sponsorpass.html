@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Tue May 23 2023 13:03:31 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="6466f4eabf45be36dbc065b4" data-wf-site="6416913004ae8a2b5cbbad43">
+<!--  Last Published: Fri Jun 02 2023 12:33:44 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="647822a9f5cd8d6fe9d847d6" data-wf-site="6416913004ae8a2b5cbbad43">
     {% load static %}
     <head>
         <meta charset="utf-8"/>
         <title>
-            RegisterTicket2
+            SponsorPass
         </title>
-        <meta content="RegisterTicket2" property="og:title"/>
-        <meta content="RegisterTicket2" property="twitter:title"/>
+        <meta content="SponsorPass" property="og:title"/>
+        <meta content="SponsorPass" property="twitter:title"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content="Webflow" name="generator"/>
         <link href="{% static 'web/css/normalize.css' %}" rel="stylesheet" type="text/css"/>
@@ -48,6 +48,9 @@
                                     Data Collection
                                 </a>
                                 <a class="nav-link-4 w-nav-link" href="#">
+                                    Events
+                                </a>
+                                <a class="nav-link-4 w-nav-link" href="#">
                                     Our Team
                                 </a>
                                 <a class="nav-link-4 w-nav-link" href="#">
@@ -69,7 +72,7 @@
                 <div class="navbar2">
                     <a class="w-inline-block" href="{% url 'HomePage' %}">
                         <div class="logowrp">
-                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 479px) 0px, (max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="125"/>
+                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="125"/>
                         </div>
                     </a>
                     <a class="link-block w-inline-block" href="{% url 'HomePage' %}">
@@ -96,14 +99,14 @@
                             </div>
                         </a>
                     </div>
-                    <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#Partners">
+                    <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#PartnersPage">
                         <div class="text-block-32">
                             Partners
                         </div>
                     </a>
-                    <a class="link-block-5 w-inline-block" href="{% url 'HomePage' %}#OurTeam">
+                    <a class="link-block-5 w-inline-block" href="{% url 'DataContPage' %}">
                         <div class="text-block-33">
-                            Our Team
+                            Data Content
                         </div>
                     </a>
                     <a class="link-block-6 w-inline-block" href="{% url 'ContactPage' %}">
@@ -131,14 +134,9 @@
                                             Ticket Types
                                         </p>
                                         <h2 class="brix---heading-h2-size-4">
-                                            Conference Pass : Attendee
+                                            Conference Pass : Sponsor
                                         </h2>
                                     </div>
-                                </div>
-                                <div class="brix---color-neutral-821">
-                                    <p class="brix---paragraph-default-8">
-                                        Just few more steps to conclude your registration for the event.
-                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -150,12 +148,12 @@
                                     <div class="brix---flex-vertical-center-3">
                                         <div class="brix---text-center-9">
                                             <div class="brix---mg-bottom-16px-8">
-                                                <img alt="Ticket" class="brix---square-icon-3" src="{% static 'web/images/Group-142038а32а32-1.png' %}"/>
+                                                <img alt="Ticket" class="brix---square-icon-3" src="{% static 'web/images/Group-142074f-1.png' %}" width="85"/>
                                             </div>
                                             <div class="brix---mg-bottom-12px-6">
                                                 <div class="brix---color-neutral-825">
-                                                    <div class="brix---display-7">
-                                                        Walk-In
+                                                    <div class="brix---display-7-copy">
+                                                        Bronze
                                                     </div>
                                                 </div>
                                             </div>
@@ -169,13 +167,13 @@
                                         <div class="brix---mg-right-8px-3">
                                             <div class="brix---color-neutral-825">
                                                 <div class="brix---heading-h1-size-6">
-                                                    $600
+                                                    $5,000
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <a class="brix---btn-primary-full-width w-button" href="https://buy.stripe.com/test_cN2eVL6sX2c9eicdQR">
-                                        Check Out
+                                    <a class="brix---btn-primary-full-width w-button" href="{% url 'ContactPage' %}">
+                                        Become a Sponsor
                                     </a>
                                 </div>
                                 <div>
@@ -200,7 +198,7 @@
                                             </div>
                                             <div class="brix---color-neutral-825">
                                                 <div class="brix---text-200-list-medium">
-                                                    Breakfast
+                                                    Brief Address Opportunity at Social Networking Events
                                                 </div>
                                             </div>
                                         </div>
@@ -215,7 +213,7 @@
                                             </div>
                                             <div class="brix---color-neutral-825">
                                                 <div class="brix---text-200-list-medium">
-                                                    Tea Break
+                                                    3 Complementary Conference Registration
                                                 </div>
                                             </div>
                                         </div>
@@ -230,7 +228,7 @@
                                             </div>
                                             <div class="brix---color-neutral-825">
                                                 <div class="brix---text-200-list-medium">
-                                                    Lunch
+                                                    Logo Inclusion in pre-conference print and digital campaigns
                                                 </div>
                                             </div>
                                         </div>
@@ -245,22 +243,7 @@
                                             </div>
                                             <div class="brix---color-neutral-825">
                                                 <div class="brix---text-200-list-medium">
-                                                    Gifts / Souvenirs
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="brix---icon-list-item-wrapper">
-                                            <div>
-                                                <div class="w-embed">
-                                                    <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                                        </path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <div class="brix---color-neutral-825">
-                                                <div class="brix---text-200-list-medium">
-                                                    Conference Fare
+                                                    Recognition at Conference Opening and Closing
                                                 </div>
                                             </div>
                                         </div>
@@ -274,12 +257,12 @@
                                     <div class="brix---flex-vertical-center-3">
                                         <div class="brix---text-center-9">
                                             <div class="brix---mg-bottom-16px-8">
-                                                <img alt="Ticket" class="brix---square-icon-3" src="{% static 'web/images/Group-142038.png' %}"/>
+                                                <img alt="Ticket" class="brix---square-icon-3" src="{% static 'web/images/bb34-1.png' %}" width="84.5"/>
                                             </div>
                                             <div class="brix---mg-bottom-12px-6">
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---display-7">
-                                                        Basic Pass
+                                                        Silver
                                                     </div>
                                                 </div>
                                             </div>
@@ -293,13 +276,306 @@
                                         <div class="brix---mg-right-8px-3">
                                             <div class="brix---color-neutral-825">
                                                 <div class="brix---heading-h1-size-6">
-                                                    $1000
+                                                    $10,000
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <a class="brix---btn-primary-full-width w-button" href="https://buy.stripe.com/test_dR6cND9F9aIFfmg28a">
-                                        Check Out
+                                    <a class="brix---btn-primary-full-width w-button" href="{% url 'ContactPage' %}">
+                                        Become a Sponsor
+                                    </a>
+                                </div>
+                                <div>
+                                    <div class="brix---mg-bottom-24px-5">
+                                        <div class="brix---mg-bottom-24px-5">
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---text-200-bold-3">
+                                                    What's included:
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-layout-grid brix---grid-1-column-gap-row-16px-3">
+                                        <div class="brix---icon-list-item-wrapper">
+                                            <div>
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="brix---color-neutral-825">
+                                                <div class="topbenefit">
+                                                    Bronze Sponsor Benefit
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brix---icon-list-item-wrapper">
+                                            <div>
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---text-200-list-medium">
+                                                    Provision of Area for Exhibition Booth
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brix---icon-list-item-wrapper">
+                                            <div>
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---text-200-list-medium">
+                                                    Opportunity for small brochure inserts in delegate bags
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brix---icon-list-item-wrapper">
+                                            <div>
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---text-200-list-medium">
+                                                    Opportunity for small brochure inserts in delegate bags
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brix---icon-list-item-wrapper">
+                                            <div>
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---text-200-list-medium">
+                                                    Logos and Advertising Prominently Displayed in EABN Annual Magazine
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brix---icon-list-item-wrapper">
+                                            <div>
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---text-200-list-medium">
+                                                    One-year individual memberships
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brix---card-4">
+                            <div class="brix---pricing-content-v2">
+                                <div class="brix---mg-bottom-32px-2">
+                                    <div class="brix---flex-vertical-center-3">
+                                        <div class="brix---text-center-9">
+                                            <div class="brix---mg-bottom-16px-8">
+                                                <img alt="Ticket" class="brix---square-icon-3" src="{% static 'web/images/GOLD-3.png' %}" width="85"/>
+                                            </div>
+                                            <div class="brix---mg-bottom-12px-6">
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="brix---display-7">
+                                                        Gold
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="brix---divider-40px">
+                                    </div>
+                                </div>
+                                <div class="brix---mg-top-40px">
+                                    <div class="brix---flex-horizontal-start">
+                                        <div class="brix---mg-right-8px-3">
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---heading-h1-size-6">
+                                                    $25,000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="brix---btn-primary-full-width w-button" href="{% url 'ContactPage' %}">
+                                        Become a Sponsor
+                                    </a>
+                                </div>
+                                <div>
+                                    <div class="brix---mg-bottom-24px-5">
+                                        <div class="brix---mg-bottom-24px-5">
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---text-200-bold-3">
+                                                    What's included:
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-layout-grid brix---grid-1-column-gap-row-16px-3">
+                                        <div class="brix---icon-list-item-wrapper">
+                                            <div>
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="brix---color-neutral-825">
+                                                <div class="inherentbenefit">
+                                                    Silver Sponsor Benefit
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brix---icon-list-item-wrapper">
+                                            <div>
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---text-200-list-medium">
+                                                    Premium Sponsor Recognition at the Conference
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brix---icon-list-item-wrapper">
+                                            <div>
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---text-200-list-medium">
+                                                    Opportunity for Conference Presentation
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brix---icon-list-item-wrapper">
+                                            <div>
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---text-200-list-medium">
+                                                    Brief Address Opportunity at Social Networking Events
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brix---icon-list-item-wrapper">
+                                            <div>
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---text-200-list-medium">
+                                                    4 Complimentary  Conference Passes
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brix---icon-list-item-wrapper">
+                                            <div>
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---text-200-list-medium">
+                                                    3 Access Passes to VIP Louge
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="brix---icon-list-item-wrapper">
+                                            <div>
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---text-200-list-medium">
+                                                    4 Complimentary  Conference Passes
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brix---card-4">
+                            <div class="brix---pricing-content-v2">
+                                <div class="brix---mg-bottom-32px-2">
+                                    <div class="brix---flex-vertical-center-3">
+                                        <div class="brix---text-center-9">
+                                            <div class="brix---mg-bottom-16px-8">
+                                                <img alt="Ticket" class="brix---square-icon-3" src="{% static 'web/images/Group-142045ccc-1.png' %}" width="86"/>
+                                            </div>
+                                            <div class="brix---mg-bottom-12px-6">
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="brix---display-7">
+                                                        Lunch
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="brix---divider-40px">
+                                    </div>
+                                </div>
+                                <div class="brix---mg-top-40px">
+                                    <div class="brix---flex-horizontal-start">
+                                        <div class="brix---mg-right-8px-3">
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---heading-h1-size-6">
+                                                    $30,000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="brix---btn-primary-full-width w-button" href="{% url 'ContactPage' %}">
+                                        Become a Sponsor
                                     </a>
                                 </div>
                                 <div>
@@ -324,8 +600,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="brix---color-neutral-825">
-                                                    <div class="brix---text-200-list-medium">
-                                                        Breakfast
+                                                    <div class="brix---text-200-list-medium-copy">
+                                                        Silver Sponsor Benefit
                                                     </div>
                                                 </div>
                                             </div>
@@ -355,7 +631,7 @@
                                                 </div>
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---text-200-list-medium">
-                                                        Lunch
+                                                        5 Complimentary  Conference Passes
                                                     </div>
                                                 </div>
                                             </div>
@@ -370,7 +646,7 @@
                                                 </div>
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---text-200-list-medium">
-                                                        Gifts / Souvenirs
+                                                        3 Access Passes to VIP Lounge
                                                     </div>
                                                 </div>
                                             </div>
@@ -385,7 +661,7 @@
                                                 </div>
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---text-200-list-medium">
-                                                        Conference Fare
+                                                        Provision of Area for Exhibition Booth
                                                     </div>
                                                 </div>
                                             </div>
@@ -400,37 +676,7 @@
                                                 </div>
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---text-200-list-medium">
-                                                        Dinner
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="brix---icon-list-item-wrapper">
-                                                <div>
-                                                    <div class="w-embed">
-                                                        <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                                            </path>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="brix---color-neutral-825">
-                                                    <div class="brix---text-200-list-medium">
-                                                        Room
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="brix---icon-list-item-wrapper">
-                                                <div>
-                                                    <div class="w-embed">
-                                                        <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                                            </path>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="brix---color-neutral-825">
-                                                    <div class="brix---text-200-list-medium">
-                                                        Airport Pick and Drop (100)
+                                                        Opportunity for small brochure inserts in delegate bags
                                                     </div>
                                                 </div>
                                             </div>
@@ -445,12 +691,12 @@
                                     <div class="brix---flex-vertical-center-3">
                                         <div class="brix---text-center-9">
                                             <div class="brix---mg-bottom-16px-8">
-                                                <img alt="Ticket" class="brix---square-icon-3" src="{% static 'web/images/Group-142039.png' %}"/>
+                                                <img alt="Ticket" class="brix---square-icon-3" src="{% static 'web/images/Group-142081pl-1.png' %}" width="86.5"/>
                                             </div>
                                             <div class="brix---mg-bottom-12px-6">
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---display-7">
-                                                        Premium Pass
+                                                        Platinum
                                                     </div>
                                                 </div>
                                             </div>
@@ -464,13 +710,13 @@
                                         <div class="brix---mg-right-8px-3">
                                             <div class="brix---color-neutral-825">
                                                 <div class="brix---heading-h1-size-6">
-                                                    $3000
+                                                    $50,000
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <a class="brix---btn-primary-full-width w-button" href="https://buy.stripe.com/test_00g9Br7x17wteic5kn">
-                                        Check Out
+                                    <a class="brix---btn-primary-full-width w-button" href="{% url 'ContactPage' %}">
+                                        Become a Sponsor
                                     </a>
                                 </div>
                                 <div>
@@ -495,8 +741,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="brix---color-neutral-825">
-                                                    <div class="brix---text-200-list-medium">
-                                                        Breakfast
+                                                    <div class="brix---text-200-list-medium-copy">
+                                                        Silver Sponsor Benefit
                                                     </div>
                                                 </div>
                                             </div>
@@ -511,7 +757,7 @@
                                                 </div>
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---text-200-list-medium">
-                                                        Tea Break
+                                                        Brief Address Opportunity at Social Networking Events
                                                     </div>
                                                 </div>
                                             </div>
@@ -526,7 +772,7 @@
                                                 </div>
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---text-200-list-medium">
-                                                        Lunch
+                                                        10 Complimentary  Conference Passes
                                                     </div>
                                                 </div>
                                             </div>
@@ -541,7 +787,7 @@
                                                 </div>
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---text-200-list-medium">
-                                                        Gifts / Souvenirs
+                                                        4 Access Passes to VIP Lounge
                                                     </div>
                                                 </div>
                                             </div>
@@ -556,7 +802,73 @@
                                                 </div>
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---text-200-list-medium">
-                                                        Conference Fare
+                                                        Airport Pick and Drop Off
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brix---card-4">
+                            <div class="brix---pricing-content-v2">
+                                <div class="brix---mg-bottom-32px-2">
+                                    <div class="brix---flex-vertical-center-3">
+                                        <div class="brix---text-center-9">
+                                            <div class="brix---mg-bottom-16px-8">
+                                                <img alt="Ticket" class="brix---square-icon-3" src="{% static 'web/images/Group-142082em-1.png' %}" width="86.5"/>
+                                            </div>
+                                            <div class="brix---mg-bottom-12px-6">
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="brix---display-7">
+                                                        Emerald
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="brix---divider-40px">
+                                    </div>
+                                </div>
+                                <div class="brix---mg-top-40px">
+                                    <div class="brix---flex-horizontal-start">
+                                        <div class="brix---mg-right-8px-3">
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---heading-h1-size-6">
+                                                    $75,000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="brix---btn-primary-full-width w-button" href="{% url 'ContactPage' %}">
+                                        Become a Sponsor
+                                    </a>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="brix---mg-bottom-24px-5">
+                                            <div class="brix---mg-bottom-24px-5">
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="brix---text-200-bold-3">
+                                                        What's included:
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-layout-grid brix---grid-1-column-gap-row-16px-3">
+                                            <div class="brix---icon-list-item-wrapper">
+                                                <div>
+                                                    <div class="w-embed">
+                                                        <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="brix---text-200-list-medium-copy">
+                                                        Platinum Sponsor Benefit
                                                     </div>
                                                 </div>
                                             </div>
@@ -571,7 +883,7 @@
                                                 </div>
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---text-200-list-medium">
-                                                        Dinner
+                                                        Premium Sponsor Recognition at the Conference
                                                     </div>
                                                 </div>
                                             </div>
@@ -586,7 +898,7 @@
                                                 </div>
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---text-200-list-medium">
-                                                        Room
+                                                        Opportunity for Conference Presentation
                                                     </div>
                                                 </div>
                                             </div>
@@ -601,7 +913,7 @@
                                                 </div>
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---text-200-list-medium">
-                                                        Airport Pick and Drop (100)
+                                                        15 Complimentary  Conference Passes
                                                     </div>
                                                 </div>
                                             </div>
@@ -616,7 +928,7 @@
                                                 </div>
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---text-200-list-medium">
-                                                        Vip Tours
+                                                        5 Access Passes to VIP Lounge
                                                     </div>
                                                 </div>
                                             </div>
@@ -631,7 +943,118 @@
                                                 </div>
                                                 <div class="brix---color-neutral-825">
                                                     <div class="brix---text-200-list-medium">
-                                                        Entertainment
+                                                        Logo Inclusion at event site, signage, conference publications & walk-in/out slide loop
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brix---card-4">
+                            <div class="brix---pricing-content-v2">
+                                <div class="brix---mg-bottom-32px-2">
+                                    <div class="brix---flex-vertical-center-3">
+                                        <div class="brix---text-center-9">
+                                            <div class="brix---mg-bottom-16px-8">
+                                                <img alt="Ticket" class="brix---square-icon-3" src="{% static 'web/images/Group-142047di-1.png' %}" width="87"/>
+                                            </div>
+                                            <div class="brix---mg-bottom-12px-6">
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="brix---display-7">
+                                                        Diamond
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="brix---divider-40px">
+                                    </div>
+                                </div>
+                                <div class="brix---mg-top-40px">
+                                    <div class="brix---flex-horizontal-start">
+                                        <div class="brix---mg-right-8px-3">
+                                            <div class="brix---color-neutral-825">
+                                                <div class="brix---heading-h1-size-6">
+                                                    $100,000
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="brix---btn-primary-full-width w-button" href="{% url 'ContactPage' %}">
+                                        Become a Sponsor
+                                    </a>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="brix---mg-bottom-24px-5">
+                                            <div class="brix---mg-bottom-24px-5">
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="brix---text-200-bold-3">
+                                                        What's included:
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w-layout-grid brix---grid-1-column-gap-row-16px-3">
+                                            <div class="brix---icon-list-item-wrapper">
+                                                <div>
+                                                    <div class="w-embed">
+                                                        <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="wrapdiamnd">
+                                                        Emerald Sponsor Benefit
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="brix---icon-list-item-wrapper">
+                                                <div>
+                                                    <div class="w-embed">
+                                                        <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="brix---text-200-list-medium">
+                                                        Opportunity for Conference Presentation
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="brix---icon-list-item-wrapper">
+                                                <div>
+                                                    <div class="w-embed">
+                                                        <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="brix---text-200-list-medium">
+                                                        25 Complimentary  Conference Passes
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="brix---icon-list-item-wrapper">
+                                                <div>
+                                                    <div class="w-embed">
+                                                        <svg fill="none" height="10" viewbox="0 0 14 10" width="14" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M13 1L4.75 9L1 5.36364" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                            </path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="brix---text-200-list-medium">
+                                                        4 Access Passes to VIP Lounge
                                                     </div>
                                                 </div>
                                             </div>
@@ -642,6 +1065,12 @@
                         </div>
                     </div>
                 </div>
+                <section class="uui-section_pricing11 hide-tablet">
+                    <div class="uui-page-padding-12">
+                    </div>
+                    <section class="uui-section_pricing11 hide-tablet">
+                    </section>
+                </section>
             </div>
         </div>
         <div class="w-container">
@@ -675,17 +1104,17 @@
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-2" href="#">
+                                            <a class="link-2" href="{% url 'HomePage' %}#Mission">
                                                 Mission
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-3" href="#">
+                                            <a class="link-3" href="{% url 'HomePage' %}#DataCollectionPage">
                                                 Data Collection
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-4" href="#">
+                                            <a class="link-4" href="{% url 'HomePage' %}#OurTeam">
                                                 Our Team
                                             </a>
                                         </div>

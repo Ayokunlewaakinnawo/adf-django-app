@@ -20,15 +20,23 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name="HomePage"),
+    path('', views.home, name="HomePage"), #Landing Page
     path('contact/', views.contact, name="ContactPage"),
     path('learnMore/', views.event, name="EventPage"),
     path('register/', views.register, name="RegisterPage"),
     path('other/', views.other, name="UnderConstruction"),
     path('privacy/', views.privacy, name="PrivacyPolicyPage"),
     path('terms/', views.terms, name="TermsofServicePage"),
-    path('tk1/', views.tk1, name="TcTypePage"),
-    path('tk2/', views.tk2, name="AttendeeTcPage"),
-    path('tk3/', views.tk3, name="SponsorTcPage"),
-    path('lm/', views.lm, name="LMPage"),
+    path('datacontent/', views.datacont, name="DataContPage"),
+    path('resources/', views.resource, name="ResourcePage"),
+    path('resourcecontent/', views.resourcecont, name="ResourceContPage"),
+    path('conferenceticket/', views.confticket, name="TicketTypes"),
+    path('attendeeticket/', views.attendee, name="AttendeeTicket"),
+    path('sponsorticket/', views.sponsor, name="SponsorTicket"),
+    path('exhibitticket/', views.exhibit, name="ExhibitTicket"),
+    path('memberticket/', views.exhibitmember, name="MemberTicket"),
+    path('cultural/', views.cultural, name="CulturalPage"),
+    path('linguistics/', views.linguistics, name="LingPage"),
+    path('partnership/', views.partnership, name="PartnershipPg"),
+    path('politics/', views.politics, name="PoliticsPage"),
 ]

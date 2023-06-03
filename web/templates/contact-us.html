@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Tue May 23 2023 13:03:31 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Jun 02 2023 12:33:44 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6417fc58e2165d80b756b7ee" data-wf-site="6416913004ae8a2b5cbbad43">
     {% load static %}
     <head>
@@ -48,6 +48,9 @@
                                     Data Collection
                                 </a>
                                 <a class="nav-link-4 w-nav-link" href="#">
+                                    Events
+                                </a>
+                                <a class="nav-link-4 w-nav-link" href="#">
                                     Our Team
                                 </a>
                                 <a class="nav-link-4 w-nav-link" href="#">
@@ -69,7 +72,7 @@
                 <div class="navbar2">
                     <a class="w-inline-block" href="{% url 'HomePage' %}">
                         <div class="logowrp">
-                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 479px) 0px, (max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="125"/>
+                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="125"/>
                         </div>
                     </a>
                     <a class="link-block w-inline-block" href="{% url 'HomePage' %}">
@@ -96,14 +99,14 @@
                             </div>
                         </a>
                     </div>
-                    <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#Partners">
+                    <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#PartnersPage">
                         <div class="text-block-32">
                             Partners
                         </div>
                     </a>
-                    <a class="link-block-5 w-inline-block" href="{% url 'HomePage' %}#OurTeam">
+                    <a class="link-block-5 w-inline-block" href="{% url 'DataContPage' %}">
                         <div class="text-block-33">
-                            Our Team
+                            Data Content
                         </div>
                     </a>
                     <a class="link-block-6 w-inline-block" href="{% url 'HomePage' %}">
@@ -148,11 +151,11 @@
                                     Thank you! Your submission has been received!
                                 </div>
                             </div>
-                            <!--<div class="w-form-fail">
+                            <div class="w-form-fail">
                                 <div>
                                     Oops! Something went wrong while submitting the form.
                                 </div>
-                            </div>-->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -167,7 +170,7 @@
                         <div class="text-block-22">
                             1301 Presidential Dr,
                             <br/>
-                            Richardson, TX, 75081, USA
+                            Richardson, Texas, 75081, USA
                         </div>
                     </div>
                     <div class="div-block-39">
@@ -222,17 +225,17 @@
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-2" href="#">
+                                            <a class="link-2" href="{% url 'HomePage' %}#Mission">
                                                 Mission
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-3" href="#">
+                                            <a class="link-3" href="{% url 'HomePage' %}#DataCollectionPage">
                                                 Data Collection
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-4" href="#">
+                                            <a class="link-4" href="{% url 'HomePage' %}#OurTeam">
                                                 Our Team
                                             </a>
                                         </div>
@@ -385,31 +388,40 @@
         </script>
         <script>
             // Add native form submission support for Webflow forms. This makes all forms asynchronous.
-    async function submitForm(event, formElement) {
-        /*
-        We use this function to make static html forms submit data asynchronously.
-        */
-        event.preventDefault();
+            async function submitForm(event, formElement) {
+                event.preventDefault();
 
-        const formData = new FormData(formElement);
-        const response = await fetch(formElement.action, { method: formElement.method, body: formData });
+                const formData = new FormData(formElement);
+                const response = await fetch(formElement.action, {
+                    method: formElement.method,
+                    body: formData,
+                });
 
-        if (response.ok) {
-            formElement.style.display = 'none';
-            const formDoneElement = formElement.parentElement.querySelector('.w-form-done');
-            if (formDoneElement) {
-                formDoneElement.style.display = 'block';
-            }
-        } else {
-            const formFailElement = formElement.parentElement.querySelector('.w-form-fail');
-            if (formFailElement) {
-                formFailElement.style.display = 'block';
-            }
-        }
-    }
+                if (response.ok) {
+                    formElement.style.display = 'none';
+                    const formDoneElement = formElement.parentElement.querySelector('.w-form-done');
+                    const formFailElement = formElement.parentElement.querySelector('.w-form-fail');
 
-    const forms = document.querySelectorAll('form');
-    forms.forEach(form => form.addEventListener('submit', event => submitForm(event, form)));
+                    if (formDoneElement) {
+                    formDoneElement.style.display = 'block';
+                    }
+                    // window.location.href = "{% url 'TicketTypes' %}"; // Replace '/new-page' with the desired URL
+
+                    if (formFailElement) {
+                    formFailElement.style.display = 'none'; // Hide the error message if it was shown previously
+                    }
+                } else {
+                    const formFailElement = formElement.parentElement.querySelector('.w-form-fail');
+                    if (formFailElement) {
+                    formFailElement.style.display = 'block';
+                    }
+                }
+                }
+
+                const forms = document.querySelectorAll('form');
+                forms.forEach((form) =>
+                form.addEventListener('submit', (event) => submitForm(event, form))
+            );
         </script>
     </body>
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Tue May 23 2023 13:03:31 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Jun 02 2023 12:33:44 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6437a56c89f2ab6014c472a0" data-wf-site="6416913004ae8a2b5cbbad43">
     {% load static %}
     <head>
@@ -48,6 +48,9 @@
                                     Data Collection
                                 </a>
                                 <a class="nav-link-4 w-nav-link" href="#">
+                                    Events
+                                </a>
+                                <a class="nav-link-4 w-nav-link" href="#">
                                     Our Team
                                 </a>
                                 <a class="nav-link-4 w-nav-link" href="#">
@@ -69,7 +72,7 @@
                 <div class="navbar2">
                     <a class="w-inline-block" href="{% url 'HomePage' %}">
                         <div class="logowrp">
-                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 479px) 0px, (max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="125"/>
+                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="125"/>
                         </div>
                     </a>
                     <a class="link-block w-inline-block" href="{% url 'HomePage' %}">
@@ -96,14 +99,14 @@
                             </div>
                         </a>
                     </div>
-                    <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#Partners">
+                    <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#PartnersPage">
                         <div class="text-block-32">
                             Partners
                         </div>
                     </a>
-                    <a class="link-block-5 w-inline-block" href="{% url 'HomePage' %}#OurTeam">
+                    <a class="link-block-5 w-inline-block" href="{% url 'DataContPage' %}">
                         <div class="text-block-33">
-                            Our Team
+                            Data Content
                         </div>
                     </a>
                     <a class="link-block-6 w-inline-block" href="{% url 'ContactPage' %}">
@@ -126,7 +129,7 @@
                         Check back later..
                     </h1>
                     <p class="fn-paragraph-4">
-                        We are currently under construction
+                        ...this page is currently under construction
                     </p>
                     <a class="fn-button-2 w-button" href="{% url 'HomePage' %}">
                         Go back home

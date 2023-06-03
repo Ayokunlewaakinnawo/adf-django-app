@@ -860,6 +860,7 @@ img {
 
 .body-2 {
   background-color: #1d2133;
+  font-family: Helvetica, sans-serif;
 }
 
 .heading-7 {
@@ -1898,11 +1899,13 @@ img {
 .uui-button.is-button-large {
   grid-column-gap: .75rem;
   cursor: pointer;
-  background-color: #2a69ef;
+  background-color: rgba(42, 105, 239, .89);
   border-color: rgba(127, 86, 217, 0);
   border-radius: 5px;
-  padding: .5rem 1.75rem;
+  padding: 1rem 3rem;
   font-size: 1.125rem;
+  transition: all .3s;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
 }
 
 .uui-button.is-button-large:hover {
@@ -2016,6 +2019,7 @@ img {
 }
 
 .uui-heroheader09_component {
+  z-index: 10;
   grid-column-gap: 2rem;
   grid-row-gap: .25rem;
   grid-template: "."
@@ -2129,7 +2133,9 @@ img {
 }
 
 .uui-team05_component {
+  z-index: -1;
   height: auto;
+  text-align: left;
   background-color: rgba(0, 0, 0, 0);
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -2910,7 +2916,7 @@ img {
 }
 
 .uui-padding-vertical-xhuge-3 {
-  padding-top: 7rem;
+  padding-top: 0;
   padding-bottom: 7rem;
 }
 
@@ -4800,7 +4806,7 @@ img {
   background-color: #2a69ef;
   border-color: rgba(127, 86, 217, 0);
   border-radius: 5px;
-  padding: .5rem 1.25rem;
+  padding: 1rem 3rem;
   font-size: 1.125rem;
 }
 
@@ -5431,7 +5437,7 @@ img {
 
 .brix---grid-1-column-gap-row-40px {
   grid-row-gap: 40px;
-  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-rows: auto auto;
   grid-template-columns: 1fr;
   grid-auto-columns: 1fr;
   display: grid;
@@ -5573,7 +5579,7 @@ img {
   margin-top: 0;
   margin-bottom: 16px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-  font-size: 54px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 66px;
 }
@@ -5623,11 +5629,12 @@ img {
   max-width: 100%;
   color: #fff;
   text-align: center;
+  cursor: auto;
   transform-style: preserve-3d;
   background-color: #0244dc;
   border-radius: 48px;
   justify-content: center;
-  padding: 26px 38px;
+  padding: 20px 38px;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
@@ -5649,6 +5656,7 @@ img {
 .brix---display-7 {
   color: #fff;
   border-radius: 0;
+  font-family: Helvetica, sans-serif;
   font-size: 28px;
   font-weight: 700;
   line-height: 40px;
@@ -5697,9 +5705,10 @@ img {
 
 .brix---text-200-list-medium {
   color: #99a4b8;
-  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
   font-weight: 500;
-  line-height: 24px;
+  line-height: 14px;
 }
 
 .brix---divider-40px {
@@ -5729,8 +5738,8 @@ img {
 .brix---paragraph-default-9 {
   color: #99a4b8;
   margin-bottom: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
-  font-size: 14px;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
   line-height: 18px;
 }
 
@@ -6260,7 +6269,10 @@ img {
 }
 
 .button-9, .button-10 {
+  width: 100%;
+  text-align: center;
   background-color: #0244dc;
+  font-family: Helvetica, sans-serif;
 }
 
 .sponsorpass {
@@ -6321,6 +6333,7 @@ img {
   color: #fff;
   text-align: center;
   letter-spacing: -.02em;
+  cursor: not-allowed;
   background-color: #1d2133;
   flex-direction: row;
   justify-content: center;
@@ -6505,6 +6518,1214 @@ img {
 
 .datacollectnlink-copy, .eventlink-copy {
   text-decoration: none;
+}
+
+.btnwrapper {
+  grid-column-gap: .75rem;
+  grid-row-gap: .75rem;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+}
+
+.btnwrapper.is-reverse-mobile-landscape {
+  position: fixed;
+}
+
+.btnwrapper.wrapbtn {
+  z-index: 9999;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.uui-button-wrapper-copy.wrp {
+  position: fixed;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.uui-button-copy {
+  grid-column-gap: .5rem;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #7f56d9;
+  border: 1px solid #7f56d9;
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+  padding: .625rem 1.125rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+}
+
+.uui-button-copy:hover {
+  background-color: #6941c6;
+  border-color: #6941c6;
+}
+
+.uui-button-copy:focus {
+  background-color: #7f56d9;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05), 0 0 0 4px #f4ebff;
+}
+
+.uui-button-copy.is-button-large {
+  grid-column-gap: .75rem;
+  cursor: pointer;
+  background-color: rgba(42, 105, 239, .89);
+  border-color: rgba(127, 86, 217, 0);
+  border-radius: 5px;
+  padding: 1rem 2.3rem;
+  font-size: 1.125rem;
+  transition: all .3s;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+}
+
+.uui-button-copy.is-button-large:hover {
+  color: #2a69ef;
+  background-color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.uui-button-copy.is-button-large-copy {
+  grid-column-gap: .75rem;
+  cursor: pointer;
+  background-color: rgba(42, 105, 239, .89);
+  border-color: rgba(127, 86, 217, 0);
+  border-radius: 0;
+  padding: 1rem 2.3rem;
+  font-size: 1.125rem;
+  transition: all .3s;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+}
+
+.uui-button-copy.is-button-large-copy:hover {
+  color: #2a69ef;
+  background-color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.catticket, .catticket2 {
+  color: #211f54;
+}
+
+.text-span-51 {
+  color: rgba(255, 255, 255, .8);
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.text-span-52, .text-span-53, .text-span-54, .text-span-55 {
+  color: #99a4b8;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.brix---display-7-copy {
+  color: #fff;
+  border-radius: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.culturalgrid {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  cursor: not-allowed;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.resourcecontent {
+  color: #2c3144;
+  background-color: #2c3144;
+  border: 1px #eff0f6;
+  border-radius: 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 40px 64px;
+  display: flex;
+  box-shadow: 0 2px 7px rgba(20, 20, 43, .06);
+}
+
+.hdr {
+  color: #d4d4d4;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.hdrwrp {
+  color: #211f54;
+}
+
+.hdrwrp2 {
+  color: #2c3144;
+  background-color: #2c3144;
+  border: 1px #eff0f6;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px 20px 40px;
+  display: flex;
+  box-shadow: 0 2px 7px rgba(20, 20, 43, .06);
+}
+
+.buttonresource {
+  width: 100%;
+  text-align: center;
+  background-color: #0244dc;
+  font-family: Helvetica, sans-serif;
+}
+
+.text-block-180 {
+  color: #99a4b8;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.div-block-131 {
+  margin-top: 60px;
+}
+
+.uui-text-rich-text-2 {
+  color: #475467;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+}
+
+.uui-blogpost01_breadcrumb {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.uui-breadcrumb-divider {
+  width: 1rem;
+  height: 1rem;
+  color: #667085;
+  justify-content: center;
+  align-items: center;
+  margin-left: .5rem;
+  margin-right: .5rem;
+  display: flex;
+}
+
+.uui-button-secondary-gray-7 {
+  grid-column-gap: .5rem;
+  color: #344054;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #fff;
+  border: 1px solid #d0d5dd;
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+  padding: .625rem 1.125rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+}
+
+.uui-button-secondary-gray-7:hover {
+  color: #1d2939;
+  background-color: #f9fafb;
+}
+
+.uui-button-secondary-gray-7:focus {
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05), 0 0 0 4px #f2f4f7;
+}
+
+.uui-button-secondary-gray-7.is-button-small {
+  grid-column-gap: .5rem;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+
+.uui-button-secondary-gray-7.is-button-small.icon-only {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+}
+
+.uui-blogpost01_share-heading {
+  color: #fff;
+  letter-spacing: normal;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.uui-blogpost01_author-heading {
+  color: #101828;
+  letter-spacing: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.containedx {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.containedx3 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  font-family: Helvetica, sans-serif;
+}
+
+.containedx2 {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uui-blogpost01_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.uui-text-divider-2 {
+  color: #475467;
+  margin-left: .25rem;
+  margin-right: .25rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.uui-blogpost01_tag-list {
+  grid-column-gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.uui-button-icon-6 {
+  width: 1.25rem;
+  height: 1.25rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.uui-button-icon-6.text-color-gray400 {
+  color: #98a2b3;
+}
+
+.uui-blogpost01_image-wrapper {
+  width: 100%;
+  margin-bottom: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.uui-blogpost01_author-image {
+  width: 3.5rem;
+  height: 3.5rem;
+  min-height: 3.5rem;
+  min-width: 3.5rem;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.uui-blogpost01_author-image-wrapper {
+  margin-right: 1rem;
+}
+
+.uui-blogpost01_content {
+  margin-bottom: 4rem;
+}
+
+.uui-blogpost01_share-wrapper {
+  width: 30%;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.uui-text-size-medium-7 {
+  color: #99a4b8;
+  letter-spacing: normal;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.uui-text-size-medium-7.text-color-primary700 {
+  color: #0244dc;
+}
+
+.uui-blogpost01_date-wrapper {
+  align-items: center;
+  display: flex;
+}
+
+.uui-heading-large-4 {
+  color: #c5c5c5;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.uui-blogpost01_divider {
+  width: 100%;
+  height: 1px;
+  max-width: 48rem;
+  background-color: #eaecf0;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.uui-blogpost01_author-wrapper {
+  align-items: center;
+  display: flex;
+}
+
+.uui-badge-3 {
+  grid-column-gap: .375rem;
+  color: #344054;
+  white-space: nowrap;
+  background-color: #f2f4f7;
+  border-radius: 10rem;
+  align-items: center;
+  padding: .125rem .625rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  display: flex;
+}
+
+.uui-badge-3.is-pink {
+  color: #fff;
+  background-color: #2c3143;
+  margin-top: 10px;
+}
+
+.uui-badge-3.is-indigo {
+  color: #3538cd;
+  background-color: #2c3144;
+  margin-top: 10px;
+}
+
+.uui-badge-3.is-primary {
+  color: #6941c6;
+  background-color: #f9f5ff;
+  background-image: linear-gradient(#0244dc, #0244dc);
+  margin-top: 10px;
+}
+
+.uui-blogpost01_share {
+  grid-column-gap: .75rem;
+  grid-row-gap: .75rem;
+  grid-template-rows: auto;
+  grid-template-columns: max-content;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  justify-items: start;
+  margin-top: 1rem;
+  display: grid;
+}
+
+.resourceback {
+  color: #475467;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .3s;
+}
+
+.resourceback:hover {
+  color: #344054;
+}
+
+.resourceback.w--current {
+  color: #6941c6;
+  font-weight: 600;
+}
+
+.resourceback.w--current:hover {
+  color: #53389e;
+}
+
+.uui-blogpost01_title-wrapper {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative;
+}
+
+.uui-blogpost01_content-top {
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.headerwrap {
+  width: 100%;
+  max-width: 48rem;
+}
+
+.headerwrap.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uui-blogpost01_content-bottom {
+  justify-content: space-around;
+  align-items: flex-end;
+  display: flex;
+}
+
+.paragraph-10 {
+  color: #99a4b8;
+  font-size: 12px;
+}
+
+.maincontent {
+  margin-bottom: 4rem;
+}
+
+.maincontwrap {
+  width: 100%;
+  max-width: 48rem;
+}
+
+.maincontwrap.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading-12 {
+  color: #dadada;
+  font-weight: 400;
+}
+
+.inselectorwrap {
+  grid-column-gap: .5rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.text-block-181 {
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.text-block-182 {
+  color: #c9c9cf;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.text-block-183 {
+  color: #c7c7cc;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.text-block-184 {
+  color: #e8e6ee;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text-span-56 {
+  color: #99a4b8;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.grid-6 {
+  grid-row-gap: 16px;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.text-block-185 {
+  color: #99a4b8;
+}
+
+.hdr3, .hdr2, .hdr1 {
+  color: #fff;
+}
+
+.text-block-186 {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.uui-heading-subheading-9 {
+  color: #7f56d9;
+  margin-bottom: .75rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.uui-pricing11_top-row {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-color: #fff;
+  border-bottom: 1px solid #eaecf0;
+  grid-template-rows: auto;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.uui-icon-1x1-xsmall-6 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.uui-page-padding-12 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.uui-pricing11_plan-name-wrapper {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.uui-padding-vertical-xhuge-12 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.uui-container-large-10 {
+  width: 100%;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uui-text-align-center-7 {
+  text-align: center;
+}
+
+.uui-pricing11_row {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border-bottom: 1px solid #eaecf0;
+  grid-template-rows: auto;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  align-items: stretch;
+}
+
+.uui-text-size-large-10 {
+  color: #8b8b8b;
+  letter-spacing: normal;
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.uui-pricing11_tab-link {
+  grid-column-gap: .5rem;
+  grid-row-gap: .5rem;
+  color: #667085;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: .375rem;
+  align-items: center;
+  padding: .5rem 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-weight: 600;
+  display: flex;
+}
+
+.uui-pricing11_tab-link.w--current {
+  color: #344054;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, .1), 0 1px 2px rgba(16, 24, 40, .06);
+}
+
+.uui-pricing11_tabs-menu {
+  grid-column-gap: .5rem;
+  grid-row-gap: 16px;
+  background-color: #f9fafb;
+  border: 1px solid #f2f4f7;
+  border-radius: .5rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr max-content;
+  grid-auto-columns: 1fr;
+  align-self: center;
+  margin-bottom: 5rem;
+  padding: .375rem;
+  display: grid;
+}
+
+.uui-pricing11_component {
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 2.5rem;
+  display: flex;
+}
+
+.uui-pricing11_row-content {
+  text-align: center;
+  border-left: 1px solid #eaecf0;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  display: flex;
+}
+
+.uui-space-medium-5 {
+  width: 100%;
+  min-height: 2rem;
+}
+
+.uui-pricing11_price-text {
+  color: #475467;
+  letter-spacing: normal;
+  margin-left: .25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.uui-pricing11_price {
+  color: #101828;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.uui-pricing11_tabs-content {
+  width: 100%;
+  overflow: visible;
+}
+
+.uui-heading-medium-10 {
+  color: #e4e4e4;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.uui-button-15 {
+  grid-column-gap: .5rem;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #7f56d9;
+  border: 1px solid #7f56d9;
+  border-radius: .5rem;
+  justify-content: center;
+  align-items: center;
+  padding: .625rem 1.125rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+}
+
+.uui-button-15:hover {
+  background-color: #6941c6;
+  border-color: #6941c6;
+}
+
+.uui-button-15:focus {
+  background-color: #7f56d9;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05), 0 0 0 4px #f4ebff;
+}
+
+.uui-pricing11_heading-row-text {
+  color: #6941c6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-weight: 600;
+}
+
+.uui-heading-xxsmall-6 {
+  color: #101828;
+  letter-spacing: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.uui-pricing11_row-lead-text {
+  color: #101828;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-weight: 500;
+}
+
+.uui-pricing11_heading-row {
+  border-bottom: 1px solid #eaecf0;
+  margin-top: .5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.uui-pricing11_feature {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+}
+
+.uui-space-xsmall-10 {
+  width: 100%;
+  min-height: 1rem;
+}
+
+.uui-max-width-large-9 {
+  width: 100%;
+  max-width: 48rem;
+}
+
+.uui-max-width-large-9.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uui-pricing11_top-row-content {
+  height: 100%;
+  border-left: 1px solid #eaecf0;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  display: flex;
+}
+
+.uui-text-size-small-5 {
+  color: #475467;
+  letter-spacing: normal;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+.uui-pricing11_plans {
+  width: 100%;
+}
+
+.topbenefit, .inherentbenefit {
+  color: #0244dc;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.brix---text-200-list-medium-copy {
+  color: #0244dc;
+  color: #0244dc;
+  color: #0244dc;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.wrapdiamnd {
+  color: #0244dc;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.uui-badge-3-copy {
+  grid-column-gap: .375rem;
+  color: #344054;
+  white-space: nowrap;
+  background-color: #f2f4f7;
+  border-radius: 10rem;
+  align-items: center;
+  padding: .125rem .625rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  display: flex;
+}
+
+.uui-badge-3-copy.is-pink {
+  color: #fff;
+  background-color: #2c3143;
+  margin-top: 10px;
+}
+
+.uui-badge-3-copy.is-indigo {
+  color: #3538cd;
+  background-color: #2c3144;
+  margin-top: 10px;
+}
+
+.uui-badge-3-copy.is-primary {
+  color: #6941c6;
+  background-color: #f9f5ff;
+  margin-top: 10px;
+}
+
+.introbkgrd {
+  grid-column-gap: .375rem;
+  color: #344054;
+  white-space: nowrap;
+  background-color: #f2f4f7;
+  border-radius: 10rem;
+  align-items: center;
+  padding: .125rem .625rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  display: flex;
+}
+
+.introbkgrd.is-pink {
+  color: #fff;
+  background-color: #2c3143;
+  margin-top: 10px;
+}
+
+.introbkgrd.is-indigo {
+  color: #3538cd;
+  background-color: #2c3144;
+  margin-top: 10px;
+}
+
+.introbkgrd.is-primary {
+  color: #6941c6;
+  background-color: #f9f5ff;
+  background-image: linear-gradient(#0244dc, #0244dc);
+  margin-top: 10px;
+}
+
+.text-block-187 {
+  color: #c5c5c5;
+}
+
+.text-block-188, .text-block-189, .text-block-190, .text-block-191, .text-block-192, .text-block-193 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.brix---text-200-list-medium-copy {
+  color: #0244dc;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.uui-team10_item {
+  flex-direction: column;
+  align-items: stretch;
+  display: flex;
+}
+
+.uui-heading-tiny-3 {
+  color: #dfdfdf;
+  letter-spacing: normal;
+  margin-top: 0;
+  margin-bottom: .25rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.uui-team10_component {
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  align-items: start;
+  justify-items: start;
+  display: grid;
+}
+
+.uui-team10_list {
+  width: 100%;
+  grid-column-gap: 2rem;
+  grid-row-gap: 4rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.uui-team10_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
+
+.uui-team10_image-wrapper {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  padding-top: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.uui-team10_content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.brix---mg-top-40px-copy {
+  mix-blend-mode: luminosity;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  position: static;
+}
+
+.brix---btn-primary-full-width-copy {
+  width: 100%;
+  max-width: 100%;
+  color: #fff;
+  text-align: center;
+  cursor: auto;
+  transform-style: preserve-3d;
+  background-color: #0244dc;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 20px 38px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-full-width-copy:hover {
+  color: #fff;
+  background-color: #0132a2;
+  transform: translate3d(0, -3px, .01px);
+}
+
+.brix---btn-primary-full-width-copy {
+  width: 100%;
+  max-width: 100%;
+  color: #fff;
+  text-align: center;
+  cursor: not-allowed;
+  transform-style: preserve-3d;
+  background-color: #0244dc;
+  border-radius: 48px;
+  justify-content: center;
+  padding: 20px 38px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  transition: background-color .3s, transform .3s, color .3s;
+}
+
+.brix---btn-primary-full-width-copy:hover {
+  color: #fff;
+  background-color: #0132a2;
+  transform: translate3d(0, -3px, .01px);
+}
+
+.resourcesgrid {
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.uui-text-size-large-12 {
+  color: #475467;
+  letter-spacing: normal;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.uui-cta03_component {
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  display: grid;
+}
+
+.uui-padding-vertical-xhuge-14 {
+  padding-top: 2rem;
+  padding-bottom: 7rem;
+}
+
+.uui-button-17 {
+  width: 50%;
+  grid-column-gap: .5rem;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #2a69ef;
+  border: 1px #2a69ef;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.125rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05);
+}
+
+.uui-button-17:hover {
+  background-color: #2a69ef;
+  border-color: #6941c6;
+}
+
+.uui-button-17:focus {
+  background-color: #184fc5;
+  box-shadow: 0 1px 2px rgba(16, 24, 40, .05), 0 0 0 4px #f4ebff;
+}
+
+.uui-cta03_image-wrapper {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.uui-space-small-7 {
+  width: 100%;
+  min-height: 1.5rem;
+}
+
+.uui-signup-form_wrapper-2 {
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  margin-bottom: .375rem;
+  display: flex;
+}
+
+.uui-cta03_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.uui-heading-large-5 {
+  color: #e4e4e4;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.uui-cta03_form {
+  max-width: 30rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0;
 }
 
 @media screen and (min-width: 1440px) {
@@ -6692,6 +7913,15 @@ img {
 
   .sponsorpass {
     max-width: 1200px;
+  }
+
+  .btnwrapper.wrapbtn {
+    padding-top: 0;
+    padding-left: 250px;
+  }
+
+  .uui-badge-3.is-primary, .uui-badge-3-copy.is-primary, .introbkgrd.is-primary {
+    background-color: #0244dc;
   }
 }
 
@@ -7406,6 +8636,79 @@ img {
   .section-regular {
     padding-top: 64px;
     padding-bottom: 64px;
+  }
+
+  .brix---display-7-copy {
+    font-size: 22px;
+    line-height: 38px;
+  }
+
+  .culturalgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .hdr {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .containedx3 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .uui-blogpost01_image-wrapper {
+    margin-bottom: 3rem;
+    padding-top: 56.25%;
+  }
+
+  .uui-blogpost01_content {
+    margin-bottom: 3rem;
+  }
+
+  .uui-heading-large-4 {
+    font-size: 2.75rem;
+  }
+
+  .uui-blogpost01_title-wrapper {
+    margin-bottom: 4rem;
+  }
+
+  .maincontent {
+    margin-bottom: 3rem;
+  }
+
+  .uui-padding-vertical-xhuge-12 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .uui-team10_component {
+    grid-column-gap: 3rem;
+  }
+
+  .brix---btn-primary-full-width-copy {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .resourcesgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .uui-cta03_component {
+    grid-row-gap: 4rem;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
+  .uui-padding-vertical-xhuge-14 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .uui-heading-large-5 {
+    font-size: 2.75rem;
   }
 }
 
@@ -8590,6 +9893,241 @@ img {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .btnwrapper {
+    align-self: stretch;
+  }
+
+  .btnwrapper.is-reverse-mobile-landscape, .btnwrapper.wrapbtn {
+    flex-direction: column-reverse;
+  }
+
+  .uui-button-wrapper-copy.max-width-full-mobile-landscape, .uui-button-wrapper-copy.wrp {
+    width: 100%;
+  }
+
+  .uui-button-copy {
+    font-size: 1rem;
+  }
+
+  .uui-button-copy:hover {
+    background-color: #7f56d9;
+    border-color: #7f56d9;
+  }
+
+  .uui-button-copy.is-button-large, .uui-button-copy.is-button-large-copy {
+    grid-column-gap: .5rem;
+    padding: .75rem 1.25rem;
+    font-size: 1rem;
+  }
+
+  .brix---display-7-copy {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .culturalgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .resourcecontent {
+    padding: 44px 32px;
+  }
+
+  .hdr {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .hdrwrp2 {
+    padding: 44px 32px;
+  }
+
+  .uui-button-secondary-gray-7 {
+    padding-left: 1.25rem;
+    font-size: 1rem;
+  }
+
+  .uui-button-secondary-gray-7:hover {
+    color: #344054;
+    background-color: #fff;
+  }
+
+  .uui-blogpost01_author-heading {
+    font-size: 1rem;
+  }
+
+  .containedx {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .containedx3 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .uui-blogpost01_author-image {
+    width: 3rem;
+    height: 3rem;
+    min-height: 3rem;
+    min-width: 3rem;
+  }
+
+  .uui-blogpost01_author-image-wrapper {
+    margin-right: .75rem;
+  }
+
+  .uui-blogpost01_content {
+    margin-bottom: 2rem;
+  }
+
+  .uui-heading-large-4 {
+    font-size: 2.25rem;
+  }
+
+  .uui-blogpost01_divider {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .uui-badge-3 {
+    padding: .125rem .5rem;
+  }
+
+  .uui-blogpost01_title-wrapper {
+    margin-bottom: 3rem;
+  }
+
+  .uui-blogpost01_content-top {
+    margin-top: 2rem;
+  }
+
+  .maincontent {
+    margin-bottom: 2rem;
+  }
+
+  .uui-page-padding-12 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .uui-padding-vertical-xhuge-12 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .uui-text-size-large-10 {
+    font-size: 1rem;
+  }
+
+  .uui-pricing11_component {
+    margin-top: 2rem;
+  }
+
+  .uui-space-medium-5 {
+    min-height: 1.5rem;
+  }
+
+  .uui-pricing11_price {
+    font-size: 2.25rem;
+  }
+
+  .uui-heading-medium-10 {
+    font-size: 1.75rem;
+    line-height: 1.4;
+  }
+
+  .uui-button-15 {
+    font-size: 1rem;
+  }
+
+  .uui-button-15:hover {
+    background-color: #7f56d9;
+    border-color: #7f56d9;
+  }
+
+  .uui-heading-xxsmall-6 {
+    font-size: 1.125rem;
+  }
+
+  .uui-space-xsmall-10 {
+    min-height: .75rem;
+  }
+
+  .topbenefit, .inherentbenefit, .brix---text-200-list-medium-copy, .brix---text-200-list-medium-copy, .brix---text-200-list-medium-copy, .wrapdiamnd {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .uui-badge-3-copy, .introbkgrd {
+    padding: .125rem .5rem;
+  }
+
+  .brix---text-200-list-medium-copy {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .uui-team10_component {
+    grid-row-gap: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  .uui-team10_list {
+    grid-row-gap: 3rem;
+  }
+
+  .uui-team10_image-wrapper {
+    height: 100%;
+  }
+
+  .brix---mg-top-40px-copy {
+    margin-top: 32px;
+  }
+
+  .brix---btn-primary-full-width-copy {
+    padding: 20px 32px;
+  }
+
+  .resourcesgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .uui-text-size-large-12 {
+    font-size: 1rem;
+  }
+
+  .uui-padding-vertical-xhuge-14 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .uui-button-17 {
+    font-size: 1rem;
+  }
+
+  .uui-button-17:hover {
+    background-color: #7f56d9;
+    border-color: #7f56d9;
+  }
+
+  .uui-cta03_image-wrapper {
+    width: 125%;
+    margin-left: -12.5%;
+  }
+
+  .uui-space-small-7 {
+    min-height: 1.25rem;
+  }
+
+  .uui-heading-large-5 {
+    font-size: 2.25rem;
+  }
+
+  .uui-cta03_form {
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -9494,6 +11032,80 @@ img {
   .logo-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .culturalgrid {
+    grid-template-columns: 1fr;
+  }
+
+  .resourcecontent {
+    padding: 40px 24px;
+  }
+
+  .hdr {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .hdrwrp2 {
+    padding: 40px 24px;
+  }
+
+  .uui-blogpost01_tag-list {
+    justify-content: flex-start;
+  }
+
+  .uui-blogpost01_share-wrapper {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .uui-blogpost01_author-wrapper {
+    margin-bottom: 1rem;
+  }
+
+  .uui-blogpost01_content-top, .uui-blogpost01_content-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .uui-blogpost01_tag-list-wrapper {
+    width: 100%;
+  }
+
+  .inselectorwrap {
+    justify-content: flex-start;
+  }
+
+  .inselectorwrapx2 {
+    width: 100%;
+  }
+
+  .uui-team10_component, .uui-team10_list {
+    grid-template-columns: 1fr;
+  }
+
+  .uui-team10_image-wrapper {
+    padding-top: 66%;
+  }
+
+  .brix---btn-primary-full-width-copy {
+    width: 100%;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .resourcesgrid, .uui-cta03_component {
+    grid-template-columns: 1fr;
+  }
+
+  .uui-signup-form_wrapper-2 {
+    grid-row-gap: .75rem;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
 }
 
 #w-node-_66731b10-acd4-e1b3-c75c-c85e960e702a-77bbad44 {
@@ -9506,6 +11118,26 @@ img {
 
 #w-node-_66731b10-acd4-e1b3-c75c-c85e960e702e-77bbad44, #w-node-cb037f7e-aed4-d7c0-4b8d-c59df4424000-77bbad44, #w-node-aa3130f0-2eb1-dcbb-a791-39f34d6d17b1-77bbad44, #w-node-_6699ec9a-6af8-66e1-550c-f4845dfde586-77bbad44 {
   grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+#w-node-e3a532d4-768f-c036-8ca9-a3c9859a215f-77bbad44 {
+  grid-area: 2 / 2 / 4 / 4;
+}
+
+#w-node-e3a532d4-768f-c036-8ca9-a3c9859a2160-77bbad44 {
+  grid-area: 4 / 1 / 6 / 3;
+}
+
+#w-node-e3a532d4-768f-c036-8ca9-a3c9859a2161-77bbad44 {
+  grid-area: 4 / 3 / 7 / 5;
+}
+
+#w-node-e3a532d4-768f-c036-8ca9-a3c9859a2162-77bbad44 {
+  grid-area: 4 / 5 / 6 / 7;
+}
+
+#w-node-e3a532d4-768f-c036-8ca9-a3c9859a2163-77bbad44 {
+  grid-area: 1 / 4 / 4 / 6;
 }
 
 #w-node-ada34fff-97ff-7db8-2bf2-46e1a7b1675f-77bbad44 {
@@ -9584,7 +11216,7 @@ img {
   justify-self: center;
 }
 
-#w-node-_851047cd-8dd4-71ac-b5c8-422cff89e5fa-1e8c4155, #w-node-f9725af1-36df-70c5-2c80-f817fc685def-f5466c0c, #w-node-eddb5144-6430-97e5-7a08-e7d0978df3a8-f5466c0c, #w-node-_73a18138-264a-96f1-9a5e-27ff32d81930-f5466c0c, #w-node-_73a18138-264a-96f1-9a5e-27ff32d81974-f5466c0c, #w-node-f9725af1-36df-70c5-2c80-f817fc685e13-f5466c0c {
+#w-node-_851047cd-8dd4-71ac-b5c8-422cff89e5fa-1e8c4155, #w-node-f9725af1-36df-70c5-2c80-f817fc685def-f5466c0c, #w-node-eddb5144-6430-97e5-7a08-e7d0978df3a8-f5466c0c, #w-node-_73a18138-264a-96f1-9a5e-27ff32d81930-f5466c0c, #w-node-_73a18138-264a-96f1-9a5e-27ff32d81974-f5466c0c, #w-node-f9725af1-36df-70c5-2c80-f817fc685e13-f5466c0c, #w-node-_633100c9-aaa0-6dea-f4d2-7352883f274f-f5466c0c, #w-node-_633100c9-aaa0-6dea-f4d2-7352883f2795-f5466c0c, #w-node-_633100c9-aaa0-6dea-f4d2-7352883f2797-f5466c0c, #w-node-_633100c9-aaa0-6dea-f4d2-7352883f27db-f5466c0c, #w-node-_633100c9-aaa0-6dea-f4d2-7352883f27dd-f5466c0c, #w-node-_7dd9fece-4682-8b10-295b-69529c179cac-aa830f74, #w-node-_7dd9fece-4682-8b10-295b-69529c179cae-aa830f74, #w-node-_7dd9fece-4682-8b10-295b-69529c179cb0-aa830f74, #w-node-_7dd9fece-4682-8b10-295b-69529c179cb2-aa830f74, #w-node-_40519013-6acf-29d1-7b60-4363b55b6bda-aa830f74, #w-node-dceb463b-73eb-5fde-c2bf-acee38b428e7-aa830f74, #w-node-d1011ce1-4cd6-83dc-aea5-272f805fff4a-aa830f74, #w-node-d453a4ad-9199-6488-1444-6691267f12b8-aa830f74, #w-node-_2634a442-34c2-657e-40ed-ed0d8295742e-aa830f74, #w-node-_8f48c70a-3a23-c910-dac8-0d73d5ceda2e-aa830f74, #w-node-_16c424ee-e6e5-2502-8119-b796fd8ce6c3-aa830f74, #w-node-_285125f3-8983-fdb3-d13a-b8d8d014a8e0-aa830f74, #w-node-_45df9d16-26c4-15d0-77fd-fe7bb3e475b8-aa830f74, #w-node-_617f311f-6c83-f044-623f-8dcd8ad4dc49-aa830f74, #w-node-_77db4b4c-ba9c-78de-684b-16b3493eb378-aa830f74, #w-node-_4d6181ab-64f6-9c63-afae-cab5e4e4a293-aa830f74, #w-node-_3ec189c1-cabb-bc85-6949-f4247114ed82-aa830f74, #w-node-_9c9c9a66-9468-ad2e-09fa-1f8a55242bc1-aa830f74, #w-node-_07627ab1-b522-d3d4-8dac-9286bfc42fc7-aa830f74, #w-node-_84a557da-a0e2-7fda-580e-993e025e2ef8-aa830f74, #w-node-_8dbcfac1-ff3f-17a0-eeb2-85ea85dda26e-aa830f74, #w-node-_40b7ff99-8bcd-e51b-744f-0816b9837ea4-aa830f74, #w-node-_453d59c1-ed0e-8de5-7291-0002ecaa4a6b-aa830f74, #w-node-e86cb385-0862-a896-dbbb-511ee78956b1-aa830f74, #w-node-_39d4b900-8a5b-2f4d-745d-6dfa124fd748-aa830f74, #w-node-c0ad90e8-d7ad-38f7-da00-a5ab872e548f-aa830f74, #w-node-a182b913-9c20-8df5-fc28-35d1e83916a0-aa830f74, #w-node-_97b2fc58-7fec-0bc7-4a9f-c155f8ee0871-aa830f74, #w-node-de650885-df7d-0d89-37d8-cb65a8211316-aa830f74, #w-node-ad9e9a38-bc15-f6d8-067c-8302efbe37a9-aa830f74, #w-node-_1dae74ff-5398-cf72-17c7-67451e5eadd9-aa830f74, #w-node-e64f0eac-c96d-911d-ab19-d3eb33a3066c-aa830f74, #w-node-f08a9ad1-f2db-87cb-61ff-92578d1ce520-aa830f74, #w-node-_15200fde-1349-6f31-99a7-b51bd9a63ae1-aa830f74, #w-node-_7dd9fece-4682-8b10-295b-69529c179cac-8c9159a9, #w-node-_7dd9fece-4682-8b10-295b-69529c179cae-8c9159a9, #w-node-_7dd9fece-4682-8b10-295b-69529c179cb0-8c9159a9, #w-node-_7dd9fece-4682-8b10-295b-69529c179cb2-8c9159a9, #w-node-_7dd9fece-4682-8b10-295b-69529c179cac-a44725e2, #w-node-_7dd9fece-4682-8b10-295b-69529c179cae-a44725e2, #w-node-_7dd9fece-4682-8b10-295b-69529c179cb0-a44725e2, #w-node-_7dd9fece-4682-8b10-295b-69529c179cb2-a44725e2 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 

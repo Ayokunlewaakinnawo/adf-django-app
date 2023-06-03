@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import ContactInfo
-from .models import RegisterEventInfo
+from .models import ContactUsInfo
+from .models import EventRegistration
 from django.http import HttpResponse
 
 def home(request):
@@ -8,7 +8,7 @@ def home(request):
 
 def contact(request):
     if request.method=="POST":
-        contactpost =  ContactInfo()
+        contactpost =  ContactUsInfo()
         fname=request.POST.get('firstname')
         lname=request.POST.get('lastname')
         email=request.POST.get('email')
@@ -28,22 +28,32 @@ def event(request):
 
 def register(request):
     if request.method=="POST":
-        registerpost =  RegisterEventInfo()
+        registerpost =  EventRegistration()
         fname=request.POST.get('Firstname')
         lname=request.POST.get('Lastname')
+        nname=request.POST.get('nickname')
+        country=request.POST.get('Country')
         email=request.POST.get('Email')
         phone=request.POST.get('Phone')
-        location=request.POST.get('Location')
+        ady1=request.POST.get('address1')
+        ady2=request.POST.get('address2')
+        city=request.POST.get('City')
+        zip=request.POST.get('ZipCode')
         category=request.POST.get('Category')
         registerpost.Firstname=fname
         registerpost.Lastname=lname
+        registerpost.Nickname=nname
+        registerpost.Country=country
         registerpost.Email=email
         registerpost.Phone=phone
-        registerpost.Location=location
+        registerpost.Address1=ady1
+        registerpost.Address2=ady2
+        registerpost.City=city
+        registerpost.ZipCode=zip
         registerpost.Category=category
         registerpost.save()
-
-    return render(request, 'registration-form.html')
+        
+    return render(request, 'registration-form.html' )
 
 def other(request):
     return render(request, 'otherpages.html')
@@ -54,14 +64,40 @@ def privacy(request):
 def terms(request):
     return render(request, 'termsofservice.html')
 
-def tk1(request):
-    return render(request, 'registerticket1.html')
+def datacont(request):
+    return render(request, 'datacontent.html')
 
-def tk2(request):
-    return render(request, 'registerticket2.html')
+def resource(request):
+    return render(request, 'resources.html')
 
-def tk3(request):
-    return render(request, 'registerticket3.html')
+def resourcecont(request):
+    return render(request, 'resourcecontentpg.html')
 
-def lm(request):
-    return render(request, 'learnmore.html')
+#Ticket Types page
+def confticket(request):
+    return render(request, 'conferenceticket.html')
+
+#
+def attendee(request):
+    return render(request, 'attendeepass.html')
+
+def sponsor(request):
+    return render(request, 'sponsorpass.html')
+
+def exhibit(request):
+    return render(request, 'exhibitorpass.html')
+
+def exhibitmember(request):
+    return render(request, 'exhibitormemberpass.html')
+
+def cultural(request):
+    return render(request, 'cultural.html')
+
+def linguistics(request):
+    return render(request, 'linguistics.html')
+
+def partnership(request):
+    return render(request, 'PartnershipsContentPg.html')
+
+def politics(request):
+    return render(request, 'politicscontentpg.html')

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Tue May 23 2023 13:03:31 GMT+0000 (Coordinated Universal Time)  -->
-<html data-wf-page="6466e1b3fcc64236f5466c0c" data-wf-site="6416913004ae8a2b5cbbad43">
+<!--  Last Published: Fri Jun 02 2023 12:33:44 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="647812277a383aaf373c7a49" data-wf-site="6416913004ae8a2b5cbbad43">
     {% load static %}
     <head>
         <meta charset="utf-8"/>
         <title>
-            RegisterTicket1
+            ExhibitorMemberPass
         </title>
-        <meta content="RegisterTicket1" property="og:title"/>
-        <meta content="RegisterTicket1" property="twitter:title"/>
+        <meta content="ExhibitorMemberPass" property="og:title"/>
+        <meta content="ExhibitorMemberPass" property="twitter:title"/>
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content="Webflow" name="generator"/>
         <link href="{% static 'web/css/normalize.css' %}" rel="stylesheet" type="text/css"/>
@@ -48,6 +48,9 @@
                                     Data Collection
                                 </a>
                                 <a class="nav-link-4 w-nav-link" href="#">
+                                    Events
+                                </a>
+                                <a class="nav-link-4 w-nav-link" href="#">
                                     Our Team
                                 </a>
                                 <a class="nav-link-4 w-nav-link" href="#">
@@ -69,7 +72,7 @@
                 <div class="navbar2">
                     <a class="w-inline-block" href="{% url 'HomePage' %}">
                         <div class="logowrp">
-                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 479px) 0px, (max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="125"/>
+                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="125"/>
                         </div>
                     </a>
                     <a class="link-block w-inline-block" href="{% url 'HomePage' %}">
@@ -96,14 +99,14 @@
                             </div>
                         </a>
                     </div>
-                    <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#Partners">
+                    <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#PartnersPage">
                         <div class="text-block-32">
                             Partners
                         </div>
                     </a>
-                    <a class="link-block-5 w-inline-block" href="{% url 'HomePage' %}#OurTeam">
+                    <a class="link-block-5 w-inline-block" href="{% url 'DataContPage' %}">
                         <div class="text-block-33">
-                            Our Team
+                            Data Content
                         </div>
                     </a>
                     <a class="link-block-6 w-inline-block" href="{% url 'ContactPage' %}">
@@ -119,287 +122,179 @@
                 </div>
             </div>
         </div>
-        <div class="brix---section-8 wf-section">
-            <div class="brix---container-default-9 w-container">
-                <div class="w-layout-grid brix---grid-top---text-2-buttons" data-w-id="f9725af1-36df-70c5-2c80-f817fc685dde" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
-                    <div class="brix---inner-container-490px">
-                        <div class="div-block-124">
-                            <div class="brix---mg-bottom-16px-7">
-                                <div class="brix---color-neutral-823">
-                                    <p class="brix---paragraph-default-8">
-                                        Ticket Types
-                                    </p>
-                                    <h2 class="brix---heading-h2-size-4">
-                                        Conference Pass
-                                    </h2>
-                                </div>
-                            </div>
-                            <div class="brix---color-neutral-821">
-                                <p class="brix---paragraph-default-8">
-                                    Just few more steps to conclude your registration for the event.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-layout-grid tickettypegrid">
-                    <div class="brix---card-3" id="w-node-f9725af1-36df-70c5-2c80-f817fc685def-f5466c0c">
-                        <div class="brix---content-inside-card-v14">
-                            <div class="w-layout-grid brix---grid-1-column-gap-row-40px">
-                                <div class="brix---icon-left---content-right">
-                                    <div class="div-block-125">
-                                        <img alt="Gift" loading="lazy" src="{% static 'web/images/🎁.svg' %}"/>
-                                    </div>
-                                    <div class="w-embed">
-                                    </div>
-                                    <div class="brix---card-left-text-wrapper">
-                                        <div class="brix---mg-bottom-8px">
-                                            <div class="brix---color-neutral-823">
-                                                <h3 class="brix---heading-h3-size-3">
-                                                    Gifts & Souvenirs
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="brix---paragraph-default-8">
-                                            <div class="brix---color-neutral-821">
-                                                <p class="brix---mg-bottom-5">
-                                                    Purchase a ticket and enjoy the gifts we have prepared especially for you!
-                                                    <br/>
-                                                    ‍
-                                                </p>
-                                            </div>
-                                        </div>
+        <div>
+            <div class="brix---section-8 wf-section">
+                <div class="brix---container-default-9 w-container">
+                    <div class="w-layout-grid brix---grid-top---text-2-buttons" data-w-id="f9725af1-36df-70c5-2c80-f817fc685dde" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
+                        <div class="brix---inner-container-490px">
+                            <div class="div-block-124">
+                                <div class="brix---mg-bottom-16px-7">
+                                    <div class="brix---color-neutral-823">
+                                        <p class="brix---paragraph-default-8">
+                                            Ticket Types
+                                        </p>
+                                        <h2 class="brix---heading-h2-size-4">
+                                            Conference Pass : Exhibitor
+                                            <br/>
+                                            <span class="text-span-51">
+                                                -Member-
+                                            </span>
+                                        </h2>
                                     </div>
                                 </div>
-                                <div class="brix---icon-left---content-right">
-                                    <div class="div-block-125">
-                                        <img alt="Plane" loading="lazy" src="{% static 'web/images/✈️.svg' %}"/>
-                                    </div>
-                                    <div class="w-embed">
-                                    </div>
-                                    <div class="brix---card-left-text-wrapper">
-                                        <div class="brix---mg-bottom-8px">
-                                            <div class="brix---color-neutral-823">
-                                                <h3 class="brix---heading-h3-size-3">
-                                                    Airport Pick and Drop
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="brix---paragraph-default-8">
-                                            <div class="brix---color-neutral-821">
-                                                <p class="brix---mg-bottom-5">
-                                                    Experience comfort with our reliable Airport Pick and Drop service. Let us take care of your transportation needs!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="brix---icon-left---content-right">
-                                    <div class="div-block-125">
-                                        <img alt="Tour" loading="lazy" src="{% static 'web/images/🏺.svg' %}"/>
-                                    </div>
-                                    <div class="w-embed">
-                                    </div>
-                                    <div class="brix---card-left-text-wrapper">
-                                        <div class="brix---mg-bottom-8px">
-                                            <div class="brix---color-neutral-823">
-                                                <h3 class="brix---heading-h3-size-3">
-                                                    Vip Tours
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="brix---paragraph-default-8">
-                                            <div class="brix---color-neutral-821">
-                                                <p class="brix---mg-bottom-5">
-                                                    Explore the city with our guided tours, discovering its hidden gems and capturing unforgettable memories!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="brix---icon-left---content-right">
-                                    <div class="div-block-125">
-                                        <img alt="Room" loading="lazy" src="{% static 'web/images/🏡.svg' %}"/>
-                                    </div>
-                                    <div class="w-embed">
-                                    </div>
-                                    <div class="brix---card-left-text-wrapper">
-                                        <div class="brix---mg-bottom-8px">
-                                            <div class="brix---color-neutral-823">
-                                                <h3 class="brix---heading-h3-size-3">
-                                                    Room
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="brix---paragraph-default-8">
-                                            <div class="brix---color-neutral-821">
-                                                <p class="brix---mg-bottom-5">
-                                                    Enjoy a complimentary room upgrade, making your stay even more memorable and luxurious!
-                                                    <br/>
-                                                    ‍
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="brix---icon-left---content-right">
-                                    <div class="div-block-125">
-                                        <img alt="food
-" loading="lazy" src="{% static 'web/images/🍲.svg' %}"/>
-                                    </div>
-                                    <div class="w-embed">
-                                    </div>
-                                    <div class="brix---card-left-text-wrapper">
-                                        <div class="brix---mg-bottom-8px">
-                                            <div class="brix---color-neutral-823">
-                                                <h3 class="brix---heading-h3-size-3">
-                                                    Room
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="brix---paragraph-default-8">
-                                            <div class="brix---color-neutral-821">
-                                                <p class="brix---mg-bottom-5">
-                                                    Indulge in complimentary mouthwatering meals, savoring delicious flavors during your stay with us!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="button-4 w-button" href="{% url 'AttendeeTcPage' %}" id="w-node-eddb5144-6430-97e5-7a08-e7d0978df3a8-f5466c0c">
-                                    Choose from $600
-                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="brix---card-3" id="w-node-_73a18138-264a-96f1-9a5e-27ff32d81930-f5466c0c">
-                        <div class="brix---content-inside-card-v14">
-                            <div class="w-layout-grid brix---grid-1-column-gap-row-40px">
-                                <div class="brix---icon-left---content-right">
-                                    <div class="div-block-125">
-                                        <img alt="Confette" loading="lazy" src="{% static 'web/images/🎉.svg' %}"/>
-                                    </div>
-                                    <div class="w-embed">
-                                    </div>
-                                    <div class="brix---card-left-text-wrapper">
-                                        <div class="brix---mg-bottom-8px">
-                                            <div class="brix---color-neutral-823">
-                                                <h3 class="brix---heading-h3-size-3">
-                                                    Gala Night
-                                                </h3>
+                    <div class="w-layout-grid brix---3-columns-1-col-tablet" data-w-id="5ee55612-f24d-0b6a-3166-0d7dbf1a3be6" style="-webkit-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 10%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
+                        <div class="brix---card-4">
+                            <div class="brix---pricing-content-v2">
+                                <div class="brix---mg-bottom-32px-2">
+                                    <div class="brix---flex-vertical-center-3">
+                                        <div class="brix---text-center-9">
+                                            <div class="brix---mg-bottom-16px-8">
+                                                <img alt="Ticket" class="brix---square-icon-3" src="{% static 'web/images/Member-1.png' %}"/>
+                                            </div>
+                                            <div class="brix---mg-bottom-12px-6">
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="brix---display-7">
+                                                        $1,025
+                                                        <br/>
+                                                        <span class="text-span-52">
+                                                            Basic
+                                                        </span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="brix---paragraph-default-8">
-                                            <div class="brix---color-neutral-821">
-                                                <p class="brix---mg-bottom-5">
-                                                    Join us for a glamorous Gala Night, filled with enchanting entertainment, exquisite cuisine, and unforgettable moments!
-                                                </p>
-                                            </div>
-                                        </div>
+                                    </div>
+                                    <div class="brix---divider-40px">
                                     </div>
                                 </div>
-                                <div class="brix---icon-left---content-right">
-                                    <div class="div-block-125">
-                                        <img alt="money" loading="lazy" src="{% static 'web/images/💰.svg' %}"/>
-                                    </div>
-                                    <div class="w-embed">
-                                    </div>
-                                    <div class="brix---card-left-text-wrapper">
-                                        <div class="brix---mg-bottom-8px">
-                                            <div class="brix---color-neutral-823">
-                                                <h3 class="brix---heading-h3-size-3">
-                                                    Investor Sessions
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="brix---paragraph-default-8">
-                                            <div class="brix---color-neutral-821">
-                                                <p class="brix---mg-bottom-5">
-                                                    Participate in exclusive Investor Sessions, gaining valuable insights and networking opportunities with industry leaders!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="brix---mg-top-40px">
+                                    <a class="brix---btn-primary-full-width w-button" href="#">
+                                        About
+                                    </a>
                                 </div>
-                                <div class="brix---icon-left---content-right">
-                                    <div class="div-block-125">
-                                        <img alt="Ticket" loading="lazy" src="{% static 'web/images/🎟️.svg' %}"/>
-                                    </div>
-                                    <div class="w-embed">
-                                    </div>
-                                    <div class="brix---card-left-text-wrapper">
-                                        <div class="brix---mg-bottom-8px">
-                                            <div class="brix---color-neutral-823">
-                                                <h3 class="brix---heading-h3-size-3">
-                                                    Free Entry
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="brix---paragraph-default-8">
-                                            <div class="brix---color-neutral-821">
-                                                <p class="brix---mg-bottom-5">
-                                                    Inviting investors with Free Entry! Join us without any cost and explore exclusive opportunities!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="brix---mg-top-40px">
+                                    <a class="brix---btn-primary-full-width w-button" href="#">
+                                        Check Out
+                                    </a>
                                 </div>
-                                <div class="brix---icon-left---content-right">
-                                    <div class="div-block-125">
-                                        <img alt="Mic" loading="lazy" src="{% static 'web/images/🎤.svg' %}"/>
-                                    </div>
-                                    <div class="w-embed">
-                                    </div>
-                                    <div class="brix---card-left-text-wrapper">
-                                        <div class="brix---mg-bottom-8px">
-                                            <div class="brix---color-neutral-823">
-                                                <h3 class="brix---heading-h3-size-3">
-                                                    Panel Sessions
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="brix---paragraph-default-8">
-                                            <div class="brix---color-neutral-821">
-                                                <p class="brix---mg-bottom-5">
-                                                    Dive into insightful Panel Sessions, featuring industry experts sharing knowledge, trends, and inspiration for success!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="brix---icon-left---content-right">
-                                    <div class="div-block-125">
-                                        <img alt="Design" loading="lazy" src="{% static 'web/images/✨.svg' %}"/>
-                                    </div>
-                                    <div class="w-embed">
-                                    </div>
-                                    <div class="brix---card-left-text-wrapper">
-                                        <div class="brix---mg-bottom-8px">
-                                            <div class="brix---color-neutral-823">
-                                                <h3 class="brix---heading-h3-size-3">
-                                                    Everything from “Be an attendee”
-                                                </h3>
-                                            </div>
-                                        </div>
-                                        <div class="brix---paragraph-default-8">
-                                            <div class="brix---color-neutral-821">
-                                                <p class="brix---mg-bottom-5">
-                                                    Discover all the possibilities from “Be an attendee” with access to all bonuses — all inclusive!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a class="button-4 w-button" href="{% url 'SponsorTcPage' %}" id="w-node-_73a18138-264a-96f1-9a5e-27ff32d81974-f5466c0c">
-                                    Choose from $5,000
-                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div class="brix---card-3" id="w-node-f9725af1-36df-70c5-2c80-f817fc685e13-f5466c0c">
+                        <div class="brix---card-4">
+                            <div class="brix---pricing-content-v2">
+                                <div class="brix---mg-bottom-32px-2">
+                                    <div class="brix---flex-vertical-center-3">
+                                        <div class="brix---text-center-9">
+                                            <div class="brix---mg-bottom-16px-8">
+                                                <img alt="Ticket" class="brix---square-icon-3" src="{% static 'web/images/Member-1.png' %}"/>
+                                            </div>
+                                            <div class="brix---mg-bottom-12px-6">
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="brix---display-7">
+                                                        $1,645
+                                                        <br/>
+                                                        <span class="text-span-54">
+                                                            Accomodation
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="brix---divider-40px">
+                                    </div>
+                                </div>
+                                <div class="brix---mg-top-40px">
+                                    <a class="brix---btn-primary-full-width w-button" href="https://buy.stripe.com/test_cN2eVL6sX2c9eicdQR">
+                                        About
+                                    </a>
+                                </div>
+                                <div class="brix---mg-top-40px">
+                                    <a class="brix---btn-primary-full-width w-button" href="https://buy.stripe.com/test_cN2eVL6sX2c9eicdQR">
+                                        Check Out
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brix---card-4">
+                            <div class="brix---pricing-content-v2">
+                                <div class="brix---mg-bottom-32px-2">
+                                    <div class="brix---flex-vertical-center-3">
+                                        <div class="brix---text-center-9">
+                                            <div class="brix---mg-bottom-16px-8">
+                                                <img alt="Ticket" class="brix---square-icon-3" src="{% static 'web/images/Member-1.png' %}"/>
+                                            </div>
+                                            <div class="brix---mg-bottom-12px-6">
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="brix---display-7">
+                                                        $2,425
+                                                        <br/>
+                                                        <span class="text-span-55">
+                                                            Conference & Flight
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="brix---divider-40px">
+                                    </div>
+                                </div>
+                                <div class="brix---mg-top-40px">
+                                    <a class="brix---btn-primary-full-width w-button" href="https://buy.stripe.com/test_cN2eVL6sX2c9eicdQR">
+                                        About
+                                    </a>
+                                </div>
+                                <div class="brix---mg-top-40px">
+                                    <a class="brix---btn-primary-full-width w-button" href="https://buy.stripe.com/test_cN2eVL6sX2c9eicdQR">
+                                        Check Out
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="brix---card-4">
+                            <div class="brix---pricing-content-v2">
+                                <div class="brix---mg-bottom-32px-2">
+                                    <div class="brix---flex-vertical-center-3">
+                                        <div class="brix---text-center-9">
+                                            <div class="brix---mg-bottom-16px-8">
+                                                <img alt="Ticket" class="brix---square-icon-3" src="{% static 'web/images/Member-1.png' %}"/>
+                                            </div>
+                                            <div class="brix---mg-bottom-12px-6">
+                                                <div class="brix---color-neutral-825">
+                                                    <div class="brix---display-7">
+                                                        $3,045
+                                                        <br/>
+                                                        <span class="text-span-53">
+                                                            Full Package
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="brix---divider-40px">
+                                    </div>
+                                </div>
+                                <div class="brix---mg-top-40px">
+                                    <a class="brix---btn-primary-full-width w-button" href="https://buy.stripe.com/test_cN2eVL6sX2c9eicdQR">
+                                        About
+                                    </a>
+                                </div>
+                                <div class="brix---mg-top-40px">
+                                    <a class="brix---btn-primary-full-width w-button" href="https://buy.stripe.com/test_cN2eVL6sX2c9eicdQR">
+                                        Check Out
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="w-container">
         </div>
         <div class="footsection wf-section">
             <div class="borderline">
@@ -430,17 +325,17 @@
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-2" href="#">
+                                            <a class="link-2" href="{% url 'HomePage' %}#Mission">
                                                 Mission
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-3" href="#">
+                                            <a class="link-3" href="{% url 'HomePage' %}#DataCollectionPage">
                                                 Data Collection
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-4" href="#">
+                                            <a class="link-4" href="{% url 'HomePage' %}#OurTeam">
                                                 Our Team
                                             </a>
                                         </div>

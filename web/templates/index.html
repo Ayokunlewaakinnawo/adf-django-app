@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Tue May 23 2023 13:03:31 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Fri Jun 02 2023 12:33:44 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6416913004ae8acc77bbad44" data-wf-site="6416913004ae8a2b5cbbad43">
     {% load static %}
     <head>
@@ -42,10 +42,13 @@
                                 <a class="nav-link-3 w-nav-link" href="{% url 'HomePage' %}#Mission">
                                     Mission
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="#DataCollectionPage">
+                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#DataCollectionPage">
                                     Data Collection
                                 </a>
-                                <a class="nav-link-4 w-nav-link" href="#OurTeam">
+                                <a class="nav-link-4 w-nav-link" href="{% url 'EventPage' %}">
+                                    Events
+                                </a>
+                                <a class="nav-link-4 w-nav-link" href="{% url 'HomePage' %}#OurTeam">
                                     Our Team
                                 </a>
                                 <a class="nav-link-4 w-nav-link" href="#GoalsAndObj.Page">
@@ -67,7 +70,7 @@
                 <div class="navbar2">
                     <a aria-current="page" class="w-inline-block w--current" href="{% url 'HomePage' %}">
                         <div class="logowrp">
-                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 479px) 0px, (max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="125"/>
+                            <img alt="ADF_Logo" loading="lazy" sizes="(max-width: 991px) 100vw, 125px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="125"/>
                         </div>
                     </a>
                     <a aria-current="page" class="link-block w-inline-block w--current" href="{% url 'HomePage' %}">
@@ -75,13 +78,13 @@
                             Home
                         </div>
                     </a>
-                    <a class="link-block-2 w-inline-block" href="{% url 'HomePage' %}#Mission">
+                    <a class="link-block-2 w-inline-block" href="#Mission">
                         <div class="text-block-30">
                             Mission
                         </div>
                     </a>
                     <div class="div-block-78">
-                        <a class="eventlink w-inline-block" href="{% url 'HomePage' %}#DataCollectionPage">
+                        <a class="eventlink w-inline-block" href="#DataCollectionPage">
                             <div class="text-block-31">
                                 Data Collection
                             </div>
@@ -94,14 +97,14 @@
                             </div>
                         </a>
                     </div>
-                    <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#Partners">
+                    <a class="link-block-4 w-inline-block" href="{% url 'HomePage' %}#PartnersPage">
                         <div class="text-block-32">
                             Partners
                         </div>
                     </a>
-                    <a class="link-block-5 w-inline-block" href="{% url 'HomePage' %}#OurTeam">
+                    <a class="link-block-5 w-inline-block" href="{% url 'DataContPage' %}">
                         <div class="text-block-33">
-                            Our Team
+                            Data Content
                         </div>
                     </a>
                     <a class="link-block-6 w-inline-block" href="{% url 'ContactPage' %}">
@@ -165,7 +168,7 @@
                                 </div>
                                 <img alt="" class="image-5" loading="lazy" src="{% static 'web/images/BtnAnimation.gif' %}" width="150"/>
                             </div>
-                            <a class="main_btn w-inline-block" href="{% url 'LMPage' %}">
+                            <a class="main_btn w-inline-block" href="{% url 'DataContPage' %}">
                                 <div class="text-block-6">
                                     Learn More
                                 </div>
@@ -189,7 +192,7 @@
                                             <h1 class="uui-heading-xlarge-2">
                                                 <span class="coftextheader">
                                                 </span>
-                                                Leveraging Africa-Centric Data to achieve Exponential Growth
+                                                Leveraging Africa-Centric Data to Achieve Exponential Growth
                                             </h1>
                                             <div class="uui-space-small">
                                                 <div class="text-block-37">
@@ -204,7 +207,7 @@
                                             </div>
                                             <div class="uui-button-row is-reverse-mobile-landscape">
                                                 <div class="learnmoreevent max-width-full-mobile-landscape">
-                                                    <a class="uui-button-copy is-button-large w-inline-block" href="{% url 'EventPage' %}">
+                                                    <a class="uui-button-copy is-button-large w-inline-block" href="{% url 'ContactPage' %}">
                                                         <div class="text-block-36">
                                                             Learn More
                                                         </div>
@@ -255,39 +258,46 @@
                         </div>
                     </div>
                     <div class="w-tab-pane" data-w-tab="Tab 3">
-                        <div class="section-regular">
-                            <div class="container-regular">
-                                <div class="header-flex-row">
-                                    <div>
-                                        <div class="header-title-wrap" data-w-id="cf7a2880-9acc-d606-83ae-95e11019bd71" style="-webkit-transform:translate3d(0, 44px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 44px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 44px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 44px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
-                                            <div class="div-block-130">
-                                                <div class="udesly-typewriter-effect" color="#333" deleting="200" typewriter="Organise Data|Analyse Data|Train Data" writing="100">
-                                                    Collect Data
-                                                </div>
-                                                <div class="udesly-code-snippet-8 w-embed w-script">
-                                                    <script>
-                                                        !function(){"use strict";class t{constructor(t,e,i=[],n=2e3,s="|",r="black",o=200,l=500){this.element=t,this.strings=i,this.period=n,this.currentIndex=0,this.isDeleting=!1,this.text="",this.textWrapper=document.createElement("span"),this.element.appendChild(this.textWrapper),this.writingMaxTime=o,this.deletingTime=l,this.appendCursor(e,s,r),this.tick()}appendCursor(t,n="|",s="black"){const r=document.createElement("span");r.classList.add(`blinking-cursor-${t}`),r.textContent=n,this.element.appendChild(r),i(e(t,s))}tick(){this.currentIndex=this.currentIndex%this.strings.length;const t=this.strings[this.currentIndex];this.isDeleting?this.text=t.substring(0,this.text.length-1):this.text=t.substring(0,this.text.length+1),this.textWrapper.textContent=this.text;let e=this.writingMaxTime-100*Math.random();this.isDeleting&&(e/=2),this.isDeleting||this.text!=t?this.isDeleting&&""===this.text&&(this.isDeleting=!1,this.currentIndex++,e=this.deletingTime):(e=this.period,this.isDeleting=!0),setTimeout(()=>{this.tick()},e)}}const e=(t,e)=>`\n.blinking-cursor-${t} { color: ${e}; -webkit-animation: 1s blink step-end infinite; -moz-animation: 1s blink step-end infinite; -ms-animation: 1s blink step-end infinite; -o-animation: 1s blink step-end infinite; animation: 1s blink step-end infinite; } @keyframes blink{from,to{color:transparent}50%{color:${e}}}@-moz-keyframes blink{from,to{color:transparent}50%{color:${e}}}@-webkit-keyframes blink{from,to{color:transparent}50%{color:${e}}}@-ms-keyframes blink{from,to{color:transparent}50%{color:${e}}}@-o-keyframes blink{from,to{color:transparent}50%{color:${e}}}\n`,i=t=>{const e=document.createElement("style");e.textContent=t,document.head.appendChild(e)};document.currentScript.parentElement.parentElement.querySelectorAll("[typewriter]").forEach((e,i)=>{const n=e.getAttribute("typewriter").split("|").map(t=>t.trim())||[];if(!n.length||""==n[0])return void console.error("Please insert some texts separated by |");n.unshift(e.textContent),e.textContent="";const s=parseInt(e.getAttribute("period"),10)||1e3,r=e.getAttribute("cursor")||"|",o=e.getAttribute("color")||"black",l=parseInt(e.getAttribute("writing"),10)||200,a=parseInt(e.getAttribute("deleting"),10)||500;new t(e,i,n,s,r,o,l,a)})}();
-                                                    </script>
-                                                </div>
-                                            </div>
-                                            <div class="margin-bottom-64">
-                                                <p class="paragraph-9">
-                                                    Systematic process that involves gathering relevant information, structuring it in a coherent manner, and extracting meaningful insights.
-                                                </p>
-                                            </div>
-                                            <form action="/search" class="search w-form">
+                        <div class="w-container">
+                            <div class="uui-padding-vertical-xhuge-14">
+                                <div class="w-layout-grid uui-cta03_component">
+                                    <div class="uui-cta03_content">
+                                        <h2 class="uui-heading-large-5">
+                                            Donate to a
+                                            <br/>
+                                            great cause
+                                        </h2>
+                                        <div class="uui-space-small-7">
+                                        </div>
+                                        <div class="uui-text-size-large-12">
+                                            Support our programs.
+                                        </div>
+                                        <div class="uui-cta03_form w-form">
+                                            <form class="uui-form_component-2" data-name="Email Form" id="email-form" method="get" name="email-form">
                                                 {% csrf_token %}
-                                                <div class="search-input-wrapper">
-                                                    <img alt="searchicon
-" class="icon-regular" loading="lazy" src="{% static 'web/images/Search-Icon.svg' %}"/>
-                                                    <input class="search-field w-input" id="search" maxlength="256" name="query" placeholder="Search…" required="" type="search"/>
+                                                <div class="uui-signup-form_wrapper-2">
+                                                    <input class="uui-button-17 w-button" data-wait="Please wait..." type="submit" value="Donate here"/>
+                                                    <input class="uui-button-17 w-button" data-wait="Please wait..." type="submit" value="Learn more"/>
                                                 </div>
-                                                <input class="search-button w-button" type="submit" value="Search"/>
                                             </form>
+                                            <div class="w-form-done">
+                                                <div>
+                                                    Thank you! Your submission has been received!
+                                                </div>
+                                            </div>
+                                            <div class="w-form-fail">
+                                                <div>
+                                                    Oops! Something went wrong while submitting the form.
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="header-right-wrap" data-w-id="cf7a2880-9acc-d606-83ae-95e11019bd83" style="-webkit-transform:translate3d(0, 44px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 44px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 44px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 44px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
-                                        <img alt="BuildingImage" class="image-cover" loading="lazy" sizes="(max-width: 479px) 100vw, 300px" src="{% static 'web/images/adam-rhodes-ep5lX958f7E-unsplash_1adam-rhodes-ep5lX958f7E-unsplash.webp' %}" srcset="{% static 'web/images/adam-rhodes-ep5lX958f7E-unsplash_1-p-500.jpg' %} 500w, {% static 'web/images/adam-rhodes-ep5lX958f7E-unsplash_1-p-800.jpg' %} 800w, {% static 'web/images/adam-rhodes-ep5lX958f7E-unsplash_1-p-1080.jpg' %} 1080w, {% static 'web/images/adam-rhodes-ep5lX958f7E-unsplash_1-p-1600.jpg' %} 1600w, {% static 'web/images/adam-rhodes-ep5lX958f7E-unsplash_1-p-2000.jpg' %} 2000w, {% static 'web/images/adam-rhodes-ep5lX958f7E-unsplash_1-p-2600.jpg' %} 2600w, {% static 'web/images/adam-rhodes-ep5lX958f7E-unsplash_1-p-3200.jpg' %} 3200w"/>
+                                    <div class="uui-cta03_image-wrapper">
+                                        <img alt="Feature image" class="uui-cta03_image" id="w-node-e3a532d4-768f-c036-8ca9-a3c9859a215f-77bbad44" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 19vw, (max-width: 991px) 108px, 59.6640625px" src="{% static 'web/images/im7.jpeg' %}" srcset="{% static 'web/images/im7-p-500.jpeg' %} 500w, {% static 'web/images/im7.jpeg' %} 563w"/>
+                                        <img alt="Feature image" class="uui-cta03_image" id="w-node-e3a532d4-768f-c036-8ca9-a3c9859a2160-77bbad44" loading="lazy" src="{% static 'web/images/event1.png' %}"/>
+                                        <img alt="Feature image" class="uui-cta03_image" id="w-node-e3a532d4-768f-c036-8ca9-a3c9859a2161-77bbad44" loading="lazy" src="{% static 'web/images/feature-image-04.jpg' %}"/>
+                                        <img alt="Feature image" class="uui-cta03_image" id="w-node-e3a532d4-768f-c036-8ca9-a3c9859a2162-77bbad44" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 19vw, (max-width: 991px) 108px, 59.6640625px" src="{% static 'web/images/im7.1.jpeg' %}" srcset="{% static 'web/images/im7.1-p-500.jpeg' %} 500w, {% static 'web/images/im7.1.jpeg' %} 564w"/>
+                                        <img alt="Feature image" class="uui-cta03_image" id="w-node-e3a532d4-768f-c036-8ca9-a3c9859a2163-77bbad44" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 767px) 19vw, (max-width: 991px) 108px, 59.6640625px" src="{% static 'web/images/im7.0.jpeg' %}" srcset="{% static 'web/images/im7.0-p-500.jpeg' %} 500w, {% static 'web/images/im7.0.jpeg' %} 564w"/>
                                     </div>
                                 </div>
                             </div>
@@ -576,7 +586,7 @@
                         </div>
                     </div>
                     <div class="main_content5">
-                        <a class="content5 w-inline-block" href="{% url 'UnderConstruction' %}">
+                        <a class="content5 w-inline-block" href="{% url 'ResourcePage' %}">
                             <img alt="DataCollectionIcon" class="image-13" loading="lazy" src="{% static 'web/images/DDC1.jpeg' %}" width="126.5"/>
                             <div class="div-block-123">
                                 <img alt="DataCollectionImages" loading="lazy" src="{% static 'web/images/Icon.png' %}" width="35"/>
@@ -591,7 +601,7 @@
                                 <img alt="arrowDirImage" class="image-25" loading="lazy" src="{% static 'web/images/ArrowBtn2.png' %}" width="38"/>
                             </div>
                         </a>
-                        <a class="content5 w-inline-block" href="{% url 'UnderConstruction' %}">
+                        <a class="content5 w-inline-block" href="{% url 'CulturalPage' %}">
                             <img alt="DataCollectionIcon" class="image-13" loading="lazy" src="{% static 'web/images/DDC2.jpeg' %}" width="126.5"/>
                             <div>
                                 <img alt="DataCollectionImage" loading="lazy" src="{% static 'web/images/Icon3.png' %}" width="35"/>
@@ -608,7 +618,7 @@
                         </a>
                     </div>
                     <div class="main_content5">
-                        <a class="content5 w-inline-block" href="{% url 'UnderConstruction' %}">
+                        <a class="content5 w-inline-block" href="{% url 'LingPage' %}">
                             <img alt="DataCollectionIcon" class="image-13" loading="lazy" src="{% static 'web/images/DDC3.jpeg' %}" width="126.5"/>
                             <div>
                                 <img alt="DataCollectionImage" loading="lazy" src="{% static 'web/images/Icon4.png' %}" width="35"/>
@@ -640,7 +650,7 @@
                         </a>
                     </div>
                     <div class="main_content5">
-                        <a class="content5 w-inline-block" href="{% url 'UnderConstruction' %}">
+                        <a class="content5 w-inline-block" href="{% url 'PoliticsPage' %}">
                             <img alt="DataCollectionIcon" class="image-13" loading="lazy" src="{% static 'web/images/DDC5.jpeg' %}" width="126.5"/>
                             <div>
                                 <img alt="DataCollectionImage" loading="lazy" src="{% static 'web/images/Icon6.png' %}" width="35"/>
@@ -1069,7 +1079,7 @@
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-2" href="{% url 'HomePage' %}#Mission">
+                                            <a class="link-2" href="#Mission">
                                                 Mission
                                             </a>
                                         </div>
@@ -1079,7 +1089,7 @@
                                             </a>
                                         </div>
                                         <div class="footerbtn">
-                                            <a class="link-4" href="{% url 'HomePage' %}#OurTeam">
+                                            <a class="link-4" href="#OurTeam">
                                                 Our Team
                                             </a>
                                         </div>
