@@ -160,3 +160,9 @@ run to go live;
 make sure the EC2 instance public addy is included to the allowed host on the django settings file. if you make any correection to the project, restart nginx and supervior services.
 
 >sudo service supervisor restart
+
+##Setting up ssl
+>>sudo apt install snapd
+
+>>sudo snap install --classic certbot
+
