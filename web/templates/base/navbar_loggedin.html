@@ -1,0 +1,219 @@
+<!--navbar_loggedin.html-->
+{% load static %}
+
+<div class="nav_comp_users">
+    <div class="w-layout-blockcontainer nav_container w-container">
+        <div class="uui-navbar07_component w-nav" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" data-w-id="f5905523-18a0-3969-1fc0-6d474bee33c6" role="banner">
+            <div class="uui-navbar07_container">
+                <a class="uui-navbar07_logo-link w-nav-brand" href="{% url 'HomePage' %}">
+                    <div class="uui-logo_component-2">
+                        <div class="uui-logo_logomark-2">
+                            <img alt="ADF_Logo" loading="lazy" sizes="110px" src="{% static 'web/images/Logo.png' %}" srcset="{% static 'web/images/Logo-p-500.png' %} 500w, {% static 'web/images/Logo.png' %} 713w" width="110"/>
+                        </div>
+                    </div>
+                </a>
+                <nav class="uui-navbar07_menu w-nav-menu" role="navigation">
+                    <div class="uui-navbar07_menu-left">
+                        <a class="uui-navbar07_link w-nav-link" href="{% url 'HomePage' %}">
+                            Home
+                        </a>
+                        <a class="uui-navbar07_link w-nav-link" href="{% url 'HomePage' %}#Mission">
+                            Mission
+                        </a>
+                        <a class="uui-navbar07_link w-nav-link" href="{% url 'EventPage' %}">
+                            Events
+                        </a>
+                        <div class="uui-navbar07_menu-dropdown w-dropdown" data-delay="300" data-hover="true" data-w-id="f5905523-18a0-3969-1fc0-6d474bee33d4">
+                            <div class="uui-navbar07_dropdown-toggle w-dropdown-toggle">
+                                <div class="uui-dropdown-icon-2 w-embed">
+                                    <svg fill="none" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.67">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="text-block-197">
+                                    Resources
+                                </div>
+                            </div>
+                            <nav class="uui-navbar07_dropdown-list w-dropdown-list">
+                                <div class="uui-navbar07_dropdown-link-list">
+                                    <a class="uui-navbar07_dropdown-link w-inline-block" href="{% url 'DataContPage' %}">
+                                        <div class="uui-navbar07_icon-wrapper">
+                                        </div>
+                                        <div class="uui-navbar07_item-right">
+                                            <div class="uui-navbar07_item-heading">
+                                                Data Content
+                                            </div>
+                                            <div class="uui-text-size-small-9">
+                                                Get updates on different industry data collection points
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="uui-navbar07_dropdown-link w-inline-block" href="{% url 'HomePage' %}#DataCollectionPage">
+                                        <div class="uui-navbar07_icon-wrapper">
+                                        </div>
+                                        <div class="uui-navbar07_item-right">
+                                            <div class="uui-navbar07_item-heading">
+                                                Data Collection
+                                            </div>
+                                            <div class="uui-text-size-small-9">
+                                                Learn how our Beneficiaries are making big changes.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="uui-navbar07_dropdown-link w-inline-block" href="{% url 'newshome' %}">
+                                        <div class="uui-navbar07_icon-wrapper">
+                                        </div>
+                                        <div class="uui-navbar07_item-right">
+                                            <div class="uui-navbar07_item-heading">
+                                                Blogs
+                                            </div>
+                                            <div class="uui-text-size-small-9">
+                                                The latest industry news, updates and info.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="uui-navbar07_dropdown-link w-inline-block" href="#">
+                                        <div class="uui-navbar07_icon-wrapper">
+                                        </div>
+                                        <div class="uui-navbar07_item-right">
+                                            <div class="uui-navbar07_item-heading">
+                                                Documentation
+                                            </div>
+                                            <div class="uui-text-size-small-9">
+                                                All the boring stuff that you (hopefully won’t) need.
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="uui-navbar07_dropdown-link w-inline-block" href="#">
+                                        <div class="uui-navbar07_icon-wrapper">
+                                        </div>
+                                        <div class="uui-navbar07_item-right">
+                                            <div class="uui-navbar07_item-heading">
+                                                ADF Resources
+                                            </div>
+                                            <div class="uui-text-size-small-9">
+                                                Get started with Africa Data Foundation digital resources
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </nav>
+                        </div>
+                        <a class="uui-navbar07_link w-nav-link" href="{% url 'HomePage' %}#partners">
+                            Partners
+                        </a>
+                        <a class="uui-navbar07_link w-nav-link" href="{% url 'ContactPage' %}">
+                            Contact Us
+                        </a>
+                        <a class="uui-navbar07_link w-nav-link" href="{% url 'checkout' %}">
+                            Donate
+                        </a>
+                    </div>
+                    <div class="uui-navbar07_menu-right">
+                        <div class="uui-navbar07_button-wrapper">
+                            <!--<a class="uui-button-secondary-gray-9 show-tablet w-inline-block" href="#">
+                                <div>
+                                    Settings
+                                </div>
+                            </a>-->
+                            <a class="uui-button-secondary-gray-9 show-tablet w-inline-block" href="{% url 'logout_user' %}">
+                                <div>
+                                    Log Out
+                                </div>
+                            </a>
+                            <div class="uui-navbar07_menu-dropdown w-dropdown" data-delay="300" data-hover="true" data-w-id="f5905523-18a0-3969-1fc0-6d474bee340c">
+                                <div class="uui-navbar07_dropdown-toggle w-dropdown-toggle">
+                                    <div class="uui-dropdown-icon-2 w-embed">
+                                        <svg fill="none" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.67">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="w-embed">
+                                        <svg fill="#D5D5F8" height="30" viewbox="0 0 31 30" width="31" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.9961 2.5C9.10359 2.5 3.49609 8.1075 3.49609 15C3.49609 18.1512 4.67734 21.025 6.60859 23.2275C8.15859 25.1275 10.6911 27.06 14.6573 27.425C15.5467 27.5234 16.4442 27.5234 17.3336 27.425C21.3011 27.06 23.8323 25.1263 25.3823 23.2275C27.3881 20.956 28.4953 18.0303 28.4961 15C28.4961 8.1075 22.8886 2.5 15.9961 2.5ZM6.88234 10.905C7.07484 11.0175 7.26734 11.1325 7.45234 11.25C7.94734 11.5625 8.44109 11.875 9.05984 12.11C9.67734 12.3438 10.4198 12.5 11.4086 12.5C12.3986 12.5 13.1411 12.3438 13.7598 12.1088C14.3786 11.8738 14.8736 11.5625 15.3686 11.25C15.8636 10.9375 16.3586 10.625 16.9773 10.39C17.5948 10.1563 18.3373 10 19.3273 10C20.3173 10 21.0598 10.1562 21.6773 10.3912C22.2961 10.625 22.7911 10.9375 23.2861 11.25C23.7811 11.5625 24.2761 11.875 24.8948 12.11C25.1173 12.1937 25.3623 12.2625 25.6211 12.3238C25.8598 13.1763 25.9961 14.0712 25.9961 15C25.9961 16.0538 25.8298 17.0675 25.5273 18.0212C25.2011 18.265 24.6111 18.6138 23.5561 18.9663C22.5948 19.2863 21.4661 19.5387 20.1998 19.7188C17.4094 20.0925 14.5816 20.0925 11.7911 19.7188C10.5248 19.5387 9.39609 19.2863 8.43484 18.9663C7.37984 18.6138 6.78984 18.265 6.46359 18.0212C5.71866 15.679 5.86784 13.1438 6.88234 10.905Z" fill="#2a69ef">
+                                            </path>
+                                            <path d="M11.6211 17.5C12.6566 17.5 13.4961 16.6605 13.4961 15.625C13.4961 14.5895 12.6566 13.75 11.6211 13.75C10.5856 13.75 9.74609 14.5895 9.74609 15.625C9.74609 16.6605 10.5856 17.5 11.6211 17.5Z" fill="#D5D5F8">
+                                            </path>
+                                            <path d="M20.3711 17.5C21.4066 17.5 22.2461 16.6605 22.2461 15.625C22.2461 14.5895 21.4066 13.75 20.3711 13.75C19.3356 13.75 18.4961 14.5895 18.4961 15.625C18.4961 16.6605 19.3356 17.5 20.3711 17.5Z" fill="#D5D5F8">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <nav class="uui-navbar07_dropdown-list w-dropdown-list">
+                                    <div class="uui-navbar07_dropdown-link-list">
+                                        <a class="uui-navbar07_dropdown-link w-inline-block" href="{% url 'ProfilePg' %}">
+                                            <div class="uui-navbar07_icon-wrapper">
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="23" stroke="#ffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="23" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3">
+                                                        </path>
+                                                        <circle cx="12" cy="10" r="3">
+                                                        </circle>
+                                                        <circle cx="12" cy="12" r="10">
+                                                        </circle>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="uui-navbar07_item-right">
+                                                <div class="uui-navbar07_item-heading">
+                                                    My Account <br>
+                                                    ({{ user.username }})
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!--<a class="uui-navbar07_dropdown-link w-inline-block" href="">
+                                            <div class="uui-navbar07_icon-wrapper">
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="23" stroke="#ffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="23" xmlns="http://www.w3.org/2000/svg">
+                                                        <polygon points="14 2 18 6 7 17 3 17 3 13 14 2">
+                                                        </polygon>
+                                                        <line x1="3" x2="21" y1="22" y2="22">
+                                                        </line>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="uui-navbar07_item-right">
+                                                <div class="uui-navbar07_item-heading">
+                                                    Settings
+                                                </div>
+                                            </div>
+                                        </a>-->
+                                        <a class="uui-navbar07_dropdown-link w-inline-block" href="{% url 'logout_user' %}">
+                                            <div class="uui-navbar07_icon-wrapper">
+                                                <div class="w-embed">
+                                                    <svg fill="none" height="23" stroke="#ffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="23" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M16 17l5-5-5-5M19.8 12H9M13 22a10 10 0 1 1 0-20">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="uui-navbar07_item-right">
+                                                <div class="uui-navbar07_item-heading">
+                                                    Log Out
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="uui-navbar07_menu-button w-nav-button">
+                    <div class="menu-icon_component-2">
+                        <div class="menu-icon_line-top-2">
+                        </div>
+                        <div class="menu-icon_line-middle-2">
+                            <div class="menu-icon_line-middle-inner-2">
+                            </div>
+                        </div>
+                        <div class="menu-icon_line-bottom-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,5 +1,6 @@
 from django.db import models
 
+#Model for Contact
 class ContactUsInfo(models.Model):
     Firstname = models.CharField(max_length=200, null=False, blank=False)
     Lastname = models.CharField(max_length=200, null=False, blank=False)
@@ -10,6 +11,7 @@ class ContactUsInfo(models.Model):
     def __str__(self):
         return self.Firstname + '' + self.Lastname
     
+ #Model for Registering for the event   
 class EventRegistration(models.Model):
     Firstname = models.CharField(max_length=200, null=False, blank=False)
     Lastname = models.CharField(max_length=200, null=False, blank=False)
@@ -34,3 +36,6 @@ class EventRegistration(models.Model):
     
     def __str__(self):
         return self.Firstname + '' + self.Lastname
+    
+    #Model for user , user creating blog post, auth, permission
+    

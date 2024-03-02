@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html data-wf-page="65bec414148e4c2b5442ad34" data-wf-site="6416913004ae8a2b5cbbad43">
+    {% extends 'base/base.html' %}
+    {% load static %}
+    {% block content %}
+    <body class="body-6">
+        <div class="w-layout-blockcontainer w-container">
+            <div class="uui-blog03_component">
+                <div class="f-container-regular-2">
+                    <div class="f-header-wrapper-left" id="w-node-d5cbe227-a330-43eb-3d5b-5f88f355eb0a-5442ad34">
+                        <div class="f-margin-bottom-46">
+                            <div class="f-heading-detail-small">
+                                News
+                            </div>
+                        </div>
+                        <div class="f-margin-bottom-45">
+                            <h1 class="f-h1-heading-3">
+                                Latest updates and news
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uui-blog03_featured-list-wrapper">
+                    <!--MOST RECENT POST-->
+
+                            {% if recent_post %}
+                                <div class="uui-blog03_featured-list">
+                                    <div class="uui-blog03_featured-item">
+                                        <a class="uui-blog03_image-link is-featured w-inline-block" data-w-id="04cf433c-25ff-5b5a-43a6-49447fa1d7f0" href="{% url 'blog_detail' recent_post.slug %}">
+                                            <div class="uui-blog03_image-wrapper is-featured">
+
+                                                {% if recent_post.image2 %}
+                                                    <img alt="{{recent_post.title}}" class="uui-blog03_image" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, 47vw" src="{{ recent_post.image2 }}" srcset=""/>
+                                                    
+
+                                                {% endif %}
+
+                                            </div>
+                                        </a>
+
+                                        <div class="uui-blog03_featured-item-content">
+                                            <a class="uui-blog03_title-link-2 is-featured w-inline-block" href="{% url 'blog_detail' recent_post.slug %}">
+                                                <h1 class="uui-heading-small-2">
+                                                    {{recent_post.title}}
+                                                </h1>
+                                            </a>
+                                            <div class="uui-text-size-medium-14">
+                                                {{recent_post.desc}}
+                                            </div>
+                                            <div class="uui-blog03_author-wrapper-2">
+                                                <div class="uui-blog03_author-text">
+                                                    <div class="uui-blog03_author-heading-2">
+                                                        <p>{{recent_post.author}}</p>
+                                                    </div>
+                                                    <div class="uui-blog03_date-wrapper">
+                                                        <div class="uui-text-size-small-10">
+                                                            {{recent_post.date_added}}
+                                                        </div>
+                                                        <div class="uui-text-divider-2 text-size-small">
+                                                            •
+                                                        </div>
+                                                        <div class="uui-text-size-small-10">
+                                                            • min read
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% else %}
+                                <p>No news post available</p>
+                            {% endif %}
+                </div>
+            </div>
+            <section class="news" id="news">
+                <div class="uui-container-large">
+                </div>
+            </section>
+            <div class="w-layout-blockcontainer w-container">
+                <img alt="" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" src="{% static 'web/images/SK-website-verizon_10_992.jpg' %}" srcset="{% static 'web/images/SK-website-verizon_10_992-p-500.jpg' %} 500w, {% static 'web/images/SK-website-verizon_10_992-p-800.jpg' %} 800w, {% static 'web/images/SK-website-verizon_10_992.jpg' %} 966w"/>
+            </div>
+            <div class="w-layout-layout quick-stack-2 wf-layout-layout" id="w-node-b9950b6d-1aef-6506-afba-6229e3b2126e-5442ad34">
+                <div class="w-layout-cell cell-2" id="w-node-_466238a4-ee6d-29b6-3d3f-e3ebad194513-5442ad34">
+                     
+
+                    <!--GRID LIST FOR NEWS POST -->
+                    {% if other_posts %}
+                        {% for post in other_posts %}
+                            <div class="w-layout-grid grid-2-columns blog-card-primary" data-w-id="c247afce-0771-01d6-8223-a6482e980dc9">
+                                
+                                <a class="blog-card-image-wrapper featured-v1" id="w-node-c247afce-0771-01d6-8223-a6482e980dca-5442ad34" href="{% url 'blog_detail' post.slug %}">
+                                    {% if post.image2 %}
+                                    <img alt="v" class="blog-card-image featured-v1" src="{{ post.image2 }}"/>
+                                    {% elif post.image1 %}
+                                    <img alt="{{ post.title }}" class="blog-card-image featured-v1" src="{{ post.image1 }}"/>
+                                    {% endif %}
+                                </a>
+                                
+                                <a style="text-decoration: none; color: inherit; " href="{% url 'blog_detail' post.slug %}">
+                                    <div class="blog-card-content-default">
+                                        <div class="text-uppercase mg-bottom-16px">
+                                            <div class="text-200 bold">
+                                                {{post.title}}
+                                            </div>
+                                        </div>
+                                        <h3>
+                                            
+                                        </h3>
+                                        <p style="color: grey;" "mg-bottom-24px">
+                                            {{post.desc}}
+                                        </p>
+                                        <div class="uui-blog03_author-wrapper-2">
+                                            <div class="uui-blog03_author-text">
+                                                <div class="uui-blog03_author-heading-2">
+                                                    <p>{{recent_post.author}}</p>
+                                                </div>
+                                                <div class="uui-blog03_date-wrapper">
+                                                    <div class="uui-text-size-small-10">
+                                                        {{recent_post.date_added}}
+                                                    </div>
+                                                    <div class="uui-text-divider-2 text-size-small">
+                                                        •
+                                                    </div>
+                                                    <div class="uui-text-size-small-10">
+                                                        • min read
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                        {% endfor %}
+                    {% else%}
+                        <p>No news post available</p>
+                    {% endif %}
+
+                </div>
+
+
+                <div class="w-layout-cell" id="w-node-_6a9c749a-ce30-c040-833c-b60c6b4bbf7b-5442ad34">
+                    <div class="sidebar">
+                        <a class="logo-sidebar w-inline-block" href="#">
+                            <img alt="" src=""/>
+                        </a>
+                        <p class="mg-bottom-24px">
+                            Get all the latest new from all around Africa and the rest of the world. 
+                        </p>
+                        <div>
+                            <img alt="" loading="lazy" src="{% static '/web/images/7020725612931777514.gif' %}"/>
+                        </div>
+                        <div class="divider _56px">
+                        </div>
+                    </div>
+                    <div>
+                        <img alt="" loading="lazy" src="{% static 'web/images/13245314114946365519.png' %}"/>
+                    </div>
+                    
+                </div>
+                <div class="w-layout-cell" id="w-node-_78f45580-a247-c1ee-8f92-730fbde3c108-5442ad34">
+                    <img alt="" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" src="" srcset=""/>
+                </div>
+            </div>
+        </div>
+       
+    </body>
+    {% endblock %}
+</html>

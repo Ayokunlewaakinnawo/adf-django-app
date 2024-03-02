@@ -1,0 +1,79 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <div class="w-users-userformpagewrap page-wrapper">
+            <div class="w-users-userloginformwrapper">
+
+                {% for message in messages %}
+
+                    <p id="messages" style="display: block; text-align: center;">
+                    <!--color coding messages-->
+                        {{message}}
+                    </p>
+
+                {% endfor %}
+
+
+                <div class="w-users-userformheader">
+                    <h2>
+                        Log in
+                    </h2>
+                </div>
+                <form method="post" action="">
+                    {% csrf_token %}
+                    
+                    <div class="form-container">
+                        <label for="{{ form.username.id_for_label }}">Email</label>
+                        <input class="username" data-wf-user-form-input-type="username" id="username" maxlength="256" name="username" placeholder="" required="" type="text"/>
+                            
+                        <label for="{{ form.password.id_for_label }}">Password</label>
+                        <input class="password" data-wf-user-form-input-type="password" id="password" maxlength="256" name="password" placeholder="" required="" type="password"/>
+                        
+                    </div>
+
+                    <style>
+                        .form-container {
+                            display: block;
+                            width: 300px; /* You can adjust the width as needed */
+                            margin: auto;
+                            padding: 20px;
+                            border-radius: 10px;
+                        }
+                        
+                        .form-container label {
+                            display: block;
+                            font-weight: bold;
+                            margin-top: 10px;
+                        }
+                        
+                        .form-container input {
+                            color:aliceblue;
+                            width: 100%;
+                            padding: 8px;
+                            margin-top: 5px;
+                            border: 1px solid #2c3144;
+                            border-radius: 4px;
+                            background-color: #2c3144; /* White background for input fields */
+                        }
+                    </style>
+                    
+                    <input class="w-users-userformbutton submit-button-4 w-button" data-wait="Please wait..." type="submit" value="Log In"/>
+                    <div class="w-users-userformfooter">
+                        <span>
+                            Don't have an account?
+                        </span>
+                        <a class="w-inline-block" href="{% url 'sign_up' %}">
+                            Sign Up
+                        </a>
+                    </div>
+                </form>
+                <div class="w-users-userformerrorstate w-form-fail" data-wf-user-form-error="true" style="display:none">
+                    <div class="user-form-error-msg" wf-login-form-general-error-error="We're having trouble logging you in. Please try again, or contact us if you continue to have problems." wf-login-form-invalid-email_or_password-error="Invalid email or password. Please try again.">
+                        We're having trouble logging you in. Please try again, or contact us if you continue to have problems.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

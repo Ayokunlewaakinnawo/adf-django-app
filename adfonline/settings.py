@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+# Celery Configuration
+from celery import Celery
+from celery.schedules import crontab
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,9 +27,28 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8pi-=n%=&vd0487!tcqrzcpxr=6gmt$-&1mug35fk@5vu8z*_n'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+#Mail Configuration
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+EMAIL_HOST = 'mail.hover.com'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_PORT = '465'
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True#>>True
+
+#SendGrid Configuration
+#SENDGRID_API_KEY=''
+#FROM_EMAIL_ADDRESS = ''
+
+#Stripe Configuration
+STRIPE_SECRET_KEY =''
+
+
+ALLOWED_HOSTS = ['']
+
 
 
 # Application definition
@@ -38,6 +61,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'adfonline',
+    'users',
+    'blog',
+    'news',
+    'celery',
+    'django_celery_beat',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +154,21 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
     BASE_DIR / "web/static",
 ]
+
+if os.getcwd() == '/app':
+    DEBUG =False
+
+# images (uploaded images on the app goes in here)
+MEDIA_URL = '/web/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'web/media')
+
+
+app = Celery('adfonline')
+app.config_from_object('django.conf:settings', namespace='CELERY')
+app.autodiscover_tasks(lambda: INSTALLED_APPS)
+
+# Use a different Redis database (optional)
+CELERY_BROKER_URL = 'redis://localhost:6379/1'
+CELERY_RESULT_BACKEND = 'redis://localhost:6379/1'
+
+
