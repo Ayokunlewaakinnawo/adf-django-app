@@ -24,7 +24,7 @@ sudo apt-get install python3-venv
 
 Create Virtual enviroment "env" and activate it:
 
-```json
+```
 python3 -m venv env
 source env/bin/activate
 ```
@@ -38,7 +38,7 @@ git clone [https://github.com/Ayokunlewaakinnawo/adfonline.git](https://github.
 
 install nginx . install gunicorn . install supervisor
 
-```json
+```
 install nginx
 sudo apt-get install -y nginx
 pip install gunicorn
@@ -49,24 +49,24 @@ connect to the ec2 pubic address and make sure the landing page of nginx is show
 
 install and setup supervisor ; This will keep the application running in the background.
 
-```json
+```
 sudo apt-get install supervisor
 ```
 
 configure supervisor;
 
-```json
+```
 cd /etc/supervisor/conf.d/
 ```
 
 Create gunicorn configuration file;
 
-```json
+```
 sudo touch gunicorn.conf
 sudo nano gunicorn.conf
 ```
 
-```json
+```
 [program:gunicorn]
 
 directory=/home/ubuntu/elevate
@@ -84,37 +84,33 @@ programs:gunicorn
 
 create log dri.;
 
-```json
+```
 sudo mkdir /var/log/gunicorn
 ```
 
 read from config file(gunicorn conf);
 
-```json
+```
 sudo supervisorctl reread
 ```
 
 tell supervisor to start gunicorn in the bckgrd;
 
-```json
+```
 sudo supervisorctl update
 ```
 
 To test and see gunicorn is working;
 
-```json
+```
 sudo supervisorctl status
 ```
 
-> 
-> 
-
-> cd .. to go back to etc.>
-> 
+cd .. to go back to etc.>
 
 To modify an existing file "nginx.cong"
 
-```json
+```
 cd nginx
 sudo nano nginx.conf
 ```
@@ -123,7 +119,7 @@ edit the user from wwwdata to root;save and exit
 
 cd .. create a file "django.conf" at dir. /etc/nginx/sites-available;
 
-```json
+```
 cd /etc/nginx/sites-available
 ```
 
@@ -152,29 +148,29 @@ location /static/admin/ {
 
 to test your nginx syntax;
 
-```json
+```
 sudo nginx -t
 ```
 
 run to go live;
 
-```json
+```
 sudo ln django.conf /etc/nginx/sites-enabled
 ```
 
-```json
+```
 sudo service nginx restart
 ```
 
 make sure the EC2 instance public addy is included to the allowed host on the django settings file. if you make any correection to the project, restart nginx and supervior services.
 
-```json
+```
 sudo service supervisor restart
 ```
 
-##Setting up ssl
+Setting up ssl
 
-```json
+```
 sudo apt install snapd
 sudo snap install --classic certbot
 ```
