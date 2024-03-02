@@ -12,9 +12,6 @@ Setup -on Amazon EC2 (Ubuntu)
 
 Update the System
 
-> 
-> 
-
 ```json
 sudo apt-get update
 ```
@@ -24,9 +21,6 @@ install python3 virtual enviroment set up pip;
 ```json
 sudo apt-get install python3-venv
 ```
-
-> 
-> 
 
 Create Virtual enviroment "env" and activate it:
 
@@ -50,9 +44,6 @@ sudo apt-get install -y nginx
 pip install gunicorn
 
 ```
-
-> 
-> 
 
 connect to the ec2 pubic address and make sure the landing page of nginx is showing
 
@@ -97,26 +88,17 @@ create log dri.;
 sudo mkdir /var/log/gunicorn
 ```
 
-> 
-> 
-
 read from config file(gunicorn conf);
 
 ```json
 sudo supervisorctl reread
 ```
 
-> 
-> 
-
 tell supervisor to start gunicorn in the bckgrd;
 
 ```json
 sudo supervisorctl update
 ```
-
-> 
-> 
 
 To test and see gunicorn is working;
 
@@ -139,18 +121,11 @@ sudo nano nginx.conf
 
 edit the user from wwwdata to root;save and exit
 
-> cd .. create a file "django.conf" at dir. /etc/nginx/sites-available;
-> 
+cd .. create a file "django.conf" at dir. /etc/nginx/sites-available;
 
 ```json
 cd /etc/nginx/sites-available
 ```
-
-> 
-> 
-
-> 
-> 
 
 Create the file;
 
@@ -181,9 +156,6 @@ to test your nginx syntax;
 sudo nginx -t
 ```
 
-> 
-> 
-
 run to go live;
 
 ```json
@@ -199,9 +171,6 @@ make sure the EC2 instance public addy is included to the allowed host on the dj
 ```json
 sudo service supervisor restart
 ```
-
-> 
-> 
 
 ##Setting up ssl
 
