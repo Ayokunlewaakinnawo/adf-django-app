@@ -12,13 +12,13 @@ Setup -on Amazon EC2 (Ubuntu)
 
 Update the System
 
-```json
+```
 sudo apt-get update
 ```
 
 install python3 virtual enviroment set up pip;
 
-```json
+```
 sudo apt-get install python3-venv
 ```
 
@@ -31,7 +31,7 @@ source env/bin/activate
 
 install dependensies and download project from git:
 
-```json
+```
 pip3 install django
 git clone [https://github.com/Ayokunlewaakinnawo/adfonline.git](https://github.com/Ayokunlewaakinnawo/adfonline.git)
 ```
