@@ -115,7 +115,7 @@ cd nginx
 sudo nano nginx.conf
 ```
 
-edit the user from wwwdata to root;save and exit
+edit "user www-data" to ==> "user root"
 
 cd .. create a file "django.conf" at dir. /etc/nginx/sites-available;
 
